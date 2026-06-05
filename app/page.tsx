@@ -61,8 +61,9 @@ export default function Home() {
         </h1>
 
         <p style={{ color: "#aaa", fontSize: "1.2rem", maxWidth: "650px" }}>
-          We track tech, gaming and electronics deals across the UK so you do
-          not have to dig through the internet like a tired cave goblin.
+          We hunt the best tech deals across the UK.
+          GPUs, gaming, electronics and gadgets.
+          No endless scrolling. No nonsense. just the best deals, handpicked by our goblins.
         </p>
       </section>
 
