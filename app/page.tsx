@@ -5,23 +5,32 @@ export default function Home() {
       price: "£699",
       store: "Amazon UK",
       category: "Graphics Card",
+      link: "https://www.amazon.co.uk/",
     },
     {
       title: "Samsung 990 Pro 2TB",
       price: "£109",
       store: "Ebuyer",
       category: "SSD",
+      link: "https://www.ebuyer.com/",
     },
     {
       title: "LG OLED 55”",
       price: "£799",
       store: "Currys",
       category: "TV",
+      link: "https://www.currys.co.uk/",
     },
   ];
 
+  const navLinkStyle = {
+    color: "#c7c7c7",
+    textDecoration: "none",
+  };
+
   return (
     <main
+      id="home"
       style={{
         minHeight: "100vh",
         background: "#0f1115",
@@ -42,10 +51,10 @@ export default function Home() {
           🧌 GoblinTechUK
         </div>
 
-        <nav style={{ display: "flex", gap: "25px", color: "#c7c7c7" }}>
-          <span>Home</span>
-          <span>Deals</span>
-          <span>About</span>
+        <nav style={{ display: "flex", gap: "25px" }}>
+          <a href="#home" style={navLinkStyle}>Home</a>
+          <a href="#deals" style={navLinkStyle}>Deals</a>
+          <a href="#about" style={navLinkStyle}>About</a>
         </nav>
       </header>
 
@@ -61,13 +70,13 @@ export default function Home() {
         </h1>
 
         <p style={{ color: "#aaa", fontSize: "1.2rem", maxWidth: "650px" }}>
-          We hunt the best tech deals across the UK.
-          GPUs, gaming, electronics and gadgets.
-          No endless scrolling. No nonsense. just the best deals, handpicked by our goblins.
+          We hunt the best tech deals across the UK. GPUs, gaming, electronics
+          and gadgets. No endless scrolling. No nonsense. Just the best deals,
+          handpicked by our goblins.
         </p>
       </section>
 
-      <section style={{ padding: "20px 40px 60px" }}>
+      <section id="deals" style={{ padding: "20px 40px 60px" }}>
         <h2 style={{ marginBottom: "20px" }}>Latest Deals</h2>
 
         <div
@@ -109,24 +118,87 @@ export default function Home() {
                 {deal.store}
               </p>
 
-              <button
+              <a
+                href={deal.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
+                  display: "inline-block",
                   background: "#8cff4f",
                   color: "#111",
-                  border: "none",
                   borderRadius: "10px",
                   padding: "12px 18px",
                   fontWeight: "bold",
-                  cursor: "pointer",
+                  textDecoration: "none",
                 }}
               >
                 View Deal
-              </button>
+              </a>
             </div>
           ))}
         </div>
       </section>
-            <footer
+
+      <section
+        id="about"
+        style={{
+          padding: "50px 40px",
+          borderTop: "1px solid #2d313a",
+        }}
+      >
+        <h2>About GoblinTechUK</h2>
+        <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
+          GoblinTechUK tracks technology, gaming and electronics deals across
+          the United Kingdom. The goal is simple: find useful bargains, remove
+          the junk, and save people from endless scrolling.
+        </p>
+      </section>
+
+      <section
+        id="contact"
+        style={{
+          padding: "50px 40px",
+          borderTop: "1px solid #2d313a",
+        }}
+      >
+        <h2>Contact</h2>
+        <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
+          For now, GoblinTechUK is under construction. A contact email and
+          social links will be added soon.
+        </p>
+      </section>
+
+      <section
+        id="affiliate"
+        style={{
+          padding: "50px 40px",
+          borderTop: "1px solid #2d313a",
+        }}
+      >
+        <h2>Affiliate Disclosure</h2>
+        <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
+          Some links on GoblinTechUK may become affiliate links. This means we
+          may earn a small commission if you buy through them, at no extra cost
+          to you.
+        </p>
+      </section>
+
+      <section
+        id="privacy"
+        style={{
+          padding: "50px 40px",
+          borderTop: "1px solid #2d313a",
+        }}
+      >
+        <h2>Privacy Policy</h2>
+        <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
+          GoblinTechUK does not currently collect personal data. If analytics,
+          forms, cookies or affiliate tracking are added later, this section
+          will be updated.
+        </p>
+      </section>
+
+      <footer
         style={{
           borderTop: "1px solid #2d313a",
           padding: "30px 40px",
@@ -139,16 +211,14 @@ export default function Home() {
       >
         <div>
           <strong style={{ color: "white" }}>GoblinTechUK</strong>
-          <p style={{ marginTop: "8px" }}>
-            Built for UK tech deal hunters.
-          </p>
+          <p style={{ marginTop: "8px" }}>Built for UK tech deal hunters.</p>
         </div>
 
         <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-          <span>About</span>
-          <span>Contact</span>
-          <span>Affiliate Disclosure</span>
-          <span>Privacy Policy</span>
+          <a href="#about" style={navLinkStyle}>About</a>
+          <a href="#contact" style={navLinkStyle}>Contact</a>
+          <a href="#affiliate" style={navLinkStyle}>Affiliate Disclosure</a>
+          <a href="#privacy" style={navLinkStyle}>Privacy Policy</a>
         </div>
 
         <p>© 2026 GoblinTechUK</p>
