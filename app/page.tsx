@@ -1,43 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+type Deal = {
+  title: string;
+  price: string;
+  category: string;
+  quality: string;
+  source: string;
+  link: string;
+  timestamp: string;
+};
 
 export default function Home() {
-  const deals = [
-    {
-      title: "RTX 5070 Ti",
-      price: "£699",
-      oldPrice: "£799",
-      discount: "-13%",
-      store: "Amazon UK",
-      category: "GPUs",
-      tag: "Hot Deal",
-      postedAt: "Today",
-      link: "https://www.amazon.co.uk/",
-    },
-    {
-      title: "Samsung 990 Pro 2TB",
-      price: "£109",
-      oldPrice: "£149",
-      discount: "-27%",
-      store: "Ebuyer",
-      category: "SSDs",
-      tag: "Fast Storage",
-      postedAt: "Today",
-      link: "https://www.ebuyer.com/",
-    },
-    {
-      title: "LG OLED 55”",
-      price: "£799",
-      oldPrice: "£999",
-      discount: "-20%",
-      store: "Currys",
-      category: "TVs",
-      tag: "Big Screen",
-      postedAt: "Today",
-      link: "https://www.currys.co.uk/",
-    },
-  ];
+  const [deals, setDeals] = useState<Deal[]>([]);
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   const categories = [
     "All",
@@ -47,9 +26,42 @@ export default function Home() {
     "TVs",
     "Laptops",
     "Accessories",
+    "Hardware",
+    "Other",
   ];
 
-  const [activeCategory, setActiveCategory] = useState("All");
+  useEffect(() => {
+    async function loadDeals() {
+      try {
+        setIsLoading(true);
+        setError(null);
+
+        const response = await fetch("/deals.json");
+
+        if (!response.ok) {
+          throw new Error(`Failed to load deals.json (${response.status})`);
+        }
+
+        const data = await response.json();
+
+        if (!Array.isArray(data)) {
+          throw new Error("deals.json must contain an array of deals");
+        }
+
+        setDeals(data);
+      } catch (loadError) {
+        setError(
+          loadError instanceof Error
+            ? loadError.message
+            : "Failed to load deals.json"
+        );
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    loadDeals();
+  }, []);
 
   const filteredDeals =
     activeCategory === "All"
@@ -118,7 +130,7 @@ export default function Home() {
         <h1 style={{ fontSize: "4rem", margin: "10px 0" }}>
           Deals found by goblins.
           <br />
-          Sorted so you don't have to.
+          Sorted so you don&apos;t have to.
         </h1>
 
         <p style={{ color: "#aaa", fontSize: "1.2rem", maxWidth: "650px" }}>
@@ -159,9 +171,15 @@ export default function Home() {
           ))}
         </div>
 
-        {filteredDeals.length === 0 ? (
+        {isLoading ? (
           <p style={{ color: "#aaa", fontSize: "1.1rem" }}>
-            No deals found. The goblins are still hunting.
+            Loading latest deals...
+          </p>
+        ) : error ? (
+          <p style={{ color: "#ff6b6b", fontSize: "1.1rem" }}>{error}</p>
+        ) : filteredDeals.length === 0 ? (
+          <p style={{ color: "#aaa", fontSize: "1.1rem" }}>
+            The goblins are still hunting...
           </p>
         ) : (
           <div
@@ -171,9 +189,9 @@ export default function Home() {
               gap: "20px",
             }}
           >
-            {filteredDeals.map((deal, index) => (
+            {filteredDeals.map((deal) => (
               <div
-                key={index}
+                key={`${deal.source}-${deal.link}-${deal.timestamp}`}
                 style={{
                   background: "#1a1d24",
                   padding: "25px",
@@ -203,7 +221,7 @@ export default function Home() {
                       fontWeight: "bold",
                     }}
                   >
-                    {deal.tag}
+                    {deal.quality}
                   </span>
                 </div>
 
@@ -213,34 +231,16 @@ export default function Home() {
 
                 <p
                   style={{
-                    color: "#777",
-                    textDecoration: "line-through",
-                    marginBottom: "5px",
-                  }}
-                >
-                  {deal.oldPrice}
-                </p>
-
-                <p
-                  style={{
                     fontSize: "2rem",
                     fontWeight: "bold",
-                    marginBottom: "5px",
+                    marginBottom: "15px",
                   }}
                 >
                   {deal.price}
                 </p>
 
-                <p style={{ color: "#8cff4f", marginBottom: "15px" }}>
-                  {deal.discount}
-                </p>
-
-                <p style={{ color: "#aaa", marginBottom: "8px" }}>
-                  {deal.store}
-                </p>
-
-                <p style={{ color: "#777", marginBottom: "20px" }}>
-                  Posted: {deal.postedAt}
+                <p style={{ color: "#aaa", marginBottom: "20px" }}>
+                  {deal.source}
                 </p>
 
                 <a
@@ -355,7 +355,7 @@ export default function Home() {
           </a>
         </div>
 
-        <p>© 2026 GoblinTechUK</p>
+        <p>&copy; 2026 GoblinTechUK</p>
       </footer>
     </main>
   );
