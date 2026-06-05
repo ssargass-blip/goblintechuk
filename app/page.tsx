@@ -80,9 +80,14 @@ export default function Home() {
           borderBottom: "1px solid #2a2d35",
         }}
       >
-        <div style={{ fontSize: "1.8rem", fontWeight: "bold" }}>
-          🧌 GoblinTechUK
-        </div>
+        <img
+          src="/goblin-logo.png"
+          alt="GoblinTechUK logo"
+          style={{
+            height: "70px",
+            width: "auto",
+          }}
+        />
 
         <nav style={{ display: "flex", gap: "25px" }}>
           <a href="#home" style={navLinkStyle}>
