@@ -126,6 +126,33 @@ export default function Home() {
           ))}
         </div>
       </section>
+            <footer
+        style={{
+          borderTop: "1px solid #2d313a",
+          padding: "30px 40px",
+          color: "#aaa",
+          display: "flex",
+          justifyContent: "space-between",
+          gap: "20px",
+          flexWrap: "wrap",
+        }}
+      >
+        <div>
+          <strong style={{ color: "white" }}>GoblinTechUK</strong>
+          <p style={{ marginTop: "8px" }}>
+            Built for UK tech deal hunters.
+          </p>
+        </div>
+
+        <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+          <span>About</span>
+          <span>Contact</span>
+          <span>Affiliate Disclosure</span>
+          <span>Privacy Policy</span>
+        </div>
+
+        <p>© 2026 GoblinTechUK</p>
+      </footer>
     </main>
   );
 }
