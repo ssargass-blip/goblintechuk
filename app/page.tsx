@@ -1,27 +1,60 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Home() {
   const deals = [
     {
       title: "RTX 5070 Ti",
       price: "£699",
+      oldPrice: "£799",
+      discount: "-13%",
       store: "Amazon UK",
-      category: "Graphics Card",
+      category: "GPUs",
+      tag: "Hot Deal",
+      postedAt: "Today",
       link: "https://www.amazon.co.uk/",
     },
     {
       title: "Samsung 990 Pro 2TB",
       price: "£109",
+      oldPrice: "£149",
+      discount: "-27%",
       store: "Ebuyer",
-      category: "SSD",
+      category: "SSDs",
+      tag: "Fast Storage",
+      postedAt: "Today",
       link: "https://www.ebuyer.com/",
     },
     {
       title: "LG OLED 55”",
       price: "£799",
+      oldPrice: "£999",
+      discount: "-20%",
       store: "Currys",
-      category: "TV",
+      category: "TVs",
+      tag: "Big Screen",
+      postedAt: "Today",
       link: "https://www.currys.co.uk/",
     },
   ];
+
+  const categories = [
+    "All",
+    "GPUs",
+    "SSDs",
+    "Gaming",
+    "TVs",
+    "Laptops",
+    "Accessories",
+  ];
+
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredDeals =
+    activeCategory === "All"
+      ? deals
+      : deals.filter((deal) => deal.category === activeCategory);
 
   const navLinkStyle = {
     color: "#c7c7c7",
@@ -52,13 +85,27 @@ export default function Home() {
         </div>
 
         <nav style={{ display: "flex", gap: "25px" }}>
-          <a href="#home" style={navLinkStyle}>Home</a>
-          <a href="#deals" style={navLinkStyle}>Deals</a>
-          <a href="#about" style={navLinkStyle}>About</a>
+          <a href="#home" style={navLinkStyle}>
+            Home
+          </a>
+          <a href="#deals" style={navLinkStyle}>
+            Deals
+          </a>
+          <a href="#about" style={navLinkStyle}>
+            About
+          </a>
         </nav>
       </header>
 
-      <section style={{ padding: "60px 40px 30px" }}>
+      <section
+        style={{
+          padding: "90px 40px",
+          backgroundImage:
+            "linear-gradient(90deg, rgba(15,17,21,0.95), rgba(15,17,21,0.55)), url('/goblin-wallpaper.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <p style={{ color: "#8cff4f", fontWeight: "bold" }}>
           UK TECH DEAL HUNTER
         </p>
@@ -76,67 +123,141 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="deals" style={{ padding: "20px 40px 60px" }}>
+      <section id="deals" style={{ padding: "50px 40px 60px" }}>
         <h2 style={{ marginBottom: "20px" }}>Latest Deals</h2>
 
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-            gap: "20px",
+            display: "flex",
+            gap: "12px",
+            flexWrap: "wrap",
+            marginBottom: "30px",
           }}
         >
-          {deals.map((deal, index) => (
-            <div
-              key={index}
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setActiveCategory(category)}
               style={{
-                background: "#1a1d24",
-                padding: "25px",
-                borderRadius: "16px",
+                background:
+                  activeCategory === category ? "#8cff4f" : "#1a1d24",
+                color: activeCategory === category ? "#111" : "#c7c7c7",
                 border: "1px solid #2d313a",
+                borderRadius: "999px",
+                padding: "10px 16px",
+                fontWeight: "bold",
+                cursor: "pointer",
               }}
             >
-              <p style={{ color: "#8cff4f", marginBottom: "10px" }}>
-                {deal.category}
-              </p>
-
-              <h3 style={{ fontSize: "1.4rem", marginBottom: "15px" }}>
-                {deal.title}
-              </h3>
-
-              <p
-                style={{
-                  fontSize: "2rem",
-                  fontWeight: "bold",
-                  marginBottom: "10px",
-                }}
-              >
-                {deal.price}
-              </p>
-
-              <p style={{ color: "#aaa", marginBottom: "20px" }}>
-                {deal.store}
-              </p>
-
-              <a
-                href={deal.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  background: "#8cff4f",
-                  color: "#111",
-                  borderRadius: "10px",
-                  padding: "12px 18px",
-                  fontWeight: "bold",
-                  textDecoration: "none",
-                }}
-              >
-                View Deal
-              </a>
-            </div>
+              {category}
+            </button>
           ))}
         </div>
+
+        {filteredDeals.length === 0 ? (
+          <p style={{ color: "#aaa", fontSize: "1.1rem" }}>
+            No deals found. The goblins are still hunting.
+          </p>
+        ) : (
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+              gap: "20px",
+            }}
+          >
+            {filteredDeals.map((deal, index) => (
+              <div
+                key={index}
+                style={{
+                  background: "#1a1d24",
+                  padding: "25px",
+                  borderRadius: "16px",
+                  border: "1px solid #2d313a",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    gap: "10px",
+                    marginBottom: "15px",
+                  }}
+                >
+                  <span style={{ color: "#8cff4f", fontWeight: "bold" }}>
+                    {deal.category}
+                  </span>
+
+                  <span
+                    style={{
+                      background: "#263319",
+                      color: "#8cff4f",
+                      borderRadius: "999px",
+                      padding: "4px 10px",
+                      fontSize: "0.8rem",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {deal.tag}
+                  </span>
+                </div>
+
+                <h3 style={{ fontSize: "1.4rem", marginBottom: "15px" }}>
+                  {deal.title}
+                </h3>
+
+                <p
+                  style={{
+                    color: "#777",
+                    textDecoration: "line-through",
+                    marginBottom: "5px",
+                  }}
+                >
+                  {deal.oldPrice}
+                </p>
+
+                <p
+                  style={{
+                    fontSize: "2rem",
+                    fontWeight: "bold",
+                    marginBottom: "5px",
+                  }}
+                >
+                  {deal.price}
+                </p>
+
+                <p style={{ color: "#8cff4f", marginBottom: "15px" }}>
+                  {deal.discount}
+                </p>
+
+                <p style={{ color: "#aaa", marginBottom: "8px" }}>
+                  {deal.store}
+                </p>
+
+                <p style={{ color: "#777", marginBottom: "20px" }}>
+                  Posted: {deal.postedAt}
+                </p>
+
+                <a
+                  href={deal.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    background: "#8cff4f",
+                    color: "#111",
+                    borderRadius: "10px",
+                    padding: "12px 18px",
+                    fontWeight: "bold",
+                    textDecoration: "none",
+                  }}
+                >
+                  View Deal
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
       </section>
 
       <section
@@ -215,10 +336,18 @@ export default function Home() {
         </div>
 
         <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-          <a href="#about" style={navLinkStyle}>About</a>
-          <a href="#contact" style={navLinkStyle}>Contact</a>
-          <a href="#affiliate" style={navLinkStyle}>Affiliate Disclosure</a>
-          <a href="#privacy" style={navLinkStyle}>Privacy Policy</a>
+          <a href="#about" style={navLinkStyle}>
+            About
+          </a>
+          <a href="#contact" style={navLinkStyle}>
+            Contact
+          </a>
+          <a href="#affiliate" style={navLinkStyle}>
+            Affiliate Disclosure
+          </a>
+          <a href="#privacy" style={navLinkStyle}>
+            Privacy Policy
+          </a>
         </div>
 
         <p>© 2026 GoblinTechUK</p>
