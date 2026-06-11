@@ -9,6 +9,7 @@ type Deal = {
   quality: string;
   source: string;
   link: string;
+  image: string;
   timestamp: string;
 };
 
@@ -224,6 +225,39 @@ export default function Home() {
                     {deal.quality}
                   </span>
                 </div>
+
+                {deal.image ? (
+                  <img
+                    src={deal.image}
+                    alt={deal.title}
+                    style={{
+                      width: "100%",
+                      height: "180px",
+                      objectFit: "contain",
+                      background: "#0f1115",
+                      borderRadius: "10px",
+                      border: "1px solid #2d313a",
+                      marginBottom: "18px",
+                    }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      height: "180px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "#0f1115",
+                      color: "#777",
+                      borderRadius: "10px",
+                      border: "1px solid #2d313a",
+                      marginBottom: "18px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    No image
+                  </div>
+                )}
 
                 <h3 style={{ fontSize: "1.4rem", marginBottom: "15px" }}>
                   {deal.title}
