@@ -24,6 +24,7 @@ export default function Home() {
     "GPUs",
     "SSDs",
     "Gaming",
+    "Monitors",
     "TVs",
     "Laptops",
     "Accessories",
