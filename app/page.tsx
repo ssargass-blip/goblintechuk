@@ -129,7 +129,97 @@ export default function Home() {
         fontFamily: "Arial, sans-serif",
       }}
     >
+      <style>{`
+        @media (max-width: 767px) {
+          .site-header {
+            align-items: flex-start !important;
+            flex-direction: column !important;
+            gap: 18px !important;
+            padding: 18px 16px !important;
+          }
+
+          .site-nav {
+            gap: 18px !important;
+            overflow-x: auto !important;
+            width: 100% !important;
+          }
+
+          .hero-section {
+            padding: 54px 16px !important;
+          }
+
+          .hero-title {
+            font-size: 2.45rem !important;
+            line-height: 1.08 !important;
+          }
+
+          .hero-copy {
+            font-size: 1rem !important;
+          }
+
+          .deals-section {
+            padding: 36px 16px 48px !important;
+          }
+
+          .category-scroll {
+            flex-wrap: nowrap !important;
+            margin-left: -16px !important;
+            margin-right: -16px !important;
+            overflow-x: auto !important;
+            padding: 0 16px 8px !important;
+            scrollbar-width: none !important;
+          }
+
+          .category-scroll::-webkit-scrollbar {
+            display: none !important;
+          }
+
+          .category-button {
+            flex: 0 0 auto !important;
+          }
+
+          .deal-controls {
+            flex-direction: column !important;
+          }
+
+          .deal-search,
+          .deal-sort {
+            flex: 1 1 auto !important;
+            max-width: none !important;
+            width: 100% !important;
+          }
+
+          .deals-grid {
+            grid-template-columns: 1fr !important;
+          }
+
+          .deal-card {
+            padding: 18px !important;
+          }
+
+          .deal-meta {
+            align-items: flex-start !important;
+            flex-direction: column !important;
+          }
+
+          .deal-title {
+            font-size: 1.12rem !important;
+            line-height: 1.35 !important;
+            overflow-wrap: anywhere !important;
+          }
+
+          .deal-price {
+            font-size: 1.65rem !important;
+          }
+
+          .deal-image {
+            height: 160px !important;
+          }
+        }
+      `}</style>
+
       <header
+        className="site-header"
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -147,7 +237,7 @@ export default function Home() {
           }}
         />
 
-        <nav style={{ display: "flex", gap: "25px" }}>
+        <nav className="site-nav" style={{ display: "flex", gap: "25px" }}>
           <a href="#home" style={navLinkStyle}>
             Home
           </a>
@@ -161,6 +251,7 @@ export default function Home() {
       </header>
 
       <section
+        className="hero-section"
         style={{
           padding: "90px 40px",
           backgroundImage:
@@ -173,23 +264,31 @@ export default function Home() {
           UK TECH DEAL HUNTER
         </p>
 
-        <h1 style={{ fontSize: "4rem", margin: "10px 0" }}>
+        <h1 className="hero-title" style={{ fontSize: "4rem", margin: "10px 0" }}>
           Deals found by goblins.
           <br />
           Sorted so you don&apos;t have to.
         </h1>
 
-        <p style={{ color: "#aaa", fontSize: "1.2rem", maxWidth: "650px" }}>
+        <p
+          className="hero-copy"
+          style={{ color: "#aaa", fontSize: "1.2rem", maxWidth: "650px" }}
+        >
           We hunt the best tech deals across the UK. GPUs, gaming, electronics
           and gadgets. No endless scrolling. No nonsense. Just the best deals,
           handpicked by our goblins.
         </p>
       </section>
 
-      <section id="deals" style={{ padding: "50px 40px 60px" }}>
+      <section
+        id="deals"
+        className="deals-section"
+        style={{ padding: "50px 40px 60px" }}
+      >
         <h2 style={{ marginBottom: "20px" }}>Latest Deals</h2>
 
         <div
+          className="category-scroll"
           style={{
             display: "flex",
             gap: "12px",
@@ -199,6 +298,7 @@ export default function Home() {
         >
           {categories.map((category) => (
             <button
+              className="category-button"
               key={category}
               onClick={() => setActiveCategory(category)}
               style={{
@@ -218,6 +318,7 @@ export default function Home() {
         </div>
 
         <div
+          className="deal-controls"
           style={{
             display: "flex",
             gap: "12px",
@@ -226,6 +327,7 @@ export default function Home() {
           }}
         >
           <input
+            className="deal-search"
             type="search"
             value={searchQuery}
             onChange={(event) => setSearchQuery(event.target.value)}
@@ -245,6 +347,7 @@ export default function Home() {
           />
 
           <select
+            className="deal-sort"
             value={sortOption}
             onChange={(event) => setSortOption(event.target.value as SortOption)}
             aria-label="Sort deals"
@@ -281,6 +384,7 @@ export default function Home() {
           </p>
         ) : (
           <div
+            className="deals-grid"
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
@@ -289,6 +393,7 @@ export default function Home() {
           >
             {filteredDeals.map((deal) => (
               <div
+                className="deal-card"
                 key={`${deal.source}-${deal.link}-${deal.timestamp}`}
                 style={{
                   background: "#1a1d24",
@@ -300,6 +405,7 @@ export default function Home() {
                 }}
               >
                 <div
+                  className="deal-meta"
                   style={{
                     display: "flex",
                     justifyContent: "space-between",
@@ -331,6 +437,7 @@ export default function Home() {
 
                 {deal.image ? (
                   <img
+                    className="deal-image"
                     src={deal.image}
                     alt={deal.title}
                     style={{
@@ -345,6 +452,7 @@ export default function Home() {
                   />
                 ) : (
                   <div
+                    className="deal-image"
                     style={{
                       height: "180px",
                       display: "flex",
@@ -362,11 +470,15 @@ export default function Home() {
                   </div>
                 )}
 
-                <h3 style={{ fontSize: "1.4rem", marginBottom: "15px" }}>
+                <h3
+                  className="deal-title"
+                  style={{ fontSize: "1.4rem", marginBottom: "15px" }}
+                >
                   {deal.title}
                 </h3>
 
                 <p
+                  className="deal-price"
                   style={{
                     fontSize: "2rem",
                     fontWeight: "bold",
