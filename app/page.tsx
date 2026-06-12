@@ -16,6 +16,7 @@ type Deal = {
 export default function Home() {
   const [deals, setDeals] = useState<Deal[]>([]);
   const [activeCategory, setActiveCategory] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -65,10 +66,17 @@ export default function Home() {
     loadDeals();
   }, []);
 
-  const filteredDeals =
-    activeCategory === "All"
-      ? deals
-      : deals.filter((deal) => deal.category === activeCategory);
+  const normalizedSearchQuery = searchQuery.trim().toLowerCase();
+
+  const filteredDeals = deals.filter((deal) => {
+    const matchesCategory =
+      activeCategory === "All" || deal.category === activeCategory;
+    const matchesSearch =
+      normalizedSearchQuery === "" ||
+      deal.title.toLowerCase().includes(normalizedSearchQuery);
+
+    return matchesCategory && matchesSearch;
+  });
 
   const navLinkStyle = {
     color: "#c7c7c7",
@@ -172,6 +180,26 @@ export default function Home() {
             </button>
           ))}
         </div>
+
+        <input
+          type="search"
+          value={searchQuery}
+          onChange={(event) => setSearchQuery(event.target.value)}
+          placeholder="Search deals..."
+          aria-label="Search deals by product title"
+          style={{
+            width: "100%",
+            maxWidth: "520px",
+            background: "#1a1d24",
+            color: "white",
+            border: "1px solid #2d313a",
+            borderRadius: "12px",
+            padding: "14px 16px",
+            fontSize: "1rem",
+            outline: "none",
+            marginBottom: "30px",
+          }}
+        />
 
         {isLoading ? (
           <p style={{ color: "#aaa", fontSize: "1.1rem" }}>
