@@ -13,10 +13,13 @@ type Deal = {
   timestamp: string;
 };
 
+type SortOption = "newest" | "price-asc" | "price-desc" | "az" | "za";
+
 export default function Home() {
   const [deals, setDeals] = useState<Deal[]>([]);
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
+  const [sortOption, setSortOption] = useState<SortOption>("newest");
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -68,15 +71,48 @@ export default function Home() {
 
   const normalizedSearchQuery = searchQuery.trim().toLowerCase();
 
-  const filteredDeals = deals.filter((deal) => {
-    const matchesCategory =
-      activeCategory === "All" || deal.category === activeCategory;
-    const matchesSearch =
-      normalizedSearchQuery === "" ||
-      deal.title.toLowerCase().includes(normalizedSearchQuery);
+  const getPriceNumber = (price: string) => {
+    const match = price.match(/[0-9]+(?:,[0-9]{3})*(?:\.[0-9]{1,2})?/);
 
-    return matchesCategory && matchesSearch;
-  });
+    if (!match) {
+      return Number.POSITIVE_INFINITY;
+    }
+
+    return Number(match[0].replace(/,/g, ""));
+  };
+
+  const filteredDeals = deals
+    .filter((deal) => {
+      const matchesCategory =
+        activeCategory === "All" || deal.category === activeCategory;
+      const matchesSearch =
+        normalizedSearchQuery === "" ||
+        deal.title.toLowerCase().includes(normalizedSearchQuery);
+
+      return matchesCategory && matchesSearch;
+    })
+    .sort((firstDeal, secondDeal) => {
+      if (sortOption === "price-asc") {
+        return getPriceNumber(firstDeal.price) - getPriceNumber(secondDeal.price);
+      }
+
+      if (sortOption === "price-desc") {
+        return getPriceNumber(secondDeal.price) - getPriceNumber(firstDeal.price);
+      }
+
+      if (sortOption === "az") {
+        return firstDeal.title.localeCompare(secondDeal.title);
+      }
+
+      if (sortOption === "za") {
+        return secondDeal.title.localeCompare(firstDeal.title);
+      }
+
+      return (
+        new Date(secondDeal.timestamp).getTime() -
+        new Date(firstDeal.timestamp).getTime()
+      );
+    });
 
   const navLinkStyle = {
     color: "#c7c7c7",
@@ -181,25 +217,57 @@ export default function Home() {
           ))}
         </div>
 
-        <input
-          type="search"
-          value={searchQuery}
-          onChange={(event) => setSearchQuery(event.target.value)}
-          placeholder="Search deals..."
-          aria-label="Search deals by product title"
+        <div
           style={{
-            width: "100%",
-            maxWidth: "520px",
-            background: "#1a1d24",
-            color: "white",
-            border: "1px solid #2d313a",
-            borderRadius: "12px",
-            padding: "14px 16px",
-            fontSize: "1rem",
-            outline: "none",
+            display: "flex",
+            gap: "12px",
+            flexWrap: "wrap",
             marginBottom: "30px",
           }}
-        />
+        >
+          <input
+            type="search"
+            value={searchQuery}
+            onChange={(event) => setSearchQuery(event.target.value)}
+            placeholder="Search deals..."
+            aria-label="Search deals by product title"
+            style={{
+              flex: "1 1 280px",
+              maxWidth: "520px",
+              background: "#1a1d24",
+              color: "white",
+              border: "1px solid #2d313a",
+              borderRadius: "12px",
+              padding: "14px 16px",
+              fontSize: "1rem",
+              outline: "none",
+            }}
+          />
+
+          <select
+            value={sortOption}
+            onChange={(event) => setSortOption(event.target.value as SortOption)}
+            aria-label="Sort deals"
+            style={{
+              flex: "0 1 220px",
+              background: "#1a1d24",
+              color: "white",
+              border: "1px solid #2d313a",
+              borderRadius: "12px",
+              padding: "14px 16px",
+              fontSize: "1rem",
+              fontWeight: "bold",
+              outline: "none",
+              cursor: "pointer",
+            }}
+          >
+            <option value="newest">Newest</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+          </select>
+        </div>
 
         {isLoading ? (
           <p style={{ color: "#aaa", fontSize: "1.1rem" }}>
