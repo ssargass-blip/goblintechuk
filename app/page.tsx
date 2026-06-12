@@ -199,6 +199,8 @@ export default function Home() {
                   padding: "25px",
                   borderRadius: "16px",
                   border: "1px solid #2d313a",
+                  display: "flex",
+                  flexDirection: "column",
                 }}
               >
                 <div
@@ -215,8 +217,12 @@ export default function Home() {
 
                   <span
                     style={{
-                      background: "#263319",
-                      color: "#8cff4f",
+                      background: deal.quality.includes("GOOD PRICE")
+                        ? "#263319"
+                        : "#332b18",
+                      color: deal.quality.includes("GOOD PRICE")
+                        ? "#8cff4f"
+                        : "#f3c969",
                       borderRadius: "999px",
                       padding: "4px 10px",
                       fontSize: "0.8rem",
@@ -268,32 +274,54 @@ export default function Home() {
                   style={{
                     fontSize: "2rem",
                     fontWeight: "bold",
-                    marginBottom: "15px",
+                    color: "#8cff4f",
+                    marginBottom: "18px",
                   }}
                 >
                   {deal.price}
                 </p>
 
-                <p style={{ color: "#aaa", marginBottom: "20px" }}>
-                  {deal.source}
-                </p>
-
-                <a
-                  href={deal.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <div
                   style={{
-                    display: "inline-block",
-                    background: "#8cff4f",
-                    color: "#111",
-                    borderRadius: "10px",
-                    padding: "12px 18px",
-                    fontWeight: "bold",
-                    textDecoration: "none",
+                    marginTop: "auto",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "18px",
+                    alignItems: "flex-start",
                   }}
                 >
-                  View Deal
-                </a>
+                  <span
+                    style={{
+                      display: "inline-block",
+                      color: "#c7c7c7",
+                      background: "#11141a",
+                      border: "1px solid #2d313a",
+                      borderRadius: "999px",
+                      padding: "6px 10px",
+                      fontSize: "0.85rem",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {deal.source}
+                  </span>
+
+                  <a
+                    href={deal.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      background: "#8cff4f",
+                      color: "#111",
+                      borderRadius: "10px",
+                      padding: "12px 18px",
+                      fontWeight: "bold",
+                      textDecoration: "none",
+                    }}
+                  >
+                    View Deal
+                  </a>
+                </div>
               </div>
             ))}
           </div>
