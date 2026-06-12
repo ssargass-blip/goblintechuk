@@ -2,7 +2,7 @@
   {
     "title": "B Grade Acer 24\" Nitro KG241YM3 1920x1080 VA 180Hz 1ms HDR400 FreeSync Widescreen Gaming Monitor",
     "price": "£86.72",
-    "category": "Gaming",
+    "category": "Monitors",
     "quality": "🔥 GOOD PRICE",
     "source": "Overclockers Clearance Monitors",
     "link": "https://www.overclockers.co.uk/b-grade-acer-24-nitro-kg241ym3bmiipx-2560x1440-va-180hz-1ms-hdr400-freesync-bg-mo-15k-ac.html",
@@ -12,7 +12,7 @@
   {
     "title": "B Grade MSI 32\" MPG 321URX QD-OLED 3840x2160 240Hz 0.03ms FreeSync Premium Pro Gaming Monitor",
     "price": "£613.64",
-    "category": "Gaming",
+    "category": "Monitors",
     "quality": "👀 CHECK MANUALLY",
     "source": "Overclockers Clearance Monitors",
     "link": "https://www.overclockers.co.uk/b-grade-msi-32-mpg-321urx-qd-oled-3840x2160-240hz-0.03ms-a-sync-gaming-mon-bg-mon-msi-01491.html",
@@ -1200,19 +1200,9 @@
     "timestamp": "2026-06-11T15:25:37"
   },
   {
-    "title": "Buy select ACER Intel® Core Ultra™ devices Get rewards worth upto £149 during IEM Cologne!",
-    "price": "£149",
-    "category": "Hardware",
-    "quality": "👀 CHECK MANUALLY",
-    "source": "Currys Gaming",
-    "link": "https://www.currys.co.uk/deals-on-gaming/intel-iem-and-acer-predator-deals",
-    "timestamp": "2026-06-11T13:51:21",
-    "image": ""
-  },
-  {
     "title": "PCSPECIALIST Icon 211 Gaming PC £798.97 AMD Ryzen 5 5500 Processor RAM: 16 GB Storage: 1 TB SSD NVIDIA GeForce RTX 3050 8 GB 111 FPS when playing COD: Modern Warfare 3 at 1080p",
     "price": "£798.97",
-    "category": "GPUs",
+    "category": "Gaming",
     "quality": "👀 CHECK MANUALLY",
     "source": "Currys Gaming",
     "link": "https://www.currys.co.uk/products/pcspecialist-icon-211-gaming-pc-amd-ryzen-5-rtx-3050-1-tb-ssd-10261457.html",
@@ -1222,21 +1212,11 @@
   {
     "title": "MSI MEG Vision X AI Gaming PC £4,499.00 Unlocked Intel® Core™ Ultra 9 285K Processor RAM: 64 GB DDR5 Storage: 2 TB SSD NVIDIA GeForce RTX 5090 32 GB 282+ FPS when playing COD: Modern Warfare 3 at 1080p",
     "price": "£4499",
-    "category": "GPUs",
+    "category": "Gaming",
     "quality": "👀 CHECK MANUALLY",
     "source": "Currys Gaming",
     "link": "https://www.currys.co.uk/products/msi-meg-vision-x-ai-gaming-pc-intel-core-ultra-9-rtx-5090-2-tb-ssd-10275972.html",
     "timestamp": "2026-06-11T13:51:22",
-    "image": ""
-  },
-  {
-    "title": "Gaming PCs Under £1000",
-    "price": "£1000",
-    "category": "Gaming",
-    "quality": "👀 CHECK MANUALLY",
-    "source": "Overclockers GPU Deals",
-    "link": "https://www.overclockers.co.uk/pc-systems/pcs-by-price/gaming-pcs-under-1000",
-    "timestamp": "2026-06-11T13:52:14",
     "image": ""
   },
   {
