@@ -145,7 +145,10 @@ export default function Home() {
           }
 
           .hero-section {
-            padding: 54px 16px !important;
+            min-height: 58vh !important;
+            padding: 28px 16px !important;
+            background-size: cover !important;
+            background-position: center top !important;
           }
 
           .hero-title {
@@ -253,30 +256,18 @@ export default function Home() {
       <section
         className="hero-section"
         style={{
-          padding: "90px 40px",
+          minHeight: "clamp(560px, 62vw, 860px)",
+          padding: "40px",
           backgroundImage:
-            "linear-gradient(90deg, rgba(15,17,21,0.95), rgba(15,17,21,0.55)), url('/goblin-wallpaper.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+            "linear-gradient(90deg, rgba(15,17,21,0.32), rgba(15,17,21,0.08)), url('/goblin-wallpaper.png')",
+          backgroundSize: "100% auto",
+          backgroundPosition: "center top",
+          backgroundRepeat: "no-repeat",
+          backgroundColor: "#0f1115",
         }}
       >
         <p style={{ color: "#8cff4f", fontWeight: "bold" }}>
           UK TECH DEAL HUNTER
-        </p>
-
-        <h1 className="hero-title" style={{ fontSize: "4rem", margin: "10px 0" }}>
-          Deals found by goblins.
-          <br />
-          Sorted so you don&apos;t have to.
-        </h1>
-
-        <p
-          className="hero-copy"
-          style={{ color: "#aaa", fontSize: "1.2rem", maxWidth: "650px" }}
-        >
-          We hunt the best tech deals across the UK. GPUs, gaming, electronics
-          and gadgets. No endless scrolling. No nonsense. Just the best deals,
-          handpicked by our goblins.
         </p>
       </section>
 
