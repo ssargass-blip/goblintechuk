@@ -24,6 +24,7 @@ export default function Home() {
   const [sortOption, setSortOption] = useState<SortOption>("newest");
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   const categories = [
     "All",
@@ -70,6 +71,23 @@ export default function Home() {
 
     loadDeals();
   }, []);
+
+  useEffect(() => {
+    function handleScroll() {
+      setShowBackToTop(window.scrollY > 500);
+    }
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   const normalizedSearchQuery = searchQuery.trim().toLowerCase();
   const featuredDeal = deals[0];
@@ -818,6 +836,32 @@ export default function Home() {
 
         <p>&copy; 2026 GoblinTechUK</p>
       </footer>
+
+      {showBackToTop && (
+        <button
+          type="button"
+          aria-label="Back to top"
+          onClick={scrollToTop}
+          style={{
+            position: "fixed",
+            right: "18px",
+            bottom: "18px",
+            width: "48px",
+            height: "48px",
+            borderRadius: "999px",
+            border: "1px solid #8cff4f",
+            background: "#11141a",
+            color: "#8cff4f",
+            fontSize: "1.5rem",
+            fontWeight: "bold",
+            cursor: "pointer",
+            boxShadow: "0 10px 25px rgba(0,0,0,0.35)",
+            zIndex: 50,
+          }}
+        >
+          ↑
+        </button>
+      )}
     </main>
   );
 }
