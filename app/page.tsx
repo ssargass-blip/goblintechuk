@@ -70,6 +70,7 @@ export default function Home() {
   }, []);
 
   const normalizedSearchQuery = searchQuery.trim().toLowerCase();
+  const featuredDeal = deals[0];
 
   const getPriceNumber = (price: string) => {
     const match = price.match(/[0-9]+(?:,[0-9]{3})*(?:\.[0-9]{1,2})?/);
@@ -145,10 +146,11 @@ export default function Home() {
           }
 
           .hero-section {
-            min-height: 58vh !important;
+            min-height: 70vh !important;
             padding: 28px 16px !important;
-            background-size: cover !important;
+            background-size: 100% auto !important;
             background-position: center top !important;
+            background-repeat: no-repeat !important;
           }
 
           .hero-title {
@@ -162,6 +164,19 @@ export default function Home() {
 
           .deals-section {
             padding: 36px 16px 48px !important;
+          }
+
+          .featured-pick {
+            padding: 16px !important;
+          }
+
+          .featured-title {
+            font-size: 1.08rem !important;
+            overflow-wrap: anywhere !important;
+          }
+
+          .featured-price {
+            font-size: 1.55rem !important;
           }
 
           .category-scroll {
@@ -260,15 +275,12 @@ export default function Home() {
           padding: "40px",
           backgroundImage:
             "linear-gradient(90deg, rgba(15,17,21,0.32), rgba(15,17,21,0.08)), url('/goblin-wallpaper.png')",
-          backgroundSize: "100% auto",
+          backgroundSize: "cover",
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
           backgroundColor: "#0f1115",
         }}
       >
-        <p style={{ color: "#8cff4f", fontWeight: "bold" }}>
-          UK TECH DEAL HUNTER
-        </p>
       </section>
 
       <section
@@ -277,6 +289,105 @@ export default function Home() {
         style={{ padding: "50px 40px 60px" }}
       >
         <h2 style={{ marginBottom: "20px" }}>Latest Deals</h2>
+
+        {!isLoading && !error && (
+          <section
+            className="featured-pick"
+            style={{
+              background: "#12161d",
+              border: "1px solid #31421f",
+              borderLeft: "5px solid #8cff4f",
+              borderRadius: "16px",
+              padding: "20px",
+              marginBottom: "24px",
+              boxShadow: "0 18px 40px rgba(0,0,0,0.22)",
+            }}
+          >
+            <p
+              style={{
+                color: "#8cff4f",
+                fontSize: "0.9rem",
+                fontWeight: "bold",
+                marginBottom: "10px",
+              }}
+            >
+              🏆 Goblin&apos;s Pick
+            </p>
+
+            {featuredDeal ? (
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  gap: "16px",
+                  alignItems: "flex-end",
+                  flexWrap: "wrap",
+                }}
+              >
+                <div style={{ maxWidth: "780px" }}>
+                  <h3
+                    className="featured-title"
+                    style={{
+                      fontSize: "1.35rem",
+                      lineHeight: "1.25",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    {featuredDeal.title}
+                  </h3>
+
+                  <p
+                    className="featured-price"
+                    style={{
+                      color: "#8cff4f",
+                      fontSize: "1.8rem",
+                      fontWeight: "bold",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    {featuredDeal.price}
+                  </p>
+
+                  <span
+                    style={{
+                      display: "inline-block",
+                      color: "#c7c7c7",
+                      background: "#0f1115",
+                      border: "1px solid #2d313a",
+                      borderRadius: "999px",
+                      padding: "6px 10px",
+                      fontSize: "0.85rem",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {featuredDeal.source}
+                  </span>
+                </div>
+
+                <a
+                  href={featuredDeal.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    background: "#8cff4f",
+                    color: "#111",
+                    borderRadius: "10px",
+                    padding: "11px 17px",
+                    fontWeight: "bold",
+                    textDecoration: "none",
+                  }}
+                >
+                  View Deal
+                </a>
+              </div>
+            ) : (
+              <p style={{ color: "#aaa", fontSize: "1.1rem" }}>
+                The goblins are still hunting...
+              </p>
+            )}
+          </section>
+        )}
 
         <div
           className="category-scroll"
