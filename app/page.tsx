@@ -102,6 +102,42 @@ export default function Home() {
     return Number(match[0].replace(/,/g, ""));
   };
 
+  const formatFoundTime = (timestamp: string) => {
+    const foundAt = new Date(timestamp);
+
+    if (Number.isNaN(foundAt.getTime())) {
+      return "";
+    }
+
+    const now = new Date();
+    const diffMs = now.getTime() - foundAt.getTime();
+    const diffMinutes = Math.max(0, Math.floor(diffMs / 60000));
+
+    if (foundAt.toDateString() === now.toDateString()) {
+      if (diffMinutes < 60) {
+        return diffMinutes <= 1 ? "Found just now" : `Found ${diffMinutes}m ago`;
+      }
+
+      const diffHours = Math.floor(diffMinutes / 60);
+      return diffHours <= 1 ? "Found 1h ago" : `Found ${diffHours}h ago`;
+    }
+
+    const diffDays = Math.max(1, Math.floor(diffMinutes / 1440));
+
+    if (diffDays === 1) {
+      return "Found yesterday";
+    }
+
+    if (diffDays < 7) {
+      return `Found ${diffDays}d ago`;
+    }
+
+    return foundAt.toLocaleDateString("en-GB", {
+      day: "2-digit",
+      month: "short",
+    });
+  };
+
   const filteredDeals = deals
     .filter((deal) => {
       const matchesCategory =
@@ -425,6 +461,19 @@ export default function Home() {
                   >
                     {featuredDeal.source}
                   </span>
+
+                  {formatFoundTime(featuredDeal.timestamp) && (
+                    <p
+                      style={{
+                        color: "#8b929d",
+                        fontSize: "0.82rem",
+                        fontWeight: "bold",
+                        marginTop: "8px",
+                      }}
+                    >
+                      {formatFoundTime(featuredDeal.timestamp)}
+                    </p>
+                  )}
                 </div>
 
                 <a
@@ -719,6 +768,19 @@ export default function Home() {
                   >
                     {deal.source}
                   </span>
+
+                  {formatFoundTime(deal.timestamp) && (
+                    <span
+                      style={{
+                        color: "#8b929d",
+                        fontSize: "0.82rem",
+                        fontWeight: "bold",
+                        marginTop: "-10px",
+                      }}
+                    >
+                      {formatFoundTime(deal.timestamp)}
+                    </span>
+                  )}
 
                   <a
                     href={deal.link}
