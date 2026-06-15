@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 type Deal = {
   title: string;
   price: string;
+  oldPrice?: string;
+  discount?: string;
   category: string;
   quality: string;
   source: string;
@@ -336,17 +338,59 @@ export default function Home() {
                     {featuredDeal.title}
                   </h3>
 
-                  <p
-                    className="featured-price"
-                    style={{
-                      color: "#8cff4f",
-                      fontSize: "1.8rem",
-                      fontWeight: "bold",
-                      marginBottom: "10px",
-                    }}
-                  >
-                    {featuredDeal.price}
-                  </p>
+                  <div style={{ marginBottom: "10px" }}>
+                    {featuredDeal.oldPrice && (
+                      <p
+                        style={{
+                          color: "#8b929d",
+                          fontSize: "0.95rem",
+                          fontWeight: "bold",
+                          marginBottom: "3px",
+                          textDecoration: "line-through",
+                        }}
+                      >
+                        {featuredDeal.oldPrice}
+                      </p>
+                    )}
+
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        flexWrap: "wrap",
+                      }}
+                    >
+                      <p
+                        className="featured-price"
+                        style={{
+                          color: "#8cff4f",
+                          fontSize: "1.8rem",
+                          fontWeight: "bold",
+                          margin: 0,
+                        }}
+                      >
+                        {featuredDeal.price}
+                      </p>
+
+                      {featuredDeal.discount && (
+                        <span
+                          style={{
+                            display: "inline-block",
+                            background: "#263319",
+                            color: "#8cff4f",
+                            border: "1px solid #3f5f25",
+                            borderRadius: "999px",
+                            padding: "4px 9px",
+                            fontSize: "0.85rem",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          🔥 {featuredDeal.discount}
+                        </span>
+                      )}
+                    </div>
+                  </div>
 
                   <span
                     style={{
@@ -579,17 +623,59 @@ export default function Home() {
                   {deal.title}
                 </h3>
 
-                <p
-                  className="deal-price"
-                  style={{
-                    fontSize: "2rem",
-                    fontWeight: "bold",
-                    color: "#8cff4f",
-                    marginBottom: "18px",
-                  }}
-                >
-                  {deal.price}
-                </p>
+                <div style={{ marginBottom: "18px" }}>
+                  {deal.oldPrice && (
+                    <p
+                      style={{
+                        color: "#8b929d",
+                        fontSize: "0.95rem",
+                        fontWeight: "bold",
+                        marginBottom: "4px",
+                        textDecoration: "line-through",
+                      }}
+                    >
+                      {deal.oldPrice}
+                    </p>
+                  )}
+
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <p
+                      className="deal-price"
+                      style={{
+                        fontSize: "2rem",
+                        fontWeight: "bold",
+                        color: "#8cff4f",
+                        margin: 0,
+                      }}
+                    >
+                      {deal.price}
+                    </p>
+
+                    {deal.discount && (
+                      <span
+                        style={{
+                          display: "inline-block",
+                          background: "#263319",
+                          color: "#8cff4f",
+                          border: "1px solid #3f5f25",
+                          borderRadius: "999px",
+                          padding: "4px 9px",
+                          fontSize: "0.85rem",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        🔥 {deal.discount}
+                      </span>
+                    )}
+                  </div>
+                </div>
 
                 <div
                   style={{
@@ -662,8 +748,10 @@ export default function Home() {
       >
         <h2>Contact</h2>
         <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
-          For now, GoblinTechUK is under construction. A contact email and
-          social links will be added soon.
+          Email:{" "}
+          <a href="mailto:hello@goblintechuk.uk" style={{ color: "#8cff4f" }}>
+            hello@goblintechuk.uk
+          </a>
         </p>
       </section>
 
