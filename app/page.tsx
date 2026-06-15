@@ -166,8 +166,9 @@ export default function Home() {
           }
 
           .hero-section {
-            min-height: 70vh !important;
-            padding: 28px 16px !important;
+            box-sizing: border-box !important;
+            min-height: clamp(235px, 67vw, 340px) !important;
+            padding: 16px !important;
             background-size: 100% auto !important;
             background-position: center top !important;
             background-repeat: no-repeat !important;
@@ -183,7 +184,7 @@ export default function Home() {
           }
 
           .deals-section {
-            padding: 36px 16px 48px !important;
+            padding: 28px 16px 48px !important;
           }
 
           .featured-pick {
