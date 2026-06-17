@@ -12,11 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const description =
+  "GoblinTechUK hunts the best UK tech, gaming and electronics deals so you don’t have to.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://goblintechuk.uk"),
   title: "GoblinTechUK - UK Tech Deal Hunter",
-  description:
-    "GoblinTechUK ieško geriausių technologijų, gaming ir elektronikos pasiūlymų Jungtinėje Karalystėje, kad tau nereikėtų jų ieškoti pačiam.",
+  description,
   icons: {
     icon: "/goblin-logo.png",
     shortcut: "/goblin-logo.png",
@@ -24,8 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "GoblinTechUK - UK Tech Deal Hunter",
-    description:
-      "GoblinTechUK ieško geriausių technologijų, gaming ir elektronikos pasiūlymų Jungtinėje Karalystėje, kad tau nereikėtų jų ieškoti pačiam.",
+    description,
     url: "https://goblintechuk.uk",
     siteName: "GoblinTechUK",
     images: [
@@ -42,8 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "GoblinTechUK - UK Tech Deal Hunter",
-    description:
-      "GoblinTechUK ieško geriausių technologijų, gaming ir elektronikos pasiūlymų Jungtinėje Karalystėje, kad tau nereikėtų jų ieškoti pačiam.",
+    description,
     images: ["/goblin-wallpaper.png"],
   },
 };
