@@ -9,6 +9,7 @@ type Deal = {
   discount?: string;
   category: string;
   quality: string;
+  merchant?: string;
   source: string;
   link: string;
   image: string;
@@ -136,6 +137,21 @@ export default function Home() {
       day: "2-digit",
       month: "short",
     });
+  };
+
+  const getDealUrl = (deal: Deal) => {
+    const merchant = deal.merchant?.trim().toLowerCase();
+    const link = deal.link || "";
+    const isAcerDeal =
+      merchant === "acer" || link.toLowerCase().includes("store.acer.com");
+
+    if (!isAcerDeal) {
+      return link;
+    }
+
+    return `https://www.awin1.com/cread.php?awinmid=12590&awinaffid=2936395&ued=${encodeURIComponent(
+      link
+    )}`;
   };
 
   const filteredDeals = deals
@@ -477,7 +493,7 @@ export default function Home() {
                 </div>
 
                 <a
-                  href={featuredDeal.link}
+                  href={getDealUrl(featuredDeal)}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -783,7 +799,7 @@ export default function Home() {
                   )}
 
                   <a
-                    href={deal.link}
+                    href={getDealUrl(deal)}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
