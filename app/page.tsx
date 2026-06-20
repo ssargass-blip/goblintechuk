@@ -667,6 +667,11 @@ export default function Home() {
             type="search"
             value={searchQuery}
             onChange={(event) => setSearchQuery(event.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                event.currentTarget.blur();
+              }
+            }}
             placeholder="Search deals..."
             aria-label="Search deals by product title"
             style={{
