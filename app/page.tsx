@@ -14,6 +14,12 @@ type Deal = {
   link: string;
   image: string;
   timestamp: string;
+  dealType?: string;
+  offerId?: string;
+  offerStartDate?: string;
+  offerEndDate?: string;
+  offerStatus?: string;
+  description?: string;
 };
 
 type SortOption = "newest" | "price-asc" | "price-desc" | "az" | "za";
@@ -91,7 +97,26 @@ export default function Home() {
   }
 
   const normalizedSearchQuery = searchQuery.trim().toLowerCase();
-  const featuredDeal = deals[0];
+
+  const isOffer = (deal: Deal) =>
+    deal.dealType === "offer" || deal.source.toLowerCase().includes("awin promotions");
+
+  const isExpiredOffer = (deal: Deal) => {
+    if (!isOffer(deal) || !deal.offerEndDate) {
+      return false;
+    }
+
+    const expiry = new Date(deal.offerEndDate);
+
+    if (Number.isNaN(expiry.getTime())) {
+      return false;
+    }
+
+    return expiry.getTime() < Date.now();
+  };
+
+  const featuredOffers = deals.filter((deal) => isOffer(deal) && !isExpiredOffer(deal));
+  const productDeals = deals.filter((deal) => !isOffer(deal));
 
   const getPriceNumber = (price: string) => {
     const match = price.match(/[0-9]+(?:,[0-9]{3})*(?:\.[0-9]{1,2})?/);
@@ -139,6 +164,24 @@ export default function Home() {
     });
   };
 
+  const formatOfferExpiry = (offerEndDate?: string) => {
+    if (!offerEndDate) {
+      return "";
+    }
+
+    const expiry = new Date(offerEndDate);
+
+    if (Number.isNaN(expiry.getTime())) {
+      return "";
+    }
+
+    return expiry.toLocaleDateString("en-GB", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    });
+  };
+
   const getDealUrl = (deal: Deal) => {
     const merchant = deal.merchant?.trim().toLowerCase();
     const link = deal.link || "";
@@ -154,7 +197,7 @@ export default function Home() {
     )}`;
   };
 
-  const filteredDeals = deals
+  const filteredDeals = productDeals
     .filter((deal) => {
       const matchesCategory =
         activeCategory === "All" || deal.category === activeCategory;
@@ -250,6 +293,34 @@ export default function Home() {
 
           .featured-price {
             font-size: 1.55rem !important;
+          }
+
+          .featured-offers-grid {
+            gap: 10px !important;
+            margin-bottom: 24px !important;
+          }
+
+          .featured-offer-card {
+            border-left-width: 3px !important;
+            border-radius: 12px !important;
+            gap: 8px !important;
+            min-height: auto !important;
+            padding: 12px !important;
+          }
+
+          .featured-offer-title {
+            font-size: 0.98rem !important;
+            line-height: 1.22 !important;
+          }
+
+          .featured-offer-card p {
+            font-size: 0.82rem !important;
+            line-height: 1.35 !important;
+          }
+
+          .featured-offer-card a {
+            padding: 9px 12px !important;
+            font-size: 0.9rem !important;
           }
 
           .category-scroll {
@@ -361,161 +432,181 @@ export default function Home() {
         className="deals-section"
         style={{ padding: "50px 40px 60px" }}
       >
-        <h2 style={{ marginBottom: "20px" }}>Latest Deals</h2>
+        <h2 style={{ marginBottom: "20px" }}>Featured Offers</h2>
 
-        {!isLoading && !error && (
+        {isLoading ? (
+          <p style={{ color: "#aaa", fontSize: "1.1rem", marginBottom: "30px" }}>
+            Loading featured offers...
+          </p>
+        ) : error ? (
+          <p style={{ color: "#ff6b6b", fontSize: "1.1rem", marginBottom: "30px" }}>
+            {error}
+          </p>
+        ) : featuredOffers.length === 0 ? (
           <section
-            className="featured-pick"
+            className="featured-offers-panel"
             style={{
               background: "#12161d",
               border: "1px solid #31421f",
               borderLeft: "5px solid #8cff4f",
               borderRadius: "16px",
               padding: "20px",
-              marginBottom: "24px",
-              boxShadow: "0 18px 40px rgba(0,0,0,0.22)",
+              marginBottom: "34px",
             }}
           >
-            <p
-              style={{
-                color: "#8cff4f",
-                fontSize: "0.9rem",
-                fontWeight: "bold",
-                marginBottom: "10px",
-              }}
-            >
-              🏆 Goblin&apos;s Pick
+            <p style={{ color: "#aaa", fontSize: "1.1rem", margin: 0 }}>
+              The goblins are still hunting...
             </p>
-
-            {featuredDeal ? (
-              <div
+          </section>
+        ) : (
+          <div
+            className="featured-offers-grid"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+              gap: "14px",
+              marginBottom: "30px",
+            }}
+          >
+            {featuredOffers.map((offer) => (
+              <article
+                className="featured-offer-card"
+                key={`${offer.source}-${offer.link}-${offer.offerId || offer.timestamp}`}
                 style={{
+                  background: "#12161d",
+                  border: "1px solid #31421f",
+                  borderLeft: "5px solid #8cff4f",
+                  borderRadius: "16px",
+                  padding: "16px",
                   display: "flex",
-                  justifyContent: "space-between",
-                  gap: "16px",
-                  alignItems: "flex-end",
-                  flexWrap: "wrap",
+                  flexDirection: "column",
+                  gap: "10px",
+                  minHeight: "150px",
+                  boxShadow: "0 12px 28px rgba(0,0,0,0.2)",
                 }}
               >
-                <div style={{ maxWidth: "780px" }}>
-                  <h3
-                    className="featured-title"
-                    style={{
-                      fontSize: "1.35rem",
-                      lineHeight: "1.25",
-                      marginBottom: "10px",
-                    }}
-                  >
-                    {featuredDeal.title}
-                  </h3>
-
-                  <div style={{ marginBottom: "10px" }}>
-                    {featuredDeal.oldPrice && (
-                      <p
-                        style={{
-                          color: "#8b929d",
-                          fontSize: "0.95rem",
-                          fontWeight: "bold",
-                          marginBottom: "3px",
-                          textDecoration: "line-through",
-                        }}
-                      >
-                        {featuredDeal.oldPrice}
-                      </p>
-                    )}
-
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "10px",
-                        flexWrap: "wrap",
-                      }}
-                    >
-                      <p
-                        className="featured-price"
-                        style={{
-                          color: "#8cff4f",
-                          fontSize: "1.8rem",
-                          fontWeight: "bold",
-                          margin: 0,
-                        }}
-                      >
-                        {featuredDeal.price}
-                      </p>
-
-                      {featuredDeal.discount && (
-                        <span
-                          style={{
-                            display: "inline-block",
-                            background: "#263319",
-                            color: "#8cff4f",
-                            border: "1px solid #3f5f25",
-                            borderRadius: "999px",
-                            padding: "4px 9px",
-                            fontSize: "0.85rem",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          🔥 {featuredDeal.discount}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: "10px",
+                  }}
+                >
                   <span
                     style={{
-                      display: "inline-block",
-                      color: "#c7c7c7",
-                      background: "#0f1115",
-                      border: "1px solid #2d313a",
-                      borderRadius: "999px",
-                      padding: "6px 10px",
-                      fontSize: "0.85rem",
+                      color: "#8cff4f",
+                      fontSize: "0.78rem",
                       fontWeight: "bold",
+                      textTransform: "uppercase",
                     }}
                   >
-                    {featuredDeal.source}
+                    Featured Offer
                   </span>
 
-                  {formatFoundTime(featuredDeal.timestamp) && (
-                    <p
+                  {offer.offerStatus && (
+                    <span
                       style={{
-                        color: "#8b929d",
-                        fontSize: "0.82rem",
+                        background: "#263319",
+                        color: "#8cff4f",
+                        border: "1px solid #3f5f25",
+                        borderRadius: "999px",
+                        padding: "3px 8px",
+                        fontSize: "0.74rem",
                         fontWeight: "bold",
-                        marginTop: "8px",
                       }}
                     >
-                      {formatFoundTime(featuredDeal.timestamp)}
-                    </p>
+                      {offer.offerStatus}
+                    </span>
                   )}
                 </div>
 
-                <a
-                  href={getDealUrl(featuredDeal)}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <h3
+                  className="featured-offer-title"
                   style={{
-                    display: "inline-block",
-                    background: "#8cff4f",
-                    color: "#111",
-                    borderRadius: "10px",
-                    padding: "11px 17px",
-                    fontWeight: "bold",
-                    textDecoration: "none",
+                    fontSize: "1.05rem",
+                    lineHeight: "1.25",
+                    margin: 0,
+                    overflowWrap: "anywhere",
                   }}
                 >
-                  View Deal
-                </a>
-              </div>
-            ) : (
-              <p style={{ color: "#aaa", fontSize: "1.1rem" }}>
-                The goblins are still hunting...
-              </p>
-            )}
-          </section>
+                  {offer.title}
+                </h3>
+
+                {offer.description && (
+                  <p
+                    style={{
+                      color: "#b6bdc8",
+                      lineHeight: "1.4",
+                      margin: 0,
+                      fontSize: "0.9rem",
+                    }}
+                  >
+                    {offer.description}
+                  </p>
+                )}
+
+                <div style={{ marginTop: "auto" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    <span
+                      style={{
+                        display: "inline-block",
+                        color: "#c7c7c7",
+                        background: "#0f1115",
+                        border: "1px solid #2d313a",
+                        borderRadius: "999px",
+                        padding: "5px 9px",
+                        fontSize: "0.8rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {offer.merchant || offer.source}
+                    </span>
+
+                    {formatOfferExpiry(offer.offerEndDate) && (
+                      <span
+                        style={{
+                          color: "#f3c969",
+                          fontSize: "0.85rem",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Ends {formatOfferExpiry(offer.offerEndDate)}
+                      </span>
+                    )}
+                  </div>
+
+                  <a
+                    href={getDealUrl(offer)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      background: "#8cff4f",
+                      color: "#111",
+                      borderRadius: "10px",
+                      padding: "10px 14px",
+                      fontWeight: "bold",
+                      textDecoration: "none",
+                    }}
+                  >
+                    View Offer
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
         )}
+
+        <h2 style={{ marginBottom: "20px" }}>Product Deals</h2>
 
         <div
           className="category-scroll"
@@ -807,7 +898,7 @@ export default function Home() {
                       background: "#8cff4f",
                       color: "#111",
                       borderRadius: "10px",
-                      padding: "12px 18px",
+                      padding: "10px 14px",
                       fontWeight: "bold",
                       textDecoration: "none",
                     }}
