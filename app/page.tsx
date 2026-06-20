@@ -432,7 +432,20 @@ export default function Home() {
         className="deals-section"
         style={{ padding: "50px 40px 60px" }}
       >
-        <h2 style={{ marginBottom: "20px" }}>Featured Offers</h2>
+        <div style={{ marginBottom: "20px" }}>
+          <h2 style={{ marginBottom: "8px" }}>Featured Offers</h2>
+          <p
+            style={{
+              color: "#9ba3af",
+              lineHeight: "1.6",
+              margin: 0,
+              maxWidth: "760px",
+            }}
+          >
+            Limited-time partner offers checked by GoblinTechUK. Offer details,
+            prices and availability can change at the retailer.
+          </p>
+        </div>
 
         {isLoading ? (
           <p style={{ color: "#aaa", fontSize: "1.1rem", marginBottom: "30px" }}>
@@ -501,24 +514,22 @@ export default function Home() {
                       textTransform: "uppercase",
                     }}
                   >
-                    Featured Offer
+                    Partner Offer
                   </span>
 
-                  {offer.offerStatus && (
-                    <span
-                      style={{
-                        background: "#263319",
-                        color: "#8cff4f",
-                        border: "1px solid #3f5f25",
-                        borderRadius: "999px",
-                        padding: "3px 8px",
-                        fontSize: "0.74rem",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {offer.offerStatus}
-                    </span>
-                  )}
+                  <span
+                    style={{
+                      background: "#263319",
+                      color: "#8cff4f",
+                      border: "1px solid #3f5f25",
+                      borderRadius: "999px",
+                      padding: "3px 8px",
+                      fontSize: "0.74rem",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {offer.offerStatus || "Active"}
+                  </span>
                 </div>
 
                 <h3
@@ -574,7 +585,11 @@ export default function Home() {
                     {formatOfferExpiry(offer.offerEndDate) && (
                       <span
                         style={{
+                          background: "#332b18",
+                          border: "1px solid #594719",
+                          borderRadius: "999px",
                           color: "#f3c969",
+                          padding: "5px 9px",
                           fontSize: "0.85rem",
                           fontWeight: "bold",
                         }}
@@ -952,9 +967,9 @@ export default function Home() {
       >
         <h2>Affiliate Disclosure</h2>
         <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
-          Some links on GoblinTechUK may become affiliate links. This means we
-          may earn a small commission if you buy through them, at no extra cost
-          to you.
+          Some links on GoblinTechUK are affiliate links. If you buy through
+          them, we may earn a small commission at no extra cost to you. We still
+          aim to show useful UK tech deals first, not junk.
         </p>
       </section>
 
@@ -986,7 +1001,9 @@ export default function Home() {
       >
         <div>
           <strong style={{ color: "white" }}>GoblinTechUK</strong>
-          <p style={{ marginTop: "8px" }}>Built for UK tech deal hunters.</p>
+          <p style={{ marginTop: "8px" }}>
+            Independent UK tech deal finder. Prices and availability may change.
+          </p>
         </div>
 
         <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
