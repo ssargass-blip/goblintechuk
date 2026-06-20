@@ -12,13 +12,31 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://www.goblintechuk.uk";
 const description =
-  "GoblinTechUK hunts the best UK tech, gaming and electronics deals so you don’t have to.";
+  "GoblinTechUK hunts the best UK tech, gaming and electronics deals so you don't have to.";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "GoblinTechUK",
+  url: siteUrl,
+  description,
+  publisher: {
+    "@type": "Organization",
+    name: "GoblinTechUK",
+    url: siteUrl,
+    logo: `${siteUrl}/goblin-logo.png`,
+  },
+};
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://goblintechuk.uk"),
+  metadataBase: new URL(siteUrl),
   title: "GoblinTechUK - UK Tech Deal Hunter",
   description,
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/goblin-logo.png",
     shortcut: "/goblin-logo.png",
@@ -27,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GoblinTechUK - UK Tech Deal Hunter",
     description,
-    url: "https://goblintechuk.uk",
+    url: siteUrl,
     siteName: "GoblinTechUK",
     images: [
       {
@@ -58,7 +76,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </body>
     </html>
   );
 }
