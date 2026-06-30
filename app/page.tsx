@@ -32,6 +32,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [selectedOfferGroup, setSelectedOfferGroup] = useState<string | null>(null);
 
   const categories = [
     "All",
@@ -118,6 +119,32 @@ export default function Home() {
   const featuredOffers = deals.filter((deal) => isOffer(deal) && !isExpiredOffer(deal));
   const productDeals = deals.filter((deal) => !isOffer(deal));
 
+  const offerGroups = [
+    {
+      title: "Acer Offers",
+      offers: featuredOffers.filter(
+        (offer) => offer.merchant?.trim().toLowerCase() === "acer"
+      ),
+    },
+    {
+      title: "Box.co.uk Offers",
+      offers: featuredOffers.filter((offer) => {
+        const merchant = offer.merchant?.trim().toLowerCase();
+        const link = offer.link.toLowerCase();
+
+        return (
+          merchant === "box" ||
+          merchant === "box.co.uk" ||
+          link.includes("box.co.uk")
+        );
+      }),
+    },
+  ].filter((group) => group.offers.length > 0);
+
+  const selectedOfferGroupData = offerGroups.find(
+    (group) => group.title === selectedOfferGroup
+  );
+
   const getPriceNumber = (price: string) => {
     const match = price.match(/[0-9]+(?:,[0-9]{3})*(?:\.[0-9]{1,2})?/);
 
@@ -187,14 +214,24 @@ export default function Home() {
     const link = deal.link || "";
     const isAcerDeal =
       merchant === "acer" || link.toLowerCase().includes("store.acer.com");
+    const isBoxDeal =
+      merchant === "box" ||
+      merchant === "box.co.uk" ||
+      link.toLowerCase().includes("box.co.uk");
 
-    if (!isAcerDeal) {
-      return link;
+    if (isAcerDeal) {
+      return `https://www.awin1.com/cread.php?awinmid=12590&awinaffid=2936395&ued=${encodeURIComponent(
+        link
+      )}`;
     }
 
-    return `https://www.awin1.com/cread.php?awinmid=12590&awinaffid=2936395&ued=${encodeURIComponent(
-      link
-    )}`;
+    if (isBoxDeal) {
+      return `https://www.awin1.com/cread.php?awinmid=100685&awinaffid=2936395&ued=${encodeURIComponent(
+        link
+      )}`;
+    }
+
+    return link;
   };
 
   const filteredDeals = productDeals
@@ -471,152 +508,259 @@ export default function Home() {
               The goblins are still hunting...
             </p>
           </section>
+        ) : selectedOfferGroupData ? (
+          <div style={{ display: "grid", gap: "16px", marginBottom: "30px" }}>
+            <button
+              type="button"
+              onClick={() => setSelectedOfferGroup(null)}
+              style={{
+                alignSelf: "start",
+                background: "#1a1d24",
+                border: "1px solid #31421f",
+                borderRadius: "999px",
+                color: "#8cff4f",
+                cursor: "pointer",
+                fontSize: "0.9rem",
+                fontWeight: "bold",
+                padding: "9px 14px",
+              }}
+            >
+              Back to all offers
+            </button>
+
+            <section>
+              <h3
+                style={{
+                  color: "#e8edf5",
+                  fontSize: "1.15rem",
+                  margin: "0 0 10px",
+                }}
+              >
+                {selectedOfferGroupData.title}
+              </h3>
+
+              <div
+                className="featured-offers-grid"
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+                  gap: "14px",
+                }}
+              >
+                {selectedOfferGroupData.offers.map((offer) => (
+                  <article
+                    className="featured-offer-card"
+                    key={`${offer.source}-${offer.link}-${offer.offerId || offer.timestamp}`}
+                    style={{
+                      background: "#12161d",
+                      border: "1px solid #31421f",
+                      borderLeft: "5px solid #8cff4f",
+                      borderRadius: "16px",
+                      padding: "16px",
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "10px",
+                      minHeight: "150px",
+                      boxShadow: "0 12px 28px rgba(0,0,0,0.2)",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        gap: "10px",
+                      }}
+                    >
+                      <span
+                        style={{
+                          color: "#8cff4f",
+                          fontSize: "0.78rem",
+                          fontWeight: "bold",
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        Partner Offer
+                      </span>
+
+                      <span
+                        style={{
+                          background: "#263319",
+                          color: "#8cff4f",
+                          border: "1px solid #3f5f25",
+                          borderRadius: "999px",
+                          padding: "3px 8px",
+                          fontSize: "0.74rem",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {offer.offerStatus || "Active"}
+                      </span>
+                    </div>
+
+                    <h3
+                      className="featured-offer-title"
+                      style={{
+                        fontSize: "1.05rem",
+                        lineHeight: "1.25",
+                        margin: 0,
+                        overflowWrap: "anywhere",
+                      }}
+                    >
+                      {offer.title}
+                    </h3>
+
+                    {offer.description && (
+                      <p
+                        style={{
+                          color: "#b6bdc8",
+                          lineHeight: "1.4",
+                          margin: 0,
+                          fontSize: "0.9rem",
+                        }}
+                      >
+                        {offer.description}
+                      </p>
+                    )}
+
+                    <div style={{ marginTop: "auto" }}>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "10px",
+                          flexWrap: "wrap",
+                          marginBottom: "10px",
+                        }}
+                      >
+                        <span
+                          style={{
+                            display: "inline-block",
+                            color: "#c7c7c7",
+                            background: "#0f1115",
+                            border: "1px solid #2d313a",
+                            borderRadius: "999px",
+                            padding: "5px 9px",
+                            fontSize: "0.8rem",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          {offer.merchant || offer.source}
+                        </span>
+
+                        {formatOfferExpiry(offer.offerEndDate) && (
+                          <span
+                            style={{
+                              background: "#332b18",
+                              border: "1px solid #594719",
+                              borderRadius: "999px",
+                              color: "#f3c969",
+                              padding: "5px 9px",
+                              fontSize: "0.85rem",
+                              fontWeight: "bold",
+                            }}
+                          >
+                            Ends {formatOfferExpiry(offer.offerEndDate)}
+                          </span>
+                        )}
+                      </div>
+
+                      <a
+                        href={getDealUrl(offer)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: "inline-block",
+                          background: "#8cff4f",
+                          color: "#111",
+                          borderRadius: "10px",
+                          padding: "10px 14px",
+                          fontWeight: "bold",
+                          textDecoration: "none",
+                        }}
+                      >
+                        View Offer
+                      </a>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          </div>
         ) : (
           <div
-            className="featured-offers-grid"
+            className="offer-partner-grid"
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-              gap: "14px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+              gap: "16px",
               marginBottom: "30px",
             }}
           >
-            {featuredOffers.map((offer) => (
-              <article
-                className="featured-offer-card"
-                key={`${offer.source}-${offer.link}-${offer.offerId || offer.timestamp}`}
+            {offerGroups.map((group) => (
+              <button
+                type="button"
+                key={group.title}
+                onClick={() => setSelectedOfferGroup(group.title)}
                 style={{
                   background: "#12161d",
                   border: "1px solid #31421f",
                   borderLeft: "5px solid #8cff4f",
                   borderRadius: "16px",
-                  padding: "16px",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "10px",
-                  minHeight: "150px",
                   boxShadow: "0 12px 28px rgba(0,0,0,0.2)",
+                  color: "white",
+                  cursor: "pointer",
+                  minHeight: "130px",
+                  padding: "18px",
+                  textAlign: "left",
                 }}
               >
-                <div
+                <span
                   style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    gap: "10px",
+                    color: "#8cff4f",
+                    display: "block",
+                    fontSize: "0.78rem",
+                    fontWeight: "bold",
+                    marginBottom: "10px",
+                    textTransform: "uppercase",
                   }}
                 >
-                  <span
-                    style={{
-                      color: "#8cff4f",
-                      fontSize: "0.78rem",
-                      fontWeight: "bold",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    Partner Offer
-                  </span>
+                  Partner Offers
+                </span>
 
-                  <span
-                    style={{
-                      background: "#263319",
-                      color: "#8cff4f",
-                      border: "1px solid #3f5f25",
-                      borderRadius: "999px",
-                      padding: "3px 8px",
-                      fontSize: "0.74rem",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {offer.offerStatus || "Active"}
-                  </span>
-                </div>
-
-                <h3
-                  className="featured-offer-title"
+                <strong
                   style={{
-                    fontSize: "1.05rem",
-                    lineHeight: "1.25",
-                    margin: 0,
-                    overflowWrap: "anywhere",
+                    display: "block",
+                    fontSize: "1.25rem",
+                    lineHeight: "1.2",
+                    marginBottom: "10px",
                   }}
                 >
-                  {offer.title}
-                </h3>
+                  {group.title}
+                </strong>
 
-                {offer.description && (
-                  <p
-                    style={{
-                      color: "#b6bdc8",
-                      lineHeight: "1.4",
-                      margin: 0,
-                      fontSize: "0.9rem",
-                    }}
-                  >
-                    {offer.description}
-                  </p>
-                )}
+                <span
+                  style={{
+                    color: "#b6bdc8",
+                    display: "block",
+                    fontSize: "0.92rem",
+                    marginBottom: "16px",
+                  }}
+                >
+                  {group.offers.length} active offer
+                  {group.offers.length === 1 ? "" : "s"}
+                </span>
 
-                <div style={{ marginTop: "auto" }}>
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "10px",
-                      flexWrap: "wrap",
-                      marginBottom: "10px",
-                    }}
-                  >
-                    <span
-                      style={{
-                        display: "inline-block",
-                        color: "#c7c7c7",
-                        background: "#0f1115",
-                        border: "1px solid #2d313a",
-                        borderRadius: "999px",
-                        padding: "5px 9px",
-                        fontSize: "0.8rem",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {offer.merchant || offer.source}
-                    </span>
-
-                    {formatOfferExpiry(offer.offerEndDate) && (
-                      <span
-                        style={{
-                          background: "#332b18",
-                          border: "1px solid #594719",
-                          borderRadius: "999px",
-                          color: "#f3c969",
-                          padding: "5px 9px",
-                          fontSize: "0.85rem",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Ends {formatOfferExpiry(offer.offerEndDate)}
-                      </span>
-                    )}
-                  </div>
-
-                  <a
-                    href={getDealUrl(offer)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: "inline-block",
-                      background: "#8cff4f",
-                      color: "#111",
-                      borderRadius: "10px",
-                      padding: "10px 14px",
-                      fontWeight: "bold",
-                      textDecoration: "none",
-                    }}
-                  >
-                    View Offer
-                  </a>
-                </div>
-              </article>
+                <span
+                  style={{
+                    color: "#8cff4f",
+                    fontSize: "0.95rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  View {group.title}
+                </span>
+              </button>
             ))}
           </div>
         )}
