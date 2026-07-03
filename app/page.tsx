@@ -139,6 +139,24 @@ export default function Home() {
         );
       }),
     },
+    {
+      title: "AliExpress Offers",
+      offers: featuredOffers.filter((offer) => {
+        const merchant = offer.merchant?.trim().toLowerCase();
+        const link = offer.link.toLowerCase();
+
+        return merchant === "aliexpress" || link.includes("aliexpress.");
+      }),
+    },
+    {
+      title: "Amazon Offers",
+      offers: featuredOffers.filter((offer) => {
+        const merchant = offer.merchant?.trim().toLowerCase();
+        const link = offer.link.toLowerCase();
+
+        return merchant === "amazon" || link.includes("amazon.co.uk");
+      }),
+    },
   ].filter((group) => group.offers.length > 0);
 
   const selectedOfferGroupData = offerGroups.find(
@@ -218,6 +236,10 @@ export default function Home() {
       merchant === "box" ||
       merchant === "box.co.uk" ||
       link.toLowerCase().includes("box.co.uk");
+    const isAliExpressDeal =
+      merchant === "aliexpress" || link.toLowerCase().includes("aliexpress.");
+    const isAmazonDeal =
+      merchant === "amazon" || link.toLowerCase().includes("amazon.co.uk");
 
     if (isAcerDeal) {
       return `https://www.awin1.com/cread.php?awinmid=12590&awinaffid=2936395&ued=${encodeURIComponent(
@@ -227,6 +249,18 @@ export default function Home() {
 
     if (isBoxDeal) {
       return `https://www.awin1.com/cread.php?awinmid=100685&awinaffid=2936395&ued=${encodeURIComponent(
+        link
+      )}`;
+    }
+
+    if (isAliExpressDeal) {
+      return `https://www.awin1.com/cread.php?awinmid=7035&awinaffid=2936395&ued=${encodeURIComponent(
+        link
+      )}`;
+    }
+
+    if (isAmazonDeal) {
+      return `https://www.awin1.com/cread.php?awinmid=118045&awinaffid=2936395&ued=${encodeURIComponent(
         link
       )}`;
     }
