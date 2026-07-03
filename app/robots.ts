@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://goblintechuk.uk/sitemap.xml",
+    sitemap: "https://www.goblintechuk.uk/sitemap.xml",
   };
 }
