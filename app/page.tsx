@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 type Deal = {
   title: string;
+  cleanTitle?: string;
   price: string;
   oldPrice?: string;
   discount?: string;
@@ -117,7 +118,7 @@ export default function Home() {
   };
 
   const featuredOffers = deals.filter((deal) => isOffer(deal) && !isExpiredOffer(deal));
-  const productDeals = deals.filter((deal) => !isOffer(deal));
+  const productDeals = deals.filter((deal) => !isOffer(deal) && deal.merchant?.trim());
 
   const offerGroups = [
     {
@@ -958,7 +959,7 @@ export default function Home() {
                   <img
                     className="deal-image"
                     src={deal.image}
-                    alt={deal.title}
+                    alt={deal.cleanTitle || deal.title}
                     style={{
                       width: "100%",
                       height: "180px",
@@ -993,7 +994,7 @@ export default function Home() {
                   className="deal-title"
                   style={{ fontSize: "1.4rem", marginBottom: "15px" }}
                 >
-                  {deal.title}
+                  {deal.cleanTitle || deal.title}
                 </h3>
 
                 <div style={{ marginBottom: "18px" }}>
