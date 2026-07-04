@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 const siteUrl = "https://www.goblintechuk.uk";
 const canonicalUrl = `${siteUrl}/`;
 const description =
-  "GoblinTechUK hunts the best UK tech, gaming, electronics and partner offers, helping shoppers compare current deals from trusted UK retailers without endless scrolling.";
+  "GoblinTechUK hunts the best UK tech, gaming and electronics deals from trusted retailers.";
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -93,3 +93,4 @@ export default function RootLayout({
     </html>
   );
 }
+
