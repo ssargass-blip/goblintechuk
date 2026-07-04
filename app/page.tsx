@@ -35,6 +35,7 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [selectedOfferGroup, setSelectedOfferGroup] = useState<string | null>(null);
+  const [openFooterPanel, setOpenFooterPanel] = useState<string | null>(null);
   const [currentTimeMs] = useState(() => Date.now());
 
   const categories = [
@@ -97,7 +98,10 @@ export default function Home() {
   }, []);
 
   function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    document.getElementById("product-deals-controls")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   }
 
   const normalizedSearchQuery = searchQuery.trim().toLowerCase();
@@ -119,18 +123,51 @@ export default function Home() {
     return expiry.getTime() < currentTimeMs;
   };
 
-  const featuredOffers = deals.filter((deal) => isOffer(deal) && !isExpiredOffer(deal));
-  const productDeals = deals.filter((deal) => !isOffer(deal) && deal.merchant?.trim());
+  const getAwinMerchantId = (deal: Deal) => {
+    const merchant = deal.merchant?.trim().toLowerCase();
+    const link = (deal.link || "").toLowerCase();
+
+    if (merchant === "acer" || link.includes("store.acer.com")) {
+      return "12590";
+    }
+
+    if (merchant === "box" || merchant === "box.co.uk" || link.includes("box.co.uk")) {
+      return "100685";
+    }
+
+    if (merchant === "aliexpress" || link.includes("aliexpress.")) {
+      return "7035";
+    }
+
+    if (merchant === "amazon" || link.includes("amazon.co.uk")) {
+      return "118045";
+    }
+
+    return null;
+  };
+
+  const isAffiliateDeal = (deal: Deal) => Boolean(getAwinMerchantId(deal));
+
+  const featuredOffers = deals.filter(
+    (deal) => isOffer(deal) && !isExpiredOffer(deal) && isAffiliateDeal(deal)
+  );
+  const productDeals = deals.filter(
+    (deal) => !isOffer(deal) && isAffiliateDeal(deal)
+  );
 
   const offerGroups = [
     {
       title: "Acer Offers",
+      partnerName: "Acer UK",
+      logo: "/images/partners/acer.webp",
       offers: featuredOffers.filter(
         (offer) => offer.merchant?.trim().toLowerCase() === "acer"
       ),
     },
     {
       title: "Box.co.uk Offers",
+      partnerName: "Box.co.uk",
+      logo: "/images/partners/box.webp",
       offers: featuredOffers.filter((offer) => {
         const merchant = offer.merchant?.trim().toLowerCase();
         const link = offer.link.toLowerCase();
@@ -144,6 +181,8 @@ export default function Home() {
     },
     {
       title: "AliExpress Offers",
+      partnerName: "AliExpress UK",
+      logo: "/images/partners/aliexpress.webp",
       offers: featuredOffers.filter((offer) => {
         const merchant = offer.merchant?.trim().toLowerCase();
         const link = offer.link.toLowerCase();
@@ -153,6 +192,7 @@ export default function Home() {
     },
     {
       title: "Amazon Offers",
+      partnerName: "Amazon UK",
       offers: featuredOffers.filter((offer) => {
         const merchant = offer.merchant?.trim().toLowerCase();
         const link = offer.link.toLowerCase();
@@ -231,44 +271,40 @@ export default function Home() {
   };
 
   const getDealUrl = (deal: Deal) => {
-    const merchant = deal.merchant?.trim().toLowerCase();
     const link = deal.link || "";
-    const isAcerDeal =
-      merchant === "acer" || link.toLowerCase().includes("store.acer.com");
-    const isBoxDeal =
-      merchant === "box" ||
-      merchant === "box.co.uk" ||
-      link.toLowerCase().includes("box.co.uk");
-    const isAliExpressDeal =
-      merchant === "aliexpress" || link.toLowerCase().includes("aliexpress.");
-    const isAmazonDeal =
-      merchant === "amazon" || link.toLowerCase().includes("amazon.co.uk");
+    const awinMerchantId = getAwinMerchantId(deal);
 
-    if (isAcerDeal) {
-      return `https://www.awin1.com/cread.php?awinmid=12590&awinaffid=2936395&ued=${encodeURIComponent(
-        link
-      )}`;
+    if (!awinMerchantId) {
+      return link;
     }
 
-    if (isBoxDeal) {
-      return `https://www.awin1.com/cread.php?awinmid=100685&awinaffid=2936395&ued=${encodeURIComponent(
-        link
-      )}`;
+    return `https://www.awin1.com/cread.php?awinmid=${awinMerchantId}&awinaffid=2936395&ued=${encodeURIComponent(
+      link
+    )}`;
+  };
+  const getStoreLogo = (deal: Deal) => {
+    const merchant = deal.merchant?.trim().toLowerCase() || "";
+    const source = deal.source.trim().toLowerCase();
+    const link = deal.link.toLowerCase();
+    const storeText = `${merchant} ${source} ${link}`;
+
+    if (storeText.includes("acer")) {
+      return { alt: "Acer", src: "/images/partners/acer.webp" };
     }
 
-    if (isAliExpressDeal) {
-      return `https://www.awin1.com/cread.php?awinmid=7035&awinaffid=2936395&ued=${encodeURIComponent(
-        link
-      )}`;
+    if (storeText.includes("box.co.uk") || storeText.includes("box")) {
+      return { alt: "Box.co.uk", src: "/images/partners/box.webp" };
     }
 
-    if (isAmazonDeal) {
-      return `https://www.awin1.com/cread.php?awinmid=118045&awinaffid=2936395&ued=${encodeURIComponent(
-        link
-      )}`;
+    if (storeText.includes("aliexpress")) {
+      return { alt: "AliExpress", src: "/images/partners/aliexpress.webp" };
     }
 
-    return link;
+    if (storeText.includes("amazon")) {
+      return { alt: "Amazon", src: "/images/partners/Amazon.svg" };
+    }
+
+    return null;
   };
 
   const filteredDeals = productDeals
@@ -305,21 +341,173 @@ export default function Home() {
     });
 
   const navLinkStyle = {
-    color: "#c7c7c7",
+    color: "#cfd6cb",
     textDecoration: "none",
   };
 
   return (
     <main
       id="home"
+      className="site-shell"
       style={{
         minHeight: "100vh",
-        background: "#0f1115",
-        color: "white",
+        background:
+          "linear-gradient(180deg, rgba(5, 8, 6, 0.28), rgba(5, 8, 6, 0.54)), radial-gradient(circle at 18% 8%, rgba(129, 255, 86, 0.06), transparent 30%), radial-gradient(circle at 82% 28%, rgba(129, 255, 86, 0.04), transparent 34%), url('/site-background.webp'), linear-gradient(180deg, #050806 0%, #080b09 42%, #050806 100%)",
+        backgroundSize: "auto, auto, auto, min(100vw, 1536px) auto, auto",
+        backgroundPosition: "center, center, center, center top, center",
+        backgroundRepeat: "no-repeat, no-repeat, no-repeat, repeat-y, no-repeat",
+        color: "#f4f7f1",
         fontFamily: "Arial, sans-serif",
       }}
     >
       <style>{`
+        .site-shell {
+          --goblin-bg: #050806;
+          --goblin-panel: #14181d;
+          --goblin-panel-soft: #101419;
+          --goblin-border: rgba(198, 255, 173, 0.12);
+          --goblin-border-strong: rgba(156, 255, 87, 0.34);
+          --goblin-accent: #9cff57;
+          --goblin-accent-soft: rgba(156, 255, 87, 0.1);
+          --goblin-text: #f4f7f1;
+          --goblin-muted: #aeb8aa;
+          --goblin-muted-strong: #cfd6cb;
+          --goblin-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+          --goblin-hover-glow: 0 0 0 1px rgba(156, 255, 87, 0.24), 0 18px 48px rgba(0, 0, 0, 0.34);
+          background-attachment: fixed;
+        }
+
+        .site-shell h2,
+        .site-shell h3,
+        .site-shell strong {
+          color: var(--goblin-text);
+        }
+
+        .site-shell p {
+          color: var(--goblin-muted);
+        }
+
+        .site-header {
+          background: rgba(5, 8, 6, 0.82);
+          backdrop-filter: blur(18px);
+          box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03);
+        }
+
+        .site-nav a,
+        footer a {
+          transition: color 180ms ease, opacity 180ms ease;
+        }
+
+        .site-nav a:hover,
+        footer a:hover {
+          color: var(--goblin-accent) !important;
+        }
+
+        .deals-section,
+        #about,
+        #contact,
+        #affiliate,
+        #privacy {
+          position: relative;
+        }
+
+        .featured-offers-panel,
+        .featured-offer-card,
+        .offer-partner-grid button,
+        .deal-card {
+          background: linear-gradient(180deg, rgba(22, 26, 31, 0.98), rgba(16, 20, 25, 0.98)) !important;
+          border-color: var(--goblin-border) !important;
+          box-shadow: var(--goblin-shadow) !important;
+          transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+        }
+
+        .featured-offers-panel,
+        .featured-offer-card,
+        .offer-partner-grid button {
+          border-left-color: var(--goblin-accent) !important;
+        }
+
+        .featured-offers-panel:hover,
+        .featured-offer-card:hover,
+        .offer-partner-grid button:hover,
+        .deal-card:hover {
+          border-color: var(--goblin-border-strong) !important;
+          box-shadow: var(--goblin-hover-glow) !important;
+        }
+
+        .category-button,
+        .deal-search,
+        .deal-sort {
+          background: rgba(16, 20, 25, 0.92) !important;
+          border-color: var(--goblin-border) !important;
+          color: var(--goblin-muted-strong) !important;
+          transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease, color 180ms ease;
+        }
+
+        .category-button:hover,
+        .deal-search:focus,
+        .deal-sort:focus {
+          border-color: var(--goblin-border-strong) !important;
+          box-shadow: 0 0 0 3px rgba(156, 255, 87, 0.08) !important;
+        }
+
+        .category-button[style*="#9cff57"],
+        .category-button[style*="rgb(156, 255, 87)"] {
+          background: var(--goblin-accent) !important;
+          color: #071006 !important;
+        }
+
+        .site-shell a[style*="#9cff57"],
+        .site-shell span[style*="#9cff57"],
+        .site-shell p[style*="#9cff57"],
+        .site-shell a[style*="rgb(156, 255, 87)"],
+        .site-shell span[style*="rgb(156, 255, 87)"],
+        .site-shell p[style*="rgb(156, 255, 87)"] {
+          color: var(--goblin-accent) !important;
+        }
+
+        .site-shell a[style*="background: #9cff57"],
+        .site-shell a[style*="background:#9cff57"],
+        .site-shell a[style*="background: rgb(156, 255, 87)"] {
+          background: var(--goblin-accent) !important;
+          color: #071006 !important;
+          transition: filter 180ms ease, box-shadow 180ms ease;
+        }
+
+        .site-shell a[style*="background: #9cff57"]:hover,
+        .site-shell a[style*="background:#9cff57"]:hover,
+        .site-shell a[style*="background: rgb(156, 255, 87)"]:hover {
+          filter: brightness(1.04);
+          box-shadow: 0 0 0 3px rgba(156, 255, 87, 0.12);
+        }
+
+        .deal-image {
+          background: #090d0b !important;
+          border-color: rgba(198, 255, 173, 0.1) !important;
+        }
+
+        .offer-partner-card:hover .partner-offer-cta {
+          filter: brightness(1.05);
+          box-shadow: 0 0 0 3px rgba(156, 255, 87, 0.12), 0 10px 24px rgba(156, 255, 87, 0.16);
+          transform: translateY(-1px);
+        }
+
+        .site-shell span.partner-offer-cta,
+        .site-shell .partner-offer-cta {
+          color: #04110a !important;
+          -webkit-text-fill-color: #04110a !important;
+          text-shadow: none !important;
+        }
+
+        footer,
+        #about,
+        #contact,
+        #affiliate,
+        #privacy,
+        .site-header {
+          border-color: rgba(198, 255, 173, 0.1) !important;
+        }
+
         @media (max-width: 767px) {
           .site-header {
             align-items: flex-start !important;
@@ -397,17 +585,17 @@ export default function Home() {
             font-size: 0.9rem !important;
           }
 
-          .category-scroll {
-            flex-wrap: nowrap !important;
-            margin-left: -16px !important;
-            margin-right: -16px !important;
-            overflow-x: auto !important;
-            padding: 0 16px 8px !important;
-            scrollbar-width: none !important;
+          .offer-partner-grid button {
+            min-height: 238px !important;
+            padding: 22px !important;
           }
-
-          .category-scroll::-webkit-scrollbar {
-            display: none !important;
+          .category-scroll {
+            flex-wrap: wrap !important;
+            gap: 10px !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            overflow-x: visible !important;
+            padding: 0 0 8px !important;
           }
 
           .category-button {
@@ -426,30 +614,43 @@ export default function Home() {
           }
 
           .deals-grid {
-            grid-template-columns: 1fr !important;
+            gap: 14px !important;
           }
 
           .deal-card {
-            padding: 18px !important;
+            grid-template-columns: 1fr !important;
+            gap: 0 !important;
+            padding: 0 !important;
           }
 
-          .deal-meta {
-            align-items: flex-start !important;
-            flex-direction: column !important;
+          .deal-image-panel {
+            border-right: 0 !important;
+            border-bottom: 1px solid rgba(198, 255, 173, 0.1) !important;
+            min-height: 170px !important;
+          }
+
+          .deal-image {
+            height: 140px !important;
+          }
+
+          .deal-info-panel,
+          .deal-price-panel {
+            padding: 16px !important;
           }
 
           .deal-title {
-            font-size: 1.12rem !important;
+            font-size: 1.08rem !important;
             line-height: 1.35 !important;
             overflow-wrap: anywhere !important;
           }
 
-          .deal-price {
-            font-size: 1.65rem !important;
+          .deal-price-panel {
+            align-items: flex-start !important;
+            border-top: 1px solid rgba(198, 255, 173, 0.08) !important;
           }
 
-          .deal-image {
-            height: 160px !important;
+          .deal-price {
+            font-size: 1.6rem !important;
           }
         }
 
@@ -510,7 +711,7 @@ export default function Home() {
           backgroundSize: "cover",
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
-          backgroundColor: "#0f1115",
+          backgroundColor: "#050806",
         }}
       >
         <h1 className="sr-only">GoblinTechUK - UK Tech Deal Hunter</h1>
@@ -525,7 +726,7 @@ export default function Home() {
           <h2 style={{ marginBottom: "8px" }}>Featured Offers</h2>
           <p
             style={{
-              color: "#9ba3af",
+              color: "#aeb8aa",
               lineHeight: "1.6",
               margin: 0,
               maxWidth: "760px",
@@ -537,7 +738,7 @@ export default function Home() {
         </div>
 
         {isLoading ? (
-          <p style={{ color: "#aaa", fontSize: "1.1rem", marginBottom: "30px" }}>
+          <p style={{ color: "#aeb8aa", fontSize: "1.1rem", marginBottom: "30px" }}>
             Loading featured offers...
           </p>
         ) : error ? (
@@ -548,15 +749,15 @@ export default function Home() {
           <section
             className="featured-offers-panel"
             style={{
-              background: "#12161d",
-              border: "1px solid #31421f",
-              borderLeft: "5px solid #8cff4f",
+              background: "#101419",
+              border: "1px solid rgba(156, 255, 87, 0.18)",
+              borderLeft: "5px solid #9cff57",
               borderRadius: "16px",
               padding: "20px",
               marginBottom: "34px",
             }}
           >
-            <p style={{ color: "#aaa", fontSize: "1.1rem", margin: 0 }}>
+            <p style={{ color: "#aeb8aa", fontSize: "1.1rem", margin: 0 }}>
               The goblins are still hunting...
             </p>
           </section>
@@ -567,17 +768,17 @@ export default function Home() {
               onClick={() => setSelectedOfferGroup(null)}
               style={{
                 alignSelf: "start",
-                background: "#1a1d24",
-                border: "1px solid #31421f",
+                background: "#14181d",
+                border: "1px solid rgba(156, 255, 87, 0.18)",
                 borderRadius: "999px",
-                color: "#8cff4f",
+                color: "#9cff57",
                 cursor: "pointer",
                 fontSize: "0.9rem",
                 fontWeight: "bold",
                 padding: "9px 14px",
               }}
             >
-              Back to all offers
+              Back to offers
             </button>
 
             <section>
@@ -604,9 +805,9 @@ export default function Home() {
                     className="featured-offer-card"
                     key={`${offer.source}-${offer.link}-${offer.offerId || offer.timestamp}`}
                     style={{
-                      background: "#12161d",
-                      border: "1px solid #31421f",
-                      borderLeft: "5px solid #8cff4f",
+                      background: "#101419",
+                      border: "1px solid rgba(156, 255, 87, 0.18)",
+                      borderLeft: "5px solid #9cff57",
                       borderRadius: "16px",
                       padding: "16px",
                       display: "flex",
@@ -626,7 +827,7 @@ export default function Home() {
                     >
                       <span
                         style={{
-                          color: "#8cff4f",
+                          color: "#9cff57",
                           fontSize: "0.78rem",
                           fontWeight: "bold",
                           textTransform: "uppercase",
@@ -637,9 +838,9 @@ export default function Home() {
 
                       <span
                         style={{
-                          background: "#263319",
-                          color: "#8cff4f",
-                          border: "1px solid #3f5f25",
+                          background: "rgba(156, 255, 87, 0.1)",
+                          color: "#9cff57",
+                          border: "1px solid rgba(156, 255, 87, 0.3)",
                           borderRadius: "999px",
                           padding: "3px 8px",
                           fontSize: "0.74rem",
@@ -665,7 +866,7 @@ export default function Home() {
                     {offer.description && (
                       <p
                         style={{
-                          color: "#b6bdc8",
+                          color: "#c0c8bc",
                           lineHeight: "1.4",
                           margin: 0,
                           fontSize: "0.9rem",
@@ -688,9 +889,9 @@ export default function Home() {
                         <span
                           style={{
                             display: "inline-block",
-                            color: "#c7c7c7",
-                            background: "#0f1115",
-                            border: "1px solid #2d313a",
+                            color: "#cfd6cb",
+                            background: "#090d0b",
+                            border: "1px solid rgba(198, 255, 173, 0.12)",
                             borderRadius: "999px",
                             padding: "5px 9px",
                             fontSize: "0.8rem",
@@ -723,7 +924,7 @@ export default function Home() {
                         rel="noopener noreferrer"
                         style={{
                           display: "inline-block",
-                          background: "#8cff4f",
+                          background: "#9cff57",
                           color: "#111",
                           borderRadius: "10px",
                           padding: "10px 14px",
@@ -749,31 +950,121 @@ export default function Home() {
               marginBottom: "30px",
             }}
           >
-            {offerGroups.map((group) => (
+            {offerGroups.map((group) => {
+              const isBoxPartner = group.partnerName.toLowerCase().includes("box");
+
+              return (
               <button
+                className="offer-partner-card"
                 type="button"
                 key={group.title}
                 onClick={() => setSelectedOfferGroup(group.title)}
                 style={{
-                  background: "#12161d",
-                  border: "1px solid #31421f",
-                  borderLeft: "5px solid #8cff4f",
+                  background:
+                    "linear-gradient(180deg, rgba(18, 22, 25, 0.98), rgba(8, 11, 10, 0.98))",
+                  border: "1px solid rgba(198, 255, 173, 0.12)",
+                  borderLeft: "3px solid rgba(156, 255, 87, 0.45)",
                   borderRadius: "16px",
-                  boxShadow: "0 12px 28px rgba(0,0,0,0.2)",
+                  boxShadow: "0 16px 36px rgba(0,0,0,0.24)",
                   color: "white",
                   cursor: "pointer",
-                  minHeight: "130px",
-                  padding: "18px",
+                  display: "flex",
+                  flexDirection: "column",
+                  minHeight: "255px",
+                  padding: "28px",
+                  position: "relative",
                   textAlign: "left",
                 }}
               >
+                <div
+                  style={{
+                    alignItems: "flex-start",
+                    display: "flex",
+                    justifyContent: "center",
+                    marginBottom: "18px",
+                    minHeight: "92px",
+                    padding: "10px 6px 4px",
+                  }}
+                >
+                  {group.logo ? (
+                    <span
+                      style={{
+                        alignItems: "center",
+                        background: isBoxPartner
+                          ? "rgba(5, 8, 6, 0.72)"
+                          : "transparent",
+                        border: isBoxPartner
+                          ? "1px solid rgba(255, 255, 255, 0.08)"
+                          : "none",
+                        borderRadius: isBoxPartner ? "12px" : 0,
+                        display: "flex",
+                        height: "82px",
+                        justifyContent: "center",
+                        maxWidth: "224px",
+                        overflow: "hidden",
+                        padding: isBoxPartner ? "10px 16px" : 0,
+                        width: "224px",
+                      }}
+                    >
+                      <Image
+                        src={group.logo}
+                        alt={`${group.partnerName} logo`}
+                        width={224}
+                        height={82}
+                        style={{
+                          display: "block",
+                          height: isBoxPartner ? "60px" : "80px",
+                          maxHeight: isBoxPartner ? "60px" : "80px",
+                          maxWidth: isBoxPartner ? "176px" : "224px",
+                          objectFit: "contain",
+                          objectPosition: "center",
+                          width: "100%",
+                        }}
+                      />
+                    </span>
+                  ) : (
+                    <strong
+                      style={{
+                        color: "#f4f7f1",
+                        display: "block",
+                        fontSize: "1.35rem",
+                        lineHeight: "1",
+                        minHeight: "72px",
+                        paddingTop: "22px",
+                      }}
+                    >
+                      {group.partnerName}
+                    </strong>
+                  )}
+                </div>
+
                 <span
                   style={{
-                    color: "#8cff4f",
-                    display: "block",
-                    fontSize: "0.78rem",
+                    background: "rgba(156, 255, 87, 0.08)",
+                    border: "1px solid rgba(156, 255, 87, 0.14)",
+                    borderRadius: "999px",
+                    color: "#9cff57",
+                    display: "inline-block",
+                    fontSize: "0.62rem",
                     fontWeight: "bold",
-                    marginBottom: "10px",
+                    opacity: 0.75,
+                    padding: "3px 7px",
+                    position: "absolute",
+                    right: "18px",
+                    top: "16px",
+                  }}
+                >
+                  Official Partner
+                </span>
+
+                <span
+                  style={{
+                    color: "#9cff57",
+                    display: "block",
+                    fontSize: "0.7rem",
+                    fontWeight: "bold",
+                    marginBottom: "8px",
+                    opacity: 0.82,
                     textTransform: "uppercase",
                   }}
                 >
@@ -783,49 +1074,70 @@ export default function Home() {
                 <strong
                   style={{
                     display: "block",
-                    fontSize: "1.25rem",
+                    fontSize: "1.16rem",
                     lineHeight: "1.2",
-                    marginBottom: "10px",
+                    marginBottom: "8px",
                   }}
                 >
-                  {group.title}
+                  {group.partnerName}
                 </strong>
 
                 <span
                   style={{
-                    color: "#b6bdc8",
+                    color: "#c0c8bc",
                     display: "block",
-                    fontSize: "0.92rem",
-                    marginBottom: "16px",
+                    fontSize: "0.9rem",
+                    marginBottom: "18px",
                   }}
                 >
-                  {group.offers.length} active offer
+                  <span style={{ color: "#9cff57", fontWeight: "bold" }}>
+                    {group.offers.length}
+                  </span>{" "}
+                  active offer
                   {group.offers.length === 1 ? "" : "s"}
                 </span>
 
                 <span
+                  className="partner-offer-cta"
                   style={{
-                    color: "#8cff4f",
-                    fontSize: "0.95rem",
+                    alignItems: "center",
+                    background: "linear-gradient(135deg, #9cff57, #6fe02d)",
+                    borderRadius: "10px",
+                    boxShadow: "0 8px 18px rgba(156, 255, 87, 0.12)",
+                    color: "#04110a",
+                    display: "flex",
+                    fontSize: "0.92rem",
                     fontWeight: "bold",
+                    justifyContent: "center",
+                    marginTop: "auto",
+                    padding: "12px 14px",
+                    transition: "filter 180ms ease, box-shadow 180ms ease, transform 180ms ease",
+                    width: "100%",
                   }}
                 >
-                  View {group.title}
+                  View Offers{" \u2192"}
                 </span>
               </button>
-            ))}
+              );
+            })}
           </div>
         )}
 
-        <h2 style={{ marginBottom: "20px" }}>Product Deals</h2>
+        <h2 id="product-deals-controls" style={{ marginBottom: "20px", scrollMarginTop: "88px" }}>Product Deals</h2>
 
         <div
           className="category-scroll"
           style={{
+            boxSizing: "border-box",
             display: "flex",
             gap: "12px",
-            flexWrap: "wrap",
+            flexWrap: "nowrap",
+            justifyContent: "flex-start",
             marginBottom: "30px",
+            maxWidth: "100%",
+            minWidth: "100%",
+            overflowX: "auto",
+            width: "100%",
           }}
         >
           {categories.map((category) => (
@@ -835,13 +1147,15 @@ export default function Home() {
               onClick={() => setActiveCategory(category)}
               style={{
                 background:
-                  activeCategory === category ? "#8cff4f" : "#1a1d24",
-                color: activeCategory === category ? "#111" : "#c7c7c7",
-                border: "1px solid #2d313a",
+                  activeCategory === category ? "#9cff57" : "#14181d",
+                color: activeCategory === category ? "#071006" : "#cfd6cb",
+                border: "1px solid rgba(198, 255, 173, 0.12)",
                 borderRadius: "999px",
-                padding: "10px 16px",
+                minHeight: "42px",
+                padding: "10px 17px",
                 fontWeight: "bold",
                 cursor: "pointer",
+                flex: "0 0 auto",
               }}
             >
               {category}
@@ -853,9 +1167,10 @@ export default function Home() {
           className="deal-controls"
           style={{
             display: "flex",
-            gap: "12px",
+            gap: "20px",
             flexWrap: "wrap",
             marginBottom: "30px",
+            overflowX: "auto",
           }}
         >
           <input
@@ -871,11 +1186,11 @@ export default function Home() {
             placeholder="Search deals..."
             aria-label="Search deals by product title"
             style={{
-              flex: "1 1 280px",
-              maxWidth: "520px",
-              background: "#1a1d24",
+              flex: "1 1 calc(72% - 10px)",
+              maxWidth: "none",
+              background: "#14181d",
               color: "white",
-              border: "1px solid #2d313a",
+              border: "1px solid rgba(198, 255, 173, 0.12)",
               borderRadius: "12px",
               padding: "14px 16px",
               fontSize: "1rem",
@@ -889,10 +1204,10 @@ export default function Home() {
             onChange={(event) => setSortOption(event.target.value as SortOption)}
             aria-label="Sort deals"
             style={{
-              flex: "0 1 220px",
-              background: "#1a1d24",
+              flex: "0 1 calc(28% - 10px)",
+              background: "#14181d",
               color: "white",
-              border: "1px solid #2d313a",
+              border: "1px solid rgba(198, 255, 173, 0.12)",
               borderRadius: "12px",
               padding: "14px 16px",
               fontSize: "1rem",
@@ -910,22 +1225,23 @@ export default function Home() {
         </div>
 
         {isLoading ? (
-          <p style={{ color: "#aaa", fontSize: "1.1rem" }}>
+          <p style={{ color: "#aeb8aa", fontSize: "1.1rem" }}>
             Loading latest deals...
           </p>
         ) : error ? (
           <p style={{ color: "#ff6b6b", fontSize: "1.1rem" }}>{error}</p>
         ) : filteredDeals.length === 0 ? (
-          <p style={{ color: "#aaa", fontSize: "1.1rem" }}>
+          <p style={{ color: "#aeb8aa", fontSize: "1.1rem" }}>
             The goblins are still hunting...
           </p>
         ) : (
           <div
             className="deals-grid"
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-              gap: "20px",
+              display: "flex",
+              flexDirection: "column",
+              gap: "10px",
+              width: "100%",
             }}
           >
             {filteredDeals.map((deal) => (
@@ -933,193 +1249,288 @@ export default function Home() {
                 className="deal-card"
                 key={`${deal.source}-${deal.link}-${deal.timestamp}`}
                 style={{
-                  background: "#1a1d24",
-                  padding: "25px",
-                  borderRadius: "16px",
-                  border: "1px solid #2d313a",
-                  display: "flex",
-                  flexDirection: "column",
+                  background: "#14181d",
+                  border: "1px solid rgba(198, 255, 173, 0.12)",
+                  borderRadius: "12px",
+                  display: "grid",
+                  gap: "28px",
+                  gridTemplateColumns: "160px minmax(0, 1fr) 150px 150px",
+                  alignItems: "center",
+                  minHeight: "132px",
+                  overflow: "hidden",
+                  padding: "0 22px 0 0",
                 }}
               >
                 <div
-                  className="deal-meta"
+                  className="deal-image-panel"
                   style={{
+                    alignItems: "center",
+                    alignSelf: "stretch",
+                    background: "#090d0b",
+                    borderRight: "1px solid rgba(198, 255, 173, 0.1)",
                     display: "flex",
-                    justifyContent: "space-between",
-                    gap: "10px",
-                    marginBottom: "15px",
+                    justifyContent: "center",
+                    minHeight: "132px",
+                    padding: "6px",
                   }}
                 >
-                  <span style={{ color: "#8cff4f", fontWeight: "bold" }}>
-                    {deal.category}
-                  </span>
-
-                  <span
-                    style={{
-                      background: deal.quality.includes("GOOD PRICE")
-                        ? "#263319"
-                        : "#332b18",
-                      color: deal.quality.includes("GOOD PRICE")
-                        ? "#8cff4f"
-                        : "#f3c969",
-                      borderRadius: "999px",
-                      padding: "4px 10px",
-                      fontSize: "0.8rem",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {deal.quality}
-                  </span>
-                </div>
-
-                {deal.image ? (
-                  <img
-                    className="deal-image"
-                    src={deal.image}
-                    alt={deal.cleanTitle || deal.title}
-                    style={{
-                      width: "100%",
-                      height: "180px",
-                      objectFit: "contain",
-                      background: "#0f1115",
-                      borderRadius: "10px",
-                      border: "1px solid #2d313a",
-                      marginBottom: "18px",
-                    }}
-                  />
-                ) : (
-                  <div
-                    className="deal-image"
-                    style={{
-                      height: "180px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      background: "#0f1115",
-                      color: "#777",
-                      borderRadius: "10px",
-                      border: "1px solid #2d313a",
-                      marginBottom: "18px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    No image
-                  </div>
-                )}
-
-                <h3
-                  className="deal-title"
-                  style={{ fontSize: "1.4rem", marginBottom: "15px" }}
-                >
-                  {deal.cleanTitle || deal.title}
-                </h3>
-
-                <div style={{ marginBottom: "18px" }}>
-                  {deal.oldPrice && (
-                    <p
+                  {deal.image ? (
+                    <Image
+                      className="deal-image"
+                      src={deal.image}
+                      alt={deal.cleanTitle || deal.title}
+                      width={148}
+                      height={120}
+                      sizes="160px"
+                      unoptimized
                       style={{
-                        color: "#8b929d",
-                        fontSize: "0.95rem",
+                        display: "block",
+                        width: "100%",
+                        height: "120px",
+                        objectFit: "contain",
+                        background: "transparent",
+                        border: "none",
+                        borderRadius: "8px",
+                      }}
+                    />
+                  ) : (
+                    <div
+                      className="deal-image"
+                      style={{
+                        alignItems: "center",
+                        color: "#777",
+                        display: "flex",
                         fontWeight: "bold",
-                        marginBottom: "4px",
-                        textDecoration: "line-through",
+                        height: "120px",
+                        justifyContent: "center",
+                        width: "100%",
                       }}
                     >
-                      {deal.oldPrice}
-                    </p>
+                      No image
+                    </div>
                   )}
+                </div>
 
+                <div
+                  className="deal-info-panel"
+                  style={{
+                    minWidth: 0,
+                    padding: "18px 0",
+                  }}
+                >
                   <div
+                    className="deal-meta"
                     style={{
-                      display: "flex",
                       alignItems: "center",
-                      gap: "10px",
+                      display: "flex",
+                      gap: "8px",
+                      marginBottom: "8px",
                       flexWrap: "wrap",
                     }}
                   >
-                    <p
-                      className="deal-price"
+                    <span
                       style={{
-                        fontSize: "2rem",
+                        background: "rgba(156, 255, 87, 0.1)",
+                        border: "1px solid rgba(156, 255, 87, 0.22)",
+                        borderRadius: "999px",
+                        color: "#9cff57",
+                        fontSize: "0.68rem",
                         fontWeight: "bold",
-                        color: "#8cff4f",
-                        margin: 0,
+                        padding: "3px 7px",
+                        textTransform: "uppercase",
                       }}
                     >
-                      {deal.price}
-                    </p>
+                      {deal.category}
+                    </span>
 
-                    {deal.discount && (
+                    <span
+                      style={{
+                        background: deal.quality.includes("GOOD PRICE")
+                          ? "rgba(156, 255, 87, 0.1)"
+                          : "rgba(243, 201, 105, 0.12)",
+                        border: deal.quality.includes("GOOD PRICE")
+                          ? "1px solid rgba(156, 255, 87, 0.24)"
+                          : "1px solid rgba(243, 201, 105, 0.18)",
+                        borderRadius: "999px",
+                        color: deal.quality.includes("GOOD PRICE")
+                          ? "#9cff57"
+                          : "#f3c969",
+                        fontSize: "0.68rem",
+                        fontWeight: "bold",
+                        padding: "3px 7px",
+                        textTransform: "uppercase",
+                      }}
+                    >
+                      {deal.quality}
+                    </span>
+                  </div>
+
+                  <h3
+                    className="deal-title"
+                    style={{
+                      color: "#f4f7f1",
+                      fontSize: "1.08rem",
+                      lineHeight: "1.28",
+                      margin: "0 0 10px",
+                      maxWidth: "430px",
+                    }}
+                  >
+                    {deal.cleanTitle || deal.title}
+                  </h3>
+
+                  <div
+                    style={{
+                      alignItems: "center",
+                      display: "flex",
+                      gap: "12px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    {getStoreLogo(deal) ? (
                       <span
                         style={{
-                          display: "inline-block",
-                          background: "#263319",
-                          color: "#8cff4f",
-                          border: "1px solid #3f5f25",
-                          borderRadius: "999px",
-                          padding: "4px 9px",
-                          fontSize: "0.85rem",
+                          alignItems: "center",
+                          display: "inline-flex",
+                          minHeight: "22px",
+                        }}
+                      >
+                        <Image
+                          src={getStoreLogo(deal)!.src}
+                          alt={getStoreLogo(deal)!.alt}
+                          width={92}
+                          height={26}
+                          style={{
+                            display: "block",
+                            maxHeight: "24px",
+                            maxWidth: "92px",
+                            objectFit: "contain",
+                            objectPosition: "left center",
+                            width: "auto",
+                          }}
+                        />
+                      </span>
+                    ) : (
+                      <span
+                        style={{
+                          color: "#cfd6cb",
+                          fontSize: "0.86rem",
                           fontWeight: "bold",
                         }}
                       >
-                        🔥 {deal.discount}
+                        {deal.source}
+                      </span>
+                    )}
+
+                    {formatFoundTime(deal.timestamp) && (
+                      <span
+                        style={{
+                          color: "#8f998d",
+                          fontSize: "0.8rem",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {formatFoundTime(deal.timestamp)}
                       </span>
                     )}
                   </div>
                 </div>
 
                 <div
+                  className="deal-price-panel"
                   style={{
-                    marginTop: "auto",
+                    alignItems: "flex-start",
                     display: "flex",
                     flexDirection: "column",
-                    gap: "18px",
-                    alignItems: "flex-start",
+                    gap: "10px",
+                    justifySelf: "stretch",
+                    padding: "18px 0",
                   }}
                 >
-                  <span
-                    style={{
-                      display: "inline-block",
-                      color: "#c7c7c7",
-                      background: "#11141a",
-                      border: "1px solid #2d313a",
-                      borderRadius: "999px",
-                      padding: "6px 10px",
-                      fontSize: "0.85rem",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {deal.source}
-                  </span>
+                  <div>
+                    {deal.oldPrice && (
+                      <p
+                        style={{
+                          color: "#8f998d",
+                          fontSize: "0.94rem",
+                          fontWeight: "bold",
+                          margin: "0 0 3px",
+                          textDecoration: "line-through",
+                        }}
+                      >
+                        {deal.oldPrice}
+                      </p>
+                    )}
 
-                  {formatFoundTime(deal.timestamp) && (
-                    <span
+                    <div
                       style={{
-                        color: "#8b929d",
-                        fontSize: "0.82rem",
-                        fontWeight: "bold",
-                        marginTop: "-10px",
+                        alignItems: "center",
+                        display: "flex",
+                        gap: "10px",
+                        flexWrap: "wrap",
                       }}
                     >
-                      {formatFoundTime(deal.timestamp)}
-                    </span>
-                  )}
+                      <p
+                        className="deal-price"
+                        style={{
+                          color: "#9cff57",
+                          fontSize: "1.55rem",
+                          fontWeight: "bold",
+                          lineHeight: 1,
+                          margin: 0,
+                        }}
+                      >
+                        {deal.price}
+                      </p>
 
+                      {deal.discount && (
+                        <span
+                          style={{
+                            background: "rgba(156, 255, 87, 0.12)",
+                            border: "1px solid rgba(156, 255, 87, 0.28)",
+                            borderRadius: "8px",
+                            color: "#9cff57",
+                            display: "inline-block",
+                            fontSize: "0.8rem",
+                            fontWeight: "bold",
+                            padding: "4px 8px",
+                          }}
+                        >
+                          {deal.discount}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  className="deal-action-panel"
+                  style={{
+                    alignItems: "center",
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    padding: "18px 0",
+                  }}
+                >
                   <a
                     href={getDealUrl(deal)}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                      display: "inline-block",
-                      background: "#8cff4f",
-                      color: "#111",
+                      alignItems: "center",
+                      background: "#9cff57",
                       borderRadius: "10px",
-                      padding: "10px 14px",
+                      color: "#071006",
+                      display: "flex",
+                      fontSize: "0.92rem",
                       fontWeight: "bold",
+                      justifyContent: "center",
+                      minHeight: "42px",
+                      padding: "10px 14px",
                       textDecoration: "none",
+                      width: "100%",
                     }}
                   >
-                    View Deal
+                    View Deal {"\u2192"}
                   </a>
                 </div>
               </div>
@@ -1128,113 +1539,155 @@ export default function Home() {
         )}
       </section>
 
-      <section
-        id="about"
-        style={{
-          padding: "50px 40px",
-          borderTop: "1px solid #2d313a",
-        }}
-      >
-        <h2>About GoblinTechUK</h2>
-        <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
-          GoblinTechUK tracks technology, gaming and electronics deals across
-          the United Kingdom. The goal is simple: find useful bargains, remove
-          the junk, and save people from endless scrolling.
-        </p>
-      </section>
-
-      <section
-        id="contact"
-        style={{
-          padding: "50px 40px",
-          borderTop: "1px solid #2d313a",
-        }}
-      >
-        <h2>Contact</h2>
-        <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
-          Email:{" "}
-          <a href="mailto:hello@goblintechuk.uk" style={{ color: "#8cff4f" }}>
-            hello@goblintechuk.uk
-          </a>
-        </p>
-      </section>
-
-      <section
-        id="affiliate"
-        style={{
-          padding: "50px 40px",
-          borderTop: "1px solid #2d313a",
-        }}
-      >
-        <h2>Affiliate Disclosure</h2>
-        <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
-          Some links on GoblinTechUK are affiliate links. If you buy through
-          them, we may earn a small commission at no extra cost to you. We still
-          aim to show useful UK tech deals first, not junk. Affiliate tracking
-          is handled through trusted partner networks such as{" "}
-          <a
-            href="https://www.awin.com/gb"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#8cff4f" }}
-          >
-            Awin
-          </a>
-          .
-        </p>
-      </section>
-
-      <section
-        id="privacy"
-        style={{
-          padding: "50px 40px",
-          borderTop: "1px solid #2d313a",
-        }}
-      >
-        <h2>Privacy Policy</h2>
-        <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
-          GoblinTechUK does not currently collect personal data. If analytics,
-          forms, cookies or affiliate tracking are added later, this section
-          will be updated.
-        </p>
-      </section>
-
       <footer
         style={{
-          borderTop: "1px solid #2d313a",
-          padding: "30px 40px",
-          color: "#aaa",
-          display: "flex",
-          justifyContent: "space-between",
-          gap: "20px",
-          flexWrap: "wrap",
+          borderTop: "1px solid rgba(198, 255, 173, 0.1)",
+          padding: "34px 40px",
+          color: "#aeb8aa",
         }}
       >
-        <div>
-          <strong style={{ color: "white" }}>GoblinTechUK</strong>
-          <p style={{ marginTop: "8px" }}>
-            Independent UK tech deal finder. Prices and availability may change.
-          </p>
-        </div>
+        <div
+          style={{
+            display: "grid",
+            gap: "24px",
+            gridTemplateColumns: "minmax(220px, 1fr) minmax(280px, 1.6fr) auto",
+            alignItems: "start",
+          }}
+        >
+          <div>
+            <strong style={{ color: "white" }}>GoblinTechUK</strong>
+            <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+              Independent UK tech deal finder. Prices and availability may change.
+            </p>
+          </div>
 
-        <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-          <a href="#about" style={navLinkStyle}>
-            About
-          </a>
-          <a href="#contact" style={navLinkStyle}>
-            Contact
-          </a>
-          <a href="#affiliate" style={navLinkStyle}>
-            Affiliate Disclosure
-          </a>
-          <a href="#privacy" style={navLinkStyle}>
-            Privacy Policy
-          </a>
-        </div>
+          <div
+            style={{
+              display: "grid",
+              gap: "10px",
+              width: "100%",
+            }}
+          >
+            {[
+              {
+                id: "about",
+                label: "About",
+                content: (
+                  <p style={{ margin: 0 }}>
+                    GoblinTechUK tracks technology, gaming and electronics deals across
+                    the United Kingdom. The goal is simple: find useful bargains, remove
+                    the junk, and save people from endless scrolling.
+                  </p>
+                ),
+              },
+              {
+                id: "contact",
+                label: "Contact",
+                content: (
+                  <p style={{ margin: 0 }}>
+                    Email:{" "}
+                    <a href="mailto:hello@goblintechuk.uk" style={{ color: "#9cff57" }}>
+                      hello@goblintechuk.uk
+                    </a>
+                  </p>
+                ),
+              },
+              {
+                id: "affiliate",
+                label: "Affiliate Disclosure",
+                content: (
+                  <p style={{ margin: 0 }}>
+                    Some links on GoblinTechUK are affiliate links. If you buy through
+                    them, we may earn a small commission at no extra cost to you. We still
+                    aim to show useful UK tech deals first, not junk. Affiliate tracking
+                    is handled through trusted partner networks such as{" "}
+                    <a
+                      href="https://www.awin.com/gb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#9cff57" }}
+                    >
+                      Awin
+                    </a>
+                    .
+                  </p>
+                ),
+              },
+              {
+                id: "privacy",
+                label: "Privacy Policy",
+                content: (
+                  <p style={{ margin: 0 }}>
+                    GoblinTechUK does not currently collect personal data. If analytics,
+                    forms, cookies or affiliate tracking are added later, this section
+                    will be updated.
+                  </p>
+                ),
+              },
+            ].map((item) => {
+              const isOpen = openFooterPanel === item.id;
 
-        <p>&copy; 2026 GoblinTechUK</p>
+              return (
+                <div
+                  id={item.id}
+                  key={item.id}
+                  style={{
+                    border: "1px solid rgba(198, 255, 173, 0.1)",
+                    borderRadius: "10px",
+                    background: isOpen
+                      ? "linear-gradient(180deg, rgba(20, 25, 22, 0.95), rgba(12, 16, 14, 0.95))"
+                      : "rgba(10, 14, 12, 0.42)",
+                    overflow: "hidden",
+                  }}
+                >
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setOpenFooterPanel(isOpen ? null : item.id)
+                    }
+                    aria-expanded={isOpen}
+                    style={{
+                      alignItems: "center",
+                      background: "transparent",
+                      border: 0,
+                      color: isOpen ? "#9cff57" : "#e8f0e5",
+                      cursor: "pointer",
+                      display: "flex",
+                      fontSize: "0.95rem",
+                      fontWeight: 700,
+                      justifyContent: "space-between",
+                      padding: "13px 15px",
+                      textAlign: "left",
+                      width: "100%",
+                    }}
+                  >
+                    <span>{item.label}</span>
+                    <span aria-hidden="true" style={{ color: "#9cff57" }}>
+                      {isOpen ? "-" : "+"}
+                    </span>
+                  </button>
+
+                  {isOpen && (
+                    <div
+                      style={{
+                        borderTop: "1px solid rgba(198, 255, 173, 0.08)",
+                        color: "#aeb8aa",
+                        fontSize: "0.92rem",
+                        lineHeight: "1.7",
+                        padding: "0 15px 15px",
+                      }}
+                    >
+                      {item.content}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          <p style={{ margin: 0, whiteSpace: "nowrap" }}>&copy; 2026 GoblinTechUK</p>
+        </div>
       </footer>
-
       {showBackToTop && (
         <button
           type="button"
@@ -1247,19 +1700,34 @@ export default function Home() {
             width: "48px",
             height: "48px",
             borderRadius: "999px",
-            border: "1px solid #8cff4f",
-            background: "#11141a",
-            color: "#8cff4f",
+            border: "1px solid #9cff57",
+            background: "#0c100e",
+            color: "#9cff57",
             fontSize: "1.5rem",
             fontWeight: "bold",
             cursor: "pointer",
-            boxShadow: "0 10px 25px rgba(0,0,0,0.35)",
-            zIndex: 50,
+            alignItems: "center",
+            boxShadow: "0 10px 25px rgba(0,0,0,0.35), 0 0 18px rgba(156,255,87,0.18)",
+            display: "flex",
+            justifyContent: "center",
+            lineHeight: 1,
+            zIndex: 1000,
           }}
         >
-          ↑
+          {"\u2191"}
         </button>
       )}
     </main>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
