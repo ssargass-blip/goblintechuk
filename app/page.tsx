@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 type Deal = {
   title: string;
@@ -34,6 +35,7 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [selectedOfferGroup, setSelectedOfferGroup] = useState<string | null>(null);
+  const [currentTimeMs] = useState(() => Date.now());
 
   const categories = [
     "All",
@@ -114,7 +116,7 @@ export default function Home() {
       return false;
     }
 
-    return expiry.getTime() < Date.now();
+    return expiry.getTime() < currentTimeMs;
   };
 
   const featuredOffers = deals.filter((deal) => isOffer(deal) && !isExpiredOffer(deal));
@@ -450,6 +452,18 @@ export default function Home() {
             height: 160px !important;
           }
         }
+
+        .sr-only {
+          border: 0;
+          clip: rect(0, 0, 0, 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          white-space: nowrap;
+          width: 1px;
+        }
       `}</style>
 
       <header
@@ -462,9 +476,11 @@ export default function Home() {
           borderBottom: "1px solid #2a2d35",
         }}
       >
-        <img
-          src="/goblin-logo.png"
+        <Image
+          src="/goblin-icon.png"
           alt="GoblinTechUK logo"
+          width={256}
+          height={171}
           style={{
             height: "70px",
             width: "auto",
@@ -490,13 +506,14 @@ export default function Home() {
           minHeight: "clamp(560px, 62vw, 860px)",
           padding: "40px",
           backgroundImage:
-            "linear-gradient(90deg, rgba(15,17,21,0.32), rgba(15,17,21,0.08)), url('/goblin-wallpaper.png')",
+            "linear-gradient(90deg, rgba(15,17,21,0.32), rgba(15,17,21,0.08)), url('/goblin-wallpaper.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
           backgroundColor: "#0f1115",
         }}
       >
+        <h1 className="sr-only">GoblinTechUK - UK Tech Deal Hunter</h1>
       </section>
 
       <section
@@ -1153,7 +1170,17 @@ export default function Home() {
         <p style={{ color: "#aaa", maxWidth: "800px", lineHeight: "1.8" }}>
           Some links on GoblinTechUK are affiliate links. If you buy through
           them, we may earn a small commission at no extra cost to you. We still
-          aim to show useful UK tech deals first, not junk.
+          aim to show useful UK tech deals first, not junk. Affiliate tracking
+          is handled through trusted partner networks such as{" "}
+          <a
+            href="https://www.awin.com/gb"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#8cff4f" }}
+          >
+            Awin
+          </a>
+          .
         </p>
       </section>
 

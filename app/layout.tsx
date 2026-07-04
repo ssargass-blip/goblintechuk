@@ -14,20 +14,21 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = "https://www.goblintechuk.uk";
+const canonicalUrl = `${siteUrl}/`;
 const description =
-  "GoblinTechUK hunts the best UK tech, gaming and electronics deals so you don't have to.";
+  "GoblinTechUK hunts the best UK tech, gaming, electronics and partner offers, helping shoppers compare current deals from trusted UK retailers without endless scrolling.";
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "GoblinTechUK",
-  url: siteUrl,
+  url: canonicalUrl,
   description,
   publisher: {
     "@type": "Organization",
     name: "GoblinTechUK",
-    url: siteUrl,
-    logo: `${siteUrl}/goblin-logo.png`,
+    url: canonicalUrl,
+    logo: `${siteUrl}/goblin-icon.png`,
   },
 };
 
@@ -39,18 +40,18 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/goblin-logo.png",
-    shortcut: "/goblin-logo.png",
-    apple: "/goblin-logo.png",
+    icon: "/goblin-icon.png",
+    shortcut: "/goblin-icon.png",
+    apple: "/goblin-icon.png",
   },
   openGraph: {
     title: "GoblinTechUK - UK Tech Deal Hunter",
     description,
-    url: siteUrl,
+    url: canonicalUrl,
     siteName: "GoblinTechUK",
     images: [
       {
-        url: "/goblin-wallpaper.png",
+        url: "/goblin-wallpaper.webp",
         width: 1536,
         height: 1024,
         alt: "GoblinTechUK tech deal hunter wallpaper",
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GoblinTechUK - UK Tech Deal Hunter",
     description,
-    images: ["/goblin-wallpaper.png"],
+    images: ["/goblin-wallpaper.webp"],
   },
 };
 
