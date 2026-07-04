@@ -86,7 +86,7 @@ export default function Home() {
 
   useEffect(() => {
     function handleScroll() {
-      setShowBackToTop(window.scrollY > 500);
+      setShowBackToTop(window.scrollY > 260);
     }
 
     handleScroll();
@@ -1696,7 +1696,7 @@ export default function Home() {
           style={{
             position: "fixed",
             right: "18px",
-            bottom: "18px",
+            bottom: "calc(env(safe-area-inset-bottom, 0px) + 18px)",
             width: "48px",
             height: "48px",
             borderRadius: "999px",
@@ -1711,7 +1711,7 @@ export default function Home() {
             display: "flex",
             justifyContent: "center",
             lineHeight: 1,
-            zIndex: 1000,
+            zIndex: 9999,
           }}
         >
           {"\u2191"}
@@ -1720,6 +1720,8 @@ export default function Home() {
     </main>
   );
 }
+
+
 
 
 
