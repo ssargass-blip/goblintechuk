@@ -666,6 +666,24 @@ export default function Home() {
             font-size: 1.6rem !important;
           }
 
+          .site-footer {
+            padding: 28px 16px 92px !important;
+          }
+
+          .site-footer-grid {
+            gap: 16px !important;
+            grid-template-columns: 1fr !important;
+          }
+
+          .site-footer-grid > * {
+            min-width: 0 !important;
+            max-width: 100% !important;
+          }
+
+          .footer-copy {
+            white-space: normal !important;
+          }
+
           .back-to-top-button {
             bottom: calc(env(safe-area-inset-bottom, 0px) + 14px) !important;
             height: 44px !important;
@@ -1566,6 +1584,7 @@ export default function Home() {
       </section>
 
       <footer
+        className="site-footer"
         style={{
           borderTop: "1px solid rgba(198, 255, 173, 0.1)",
           padding: "34px 40px",
@@ -1573,6 +1592,7 @@ export default function Home() {
         }}
       >
         <div
+          className="site-footer-grid"
           style={{
             display: "grid",
             gap: "24px",
@@ -1711,7 +1731,7 @@ export default function Home() {
             })}
           </div>
 
-          <p style={{ margin: 0, whiteSpace: "nowrap" }}>&copy; 2026 GoblinTechUK</p>
+          <p className="footer-copy" style={{ margin: 0, whiteSpace: "nowrap" }}>&copy; 2026 GoblinTechUK</p>
         </div>
       </footer>
       {showBackToTop && (
