@@ -361,7 +361,16 @@ export default function Home() {
       }}
     >
       <style>{`
+        html,
+        body {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+
         .site-shell {
+          box-sizing: border-box;
+          max-width: 100%;
+          overflow-x: clip;
           --goblin-bg: #050806;
           --goblin-panel: #14181d;
           --goblin-panel-soft: #101419;
@@ -509,6 +518,10 @@ export default function Home() {
         }
 
         @media (max-width: 767px) {
+          .site-shell {
+            overflow-x: hidden !important;
+          }
+
           .site-header {
             align-items: flex-start !important;
             flex-direction: column !important;
@@ -652,6 +665,19 @@ export default function Home() {
           .deal-price {
             font-size: 1.6rem !important;
           }
+
+          .back-to-top-button {
+            bottom: calc(env(safe-area-inset-bottom, 0px) + 14px) !important;
+            height: 44px !important;
+            max-width: 44px !important;
+            right: max(12px, env(safe-area-inset-right, 0px)) !important;
+            width: 44px !important;
+          }
+        }
+
+        .back-to-top-button {
+          box-sizing: border-box;
+          max-width: calc(100vw - 24px);
         }
 
         .sr-only {
@@ -1690,6 +1716,7 @@ export default function Home() {
       </footer>
       {showBackToTop && (
         <button
+          className="back-to-top-button"
           type="button"
           aria-label="Back to top"
           onClick={scrollToTop}
@@ -1720,6 +1747,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 
