@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GoblinTechUK
 
-## Getting Started
+GoblinTechUK is a Next.js site for showing curated UK tech, gaming and electronics deals from affiliate partner feeds. The public site reads deal data from `public/deals.json` and renders Featured Offers, product categories, search, sorting, affiliate outbound links, SEO metadata, sitemap and robots output.
 
-First, run the development server:
+## Tech Stack
+
+- Next.js App Router
+- React
+- TypeScript
+- CSS-in-JSX styling inside the current page/components
+- Static JSON feed at `public/deals.json`
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build And Checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+## Site URL Configuration
 
-To learn more about Next.js, take a look at the following resources:
+Production URLs are read from `NEXT_PUBLIC_SITE_URL`. If the variable is not set, the app falls back to:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```text
+https://www.goblintechuk.uk
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This value is used by metadata, canonical URLs, `sitemap.xml`, and `robots.txt`.
 
-## Deploy on Vercel
+## Deal Feed
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The frontend expects `public/deals.json` to contain an array of deal objects. Important fields include:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```ts
+{
+  title: string;
+  cleanTitle?: string;
+  price: string;
+  oldPrice?: string;
+  discount?: string;
+  category: string;
+  quality: string;
+  merchant?: string;
+  source: string;
+  link: string;
+  image: string;
+  timestamp: string;
+  dealType?: string;
+  offerEndDate?: string;
+}
+```
+
+Affiliate redirects are handled in the frontend for supported merchants, while the JSON feed keeps the original merchant URL.
+
+## SEO
+
+The app provides:
+
+- Next.js metadata in `app/layout.tsx`
+- Open Graph and Twitter card data
+- JSON-LD structured data
+- `app/sitemap.ts`
+- `app/robots.ts`
+- Ahrefs Web Analytics loaded with `next/script`
+
+## Project Layout
+
+```text
+app/
+  components/      Shared UI sections used by the homepage
+  lib/site.ts      Canonical site URL and metadata strings
+  page.tsx         Homepage data loading and deal rendering
+  layout.tsx       Global metadata, fonts, analytics and schema
+  robots.ts        robots.txt generation
+  sitemap.ts       sitemap.xml generation
+public/
+  deals.json       Live deal feed consumed by the homepage
+  images/partners/ Partner logos used by offers and deal cards
+```

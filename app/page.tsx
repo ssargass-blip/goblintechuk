@@ -2,29 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-
-type Deal = {
-  title: string;
-  cleanTitle?: string;
-  price: string;
-  oldPrice?: string;
-  discount?: string;
-  category: string;
-  quality: string;
-  merchant?: string;
-  source: string;
-  link: string;
-  image: string;
-  timestamp: string;
-  dealType?: string;
-  offerId?: string;
-  offerStartDate?: string;
-  offerEndDate?: string;
-  offerStatus?: string;
-  description?: string;
-};
-
-type SortOption = "newest" | "price-asc" | "price-desc" | "az" | "za";
+import { BackToTopButton } from "./components/BackToTopButton";
+import { HeroSection } from "./components/HeroSection";
+import { SiteFooter } from "./components/SiteFooter";
+import { SiteHeader } from "./components/SiteHeader";
+import type { Deal, SortOption } from "./types";
 
 export default function Home() {
   const [deals, setDeals] = useState<Deal[]>([]);
@@ -35,7 +17,6 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [selectedOfferGroup, setSelectedOfferGroup] = useState<string | null>(null);
-  const [openFooterPanel, setOpenFooterPanel] = useState<string | null>(null);
   const [currentTimeMs] = useState(() => Date.now());
 
   const categories = [
@@ -339,11 +320,6 @@ export default function Home() {
         new Date(firstDeal.timestamp).getTime()
       );
     });
-
-  const navLinkStyle = {
-    color: "#cfd6cb",
-    textDecoration: "none",
-  };
 
   return (
     <main
@@ -711,55 +687,9 @@ export default function Home() {
         }
       `}</style>
 
-      <header
-        className="site-header"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "25px 40px",
-          borderBottom: "1px solid #2a2d35",
-        }}
-      >
-        <Image
-          src="/goblin-icon.png"
-          alt="GoblinTechUK logo"
-          width={256}
-          height={171}
-          style={{
-            height: "70px",
-            width: "auto",
-          }}
-        />
+      <SiteHeader />
 
-        <nav className="site-nav" style={{ display: "flex", gap: "25px" }}>
-          <a href="#home" style={navLinkStyle}>
-            Home
-          </a>
-          <a href="#deals" style={navLinkStyle}>
-            Deals
-          </a>
-          <a href="#about" style={navLinkStyle}>
-            About
-          </a>
-        </nav>
-      </header>
-
-      <section
-        className="hero-section"
-        style={{
-          minHeight: "clamp(560px, 62vw, 860px)",
-          padding: "40px",
-          backgroundImage:
-            "linear-gradient(90deg, rgba(15,17,21,0.32), rgba(15,17,21,0.08)), url('/goblin-wallpaper.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center top",
-          backgroundRepeat: "no-repeat",
-          backgroundColor: "#050806",
-        }}
-      >
-        <h1 className="sr-only">GoblinTechUK - UK Tech Deal Hunter</h1>
-      </section>
+      <HeroSection />
 
       <section
         id="deals"
@@ -1583,187 +1513,8 @@ export default function Home() {
         )}
       </section>
 
-      <footer
-        className="site-footer"
-        style={{
-          borderTop: "1px solid rgba(198, 255, 173, 0.1)",
-          padding: "34px 40px",
-          color: "#aeb8aa",
-        }}
-      >
-        <div
-          className="site-footer-grid"
-          style={{
-            display: "grid",
-            gap: "24px",
-            gridTemplateColumns: "minmax(220px, 1fr) minmax(280px, 1.6fr) auto",
-            alignItems: "start",
-          }}
-        >
-          <div>
-            <strong style={{ color: "white" }}>GoblinTechUK</strong>
-            <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
-              Independent UK tech deal finder. Prices and availability may change.
-            </p>
-          </div>
-
-          <div
-            style={{
-              display: "grid",
-              gap: "10px",
-              width: "100%",
-            }}
-          >
-            {[
-              {
-                id: "about",
-                label: "About",
-                content: (
-                  <p style={{ margin: 0 }}>
-                    GoblinTechUK tracks technology, gaming and electronics deals across
-                    the United Kingdom. The goal is simple: find useful bargains, remove
-                    the junk, and save people from endless scrolling.
-                  </p>
-                ),
-              },
-              {
-                id: "contact",
-                label: "Contact",
-                content: (
-                  <p style={{ margin: 0 }}>
-                    Email:{" "}
-                    <a href="mailto:hello@goblintechuk.uk" style={{ color: "#9cff57" }}>
-                      hello@goblintechuk.uk
-                    </a>
-                  </p>
-                ),
-              },
-              {
-                id: "affiliate",
-                label: "Affiliate Disclosure",
-                content: (
-                  <p style={{ margin: 0 }}>
-                    Some links on GoblinTechUK are affiliate links. If you buy through
-                    them, we may earn a small commission at no extra cost to you. We still
-                    aim to show useful UK tech deals first, not junk. Affiliate tracking
-                    is handled through trusted partner networks such as{" "}
-                    <a
-                      href="https://www.awin.com/gb"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ color: "#9cff57" }}
-                    >
-                      Awin
-                    </a>
-                    .
-                  </p>
-                ),
-              },
-              {
-                id: "privacy",
-                label: "Privacy Policy",
-                content: (
-                  <p style={{ margin: 0 }}>
-                    GoblinTechUK does not currently collect personal data. If analytics,
-                    forms, cookies or affiliate tracking are added later, this section
-                    will be updated.
-                  </p>
-                ),
-              },
-            ].map((item) => {
-              const isOpen = openFooterPanel === item.id;
-
-              return (
-                <div
-                  id={item.id}
-                  key={item.id}
-                  style={{
-                    border: "1px solid rgba(198, 255, 173, 0.1)",
-                    borderRadius: "10px",
-                    background: isOpen
-                      ? "linear-gradient(180deg, rgba(20, 25, 22, 0.95), rgba(12, 16, 14, 0.95))"
-                      : "rgba(10, 14, 12, 0.42)",
-                    overflow: "hidden",
-                  }}
-                >
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setOpenFooterPanel(isOpen ? null : item.id)
-                    }
-                    aria-expanded={isOpen}
-                    style={{
-                      alignItems: "center",
-                      background: "transparent",
-                      border: 0,
-                      color: isOpen ? "#9cff57" : "#e8f0e5",
-                      cursor: "pointer",
-                      display: "flex",
-                      fontSize: "0.95rem",
-                      fontWeight: 700,
-                      justifyContent: "space-between",
-                      padding: "13px 15px",
-                      textAlign: "left",
-                      width: "100%",
-                    }}
-                  >
-                    <span>{item.label}</span>
-                    <span aria-hidden="true" style={{ color: "#9cff57" }}>
-                      {isOpen ? "-" : "+"}
-                    </span>
-                  </button>
-
-                  {isOpen && (
-                    <div
-                      style={{
-                        borderTop: "1px solid rgba(198, 255, 173, 0.08)",
-                        color: "#aeb8aa",
-                        fontSize: "0.92rem",
-                        lineHeight: "1.7",
-                        padding: "0 15px 15px",
-                      }}
-                    >
-                      {item.content}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          <p className="footer-copy" style={{ margin: 0, whiteSpace: "nowrap" }}>&copy; 2026 GoblinTechUK</p>
-        </div>
-      </footer>
-      {showBackToTop && (
-        <button
-          className="back-to-top-button"
-          type="button"
-          aria-label="Back to top"
-          onClick={scrollToTop}
-          style={{
-            position: "fixed",
-            right: "18px",
-            bottom: "calc(env(safe-area-inset-bottom, 0px) + 18px)",
-            width: "48px",
-            height: "48px",
-            borderRadius: "999px",
-            border: "1px solid #9cff57",
-            background: "#0c100e",
-            color: "#9cff57",
-            fontSize: "1.5rem",
-            fontWeight: "bold",
-            cursor: "pointer",
-            alignItems: "center",
-            boxShadow: "0 10px 25px rgba(0,0,0,0.35), 0 0 18px rgba(156,255,87,0.18)",
-            display: "flex",
-            justifyContent: "center",
-            lineHeight: 1,
-            zIndex: 9999,
-          }}
-        >
-          {"\u2191"}
-        </button>
-      )}
+      <SiteFooter />
+      <BackToTopButton isVisible={showBackToTop} onClick={scrollToTop} />
     </main>
   );
 }

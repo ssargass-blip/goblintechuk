@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { canonicalUrl, siteDescription, siteTitle, siteUrl } from "./lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,17 +14,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://www.goblintechuk.uk";
-const canonicalUrl = `${siteUrl}/`;
-const description =
-  "GoblinTechUK hunts the best UK tech, gaming and electronics deals from trusted retailers.";
-
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "GoblinTechUK",
   url: canonicalUrl,
-  description,
+  description: siteDescription,
   publisher: {
     "@type": "Organization",
     name: "GoblinTechUK",
@@ -34,8 +30,8 @@ const structuredData = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "GoblinTechUK - UK Tech Deal Hunter",
-  description,
+  title: siteTitle,
+  description: siteDescription,
   alternates: {
     canonical: "/",
   },
@@ -45,8 +41,8 @@ export const metadata: Metadata = {
     apple: "/goblin-icon.png",
   },
   openGraph: {
-    title: "GoblinTechUK - UK Tech Deal Hunter",
-    description,
+    title: siteTitle,
+    description: siteDescription,
     url: canonicalUrl,
     siteName: "GoblinTechUK",
     images: [
@@ -62,8 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GoblinTechUK - UK Tech Deal Hunter",
-    description,
+    title: siteTitle,
+    description: siteDescription,
     images: ["/goblin-wallpaper.webp"],
   },
 };
