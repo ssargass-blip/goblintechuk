@@ -132,6 +132,10 @@ export default function Home() {
       return "24882";
     }
 
+    if (merchant === "quzo uk" || merchant === "quzo" || link.includes("quzo.net") || link.includes("quzo.co.uk")) {
+      return "19849";
+    }
+
     return null;
   };
 
@@ -202,6 +206,17 @@ export default function Home() {
           merchant === "stormforce" ||
           link.includes("stormforcegaming.co.uk")
         );
+      }),
+    },
+    {
+      title: "Quzo Offers",
+      partnerName: "Quzo UK",
+      logo: "/images/partners/quzo-logo.webp",
+      offers: featuredOffers.filter((offer) => {
+        const merchant = offer.merchant?.trim().toLowerCase();
+        const link = offer.link.toLowerCase();
+
+        return merchant === "quzo uk" || merchant === "quzo" || link.includes("quzo.net") || link.includes("quzo.co.uk");
       }),
     },
   ].filter((group) => group.offers.length > 0);
@@ -310,6 +325,10 @@ export default function Home() {
 
     if (storeText.includes("stormforce")) {
       return { alt: "Stormforce Gaming", src: "/images/partners/stormforce.jpg" };
+    }
+
+    if (storeText.includes("quzo")) {
+      return { alt: "Quzo UK", src: "/images/partners/quzo-logo.webp" };
     }
 
     return null;
