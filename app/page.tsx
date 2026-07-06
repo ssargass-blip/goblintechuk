@@ -124,6 +124,14 @@ export default function Home() {
       return "118045";
     }
 
+    if (
+      merchant === "stormforce gaming" ||
+      merchant === "stormforce" ||
+      link.includes("stormforcegaming.co.uk")
+    ) {
+      return "24882";
+    }
+
     return null;
   };
 
@@ -179,6 +187,21 @@ export default function Home() {
         const link = offer.link.toLowerCase();
 
         return merchant === "amazon" || link.includes("amazon.co.uk");
+      }),
+    },
+    {
+      title: "Stormforce Offers",
+      partnerName: "Stormforce Gaming",
+      logo: "/images/partners/stormforce.jpg",
+      offers: featuredOffers.filter((offer) => {
+        const merchant = offer.merchant?.trim().toLowerCase();
+        const link = offer.link.toLowerCase();
+
+        return (
+          merchant === "stormforce gaming" ||
+          merchant === "stormforce" ||
+          link.includes("stormforcegaming.co.uk")
+        );
       }),
     },
   ].filter((group) => group.offers.length > 0);
@@ -283,6 +306,10 @@ export default function Home() {
 
     if (storeText.includes("amazon")) {
       return { alt: "Amazon", src: "/images/partners/Amazon.svg" };
+    }
+
+    if (storeText.includes("stormforce")) {
+      return { alt: "Stormforce Gaming", src: "/images/partners/stormforce.jpg" };
     }
 
     return null;
