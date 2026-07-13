@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Laptop placeholder">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101419"/><stop offset="1" stop-color="#050806"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="640" height="420" rx="28" fill="url(#g)"/>
+  <rect x="170" y="94" width="300" height="190" rx="16" fill="#0a0f0c" stroke="#9cff57" stroke-opacity=".45" stroke-width="4"/>
+  <rect x="196" y="120" width="248" height="136" rx="10" fill="#14181d" stroke="#9cff57" stroke-opacity=".12"/>
+  <path d="M132 294h376l44 42H88l44-42Z" fill="#111820" stroke="#9cff57" stroke-opacity=".38" stroke-width="4" filter="url(#glow)"/>
+  <path d="M268 314h104" stroke="#9cff57" stroke-opacity=".55" stroke-width="6" stroke-linecap="round"/>
+  <path d="M222 150h196M222 178h156M222 206h118" stroke="#9cff57" stroke-opacity=".32" stroke-width="7" stroke-linecap="round"/>
+  <text x="320" y="372" fill="#9cff57" font-family="Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">LAPTOP</text>
+</svg>

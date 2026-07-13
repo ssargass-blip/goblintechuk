@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Monitor placeholder">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101419"/><stop offset="1" stop-color="#050806"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="640" height="420" rx="28" fill="url(#g)"/>
+  <rect x="102" y="74" width="436" height="238" rx="18" fill="#090d0b" stroke="#9cff57" stroke-opacity=".46" stroke-width="4" filter="url(#glow)"/>
+  <rect x="128" y="100" width="384" height="176" rx="10" fill="#14181d"/>
+  <path d="M170 242c62-78 116-36 164-92 38-43 89-38 136 24" stroke="#9cff57" stroke-opacity=".36" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M320 312v38M246 350h148" stroke="#9cff57" stroke-opacity=".52" stroke-width="8" stroke-linecap="round"/>
+  <text x="320" y="384" fill="#9cff57" font-family="Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">MONITOR</text>
+</svg>
