@@ -17,6 +17,7 @@ export type Deal = {
   offerEndDate?: string;
   offerStatus?: string;
   description?: string;
+  score?: number;
 };
 
 export type SortOption = "newest" | "price-asc" | "price-desc" | "az" | "za";

@@ -334,7 +334,87 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
     return null;
   };
 
-  const filteredDeals = productDeals
+  const getDealKey = (deal: Deal) =>
+    `${deal.link || deal.title}-${deal.source}-${deal.timestamp}`;
+
+  const getTopDealScore = (deal: Deal) => {
+    if (typeof deal.score === "number") {
+      return deal.score;
+    }
+
+    const title = `${deal.cleanTitle || deal.title} ${deal.category}`.toLowerCase();
+    const discountMatch = deal.discount?.match(/-?([0-9]+)%/);
+    const discountScore = discountMatch
+      ? Math.min(Number(discountMatch[1]) || 0, 35)
+      : 0;
+
+    const categoryScore: Record<string, number> = {
+      GPUs: 48,
+      Laptops: 46,
+      Gaming: 42,
+      Monitors: 40,
+      TVs: 38,
+      SSDs: 36,
+      Hardware: 34,
+      Accessories: 8,
+      Other: 0,
+    };
+
+    let score = categoryScore[deal.category] ?? 0;
+
+    if (deal.image) score += 14;
+    if (Number.isFinite(getPriceNumber(deal.price))) score += 10;
+    if (deal.oldPrice) score += 8;
+    if (deal.quality.includes("GOOD PRICE")) score += 24;
+    score += discountScore;
+
+    if (/(rtx|geforce|radeon|ryzen|core i[579]|oled|qled|mini led|gaming pc|laptop|monitor|nvme|ssd|ddr5|32gb|64gb|1tb|2tb)/.test(title)) {
+      score += 18;
+    }
+
+    if (/(case|cable|adapter|sticker|screen protector|cover|stand only)/.test(title)) {
+      score -= 45;
+    }
+
+    if (deal.category === "Accessories") {
+      score -= 30;
+    }
+
+    return score;
+  };
+
+  const isTopDealCandidate = (deal: Deal) => {
+    const hasUsablePrice = Number.isFinite(getPriceNumber(deal.price));
+    const topDealScore = getTopDealScore(deal);
+
+    return Boolean(
+      deal.image &&
+        hasUsablePrice &&
+        isAffiliateDeal(deal) &&
+        (deal.category !== "Accessories" || topDealScore >= 85)
+    );
+  };
+
+  const topDeal = [...productDeals]
+    .filter(isTopDealCandidate)
+    .sort((firstDeal, secondDeal) => {
+      const scoreDifference = getTopDealScore(secondDeal) - getTopDealScore(firstDeal);
+
+      if (scoreDifference !== 0) {
+        return scoreDifference;
+      }
+
+      return (
+        new Date(secondDeal.timestamp).getTime() -
+        new Date(firstDeal.timestamp).getTime()
+      );
+    })[0];
+
+  const productDealsWithoutTopDeal = topDeal
+    ? productDeals.filter((deal) => getDealKey(deal) !== getDealKey(topDeal))
+    : productDeals;
+
+  const filteredDeals = productDealsWithoutTopDeal
     .filter((deal) => {
       const matchesCategory =
         activeCategory === "All" || deal.category === activeCategory;
@@ -577,6 +657,22 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
 
           .deals-section {
             padding: 28px 16px 48px !important;
+          }
+
+          .top-deal-card {
+            grid-template-columns: 1fr !important;
+            gap: 0 !important;
+            padding: 0 !important;
+          }
+
+          .top-deal-image-panel {
+            border-right: 0 !important;
+            border-bottom: 1px solid rgba(198, 255, 173, 0.1) !important;
+            min-height: 210px !important;
+          }
+
+          .top-deal-content {
+            padding: 18px !important;
           }
 
           .featured-pick {
@@ -1141,6 +1237,257 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
               );
             })}
           </div>
+        )}
+
+        {topDeal && (
+          <section
+            className="top-deal-card"
+            aria-labelledby="top-deal-heading"
+            style={{
+              background:
+                "linear-gradient(135deg, rgba(22, 26, 31, 0.98), rgba(8, 12, 10, 0.98))",
+              border: "1px solid rgba(156, 255, 87, 0.22)",
+              borderLeft: "5px solid #9cff57",
+              borderRadius: "18px",
+              boxShadow: "0 22px 52px rgba(0,0,0,0.28)",
+              display: "grid",
+              gap: "24px",
+              gridTemplateColumns: "260px minmax(0, 1fr) 170px",
+              margin: "0 0 34px",
+              overflow: "hidden",
+              padding: "0 24px 0 0",
+            }}
+          >
+            <div
+              className="top-deal-image-panel"
+              style={{
+                alignItems: "center",
+                alignSelf: "stretch",
+                background: "#090d0b",
+                borderRight: "1px solid rgba(198, 255, 173, 0.1)",
+                display: "flex",
+                justifyContent: "center",
+                minHeight: "220px",
+                padding: "16px",
+              }}
+            >
+              <Image
+                src={topDeal.image}
+                alt={topDeal.cleanTitle || topDeal.title}
+                width={230}
+                height={180}
+                sizes="260px"
+                unoptimized
+                style={{
+                  display: "block",
+                  height: "180px",
+                  objectFit: "contain",
+                  width: "100%",
+                }}
+              />
+            </div>
+
+            <div
+              className="top-deal-content"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                minWidth: 0,
+                padding: "22px 0",
+              }}
+            >
+              <span
+                style={{
+                  color: "#9cff57",
+                  fontSize: "0.78rem",
+                  fontWeight: "bold",
+                  letterSpacing: "0.04em",
+                  marginBottom: "10px",
+                  textTransform: "uppercase",
+                }}
+              >
+                Top Deal
+              </span>
+
+              <h2
+                id="top-deal-heading"
+                style={{
+                  color: "#f4f7f1",
+                  fontSize: "1.55rem",
+                  lineHeight: "1.18",
+                  margin: "0 0 14px",
+                  maxWidth: "680px",
+                }}
+              >
+                {topDeal.cleanTitle || topDeal.title}
+              </h2>
+
+              <div
+                style={{
+                  alignItems: "center",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "10px",
+                  marginBottom: "14px",
+                }}
+              >
+                <span
+                  style={{
+                    background: "rgba(156, 255, 87, 0.1)",
+                    border: "1px solid rgba(156, 255, 87, 0.22)",
+                    borderRadius: "999px",
+                    color: "#9cff57",
+                    fontSize: "0.72rem",
+                    fontWeight: "bold",
+                    padding: "4px 8px",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {topDeal.category}
+                </span>
+
+                <span
+                  style={{
+                    background: topDeal.quality.includes("GOOD PRICE")
+                      ? "rgba(156, 255, 87, 0.1)"
+                      : "rgba(243, 201, 105, 0.12)",
+                    border: topDeal.quality.includes("GOOD PRICE")
+                      ? "1px solid rgba(156, 255, 87, 0.24)"
+                      : "1px solid rgba(243, 201, 105, 0.18)",
+                    borderRadius: "999px",
+                    color: topDeal.quality.includes("GOOD PRICE")
+                      ? "#9cff57"
+                      : "#f3c969",
+                    fontSize: "0.72rem",
+                    fontWeight: "bold",
+                    padding: "4px 8px",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {topDeal.quality}
+                </span>
+
+                {getStoreLogo(topDeal) ? (
+                  <Image
+                    src={getStoreLogo(topDeal)!.src}
+                    alt={getStoreLogo(topDeal)!.alt}
+                    width={96}
+                    height={28}
+                    style={{
+                      display: "block",
+                      maxHeight: "24px",
+                      maxWidth: "96px",
+                      objectFit: "contain",
+                      objectPosition: "left center",
+                      width: "auto",
+                    }}
+                  />
+                ) : (
+                  <span style={{ color: "#cfd6cb", fontSize: "0.88rem", fontWeight: "bold" }}>
+                    {topDeal.source}
+                  </span>
+                )}
+              </div>
+
+              {formatFoundTime(topDeal.timestamp) && (
+                <span
+                  style={{
+                    color: "#8f998d",
+                    fontSize: "0.84rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {formatFoundTime(topDeal.timestamp)}
+                </span>
+              )}
+            </div>
+
+            <div
+              style={{
+                alignItems: "flex-start",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                padding: "22px 0",
+              }}
+            >
+              {topDeal.oldPrice && (
+                <p
+                  style={{
+                    color: "#8f998d",
+                    fontSize: "1rem",
+                    fontWeight: "bold",
+                    margin: "0 0 4px",
+                    textDecoration: "line-through",
+                  }}
+                >
+                  {topDeal.oldPrice}
+                </p>
+              )}
+
+              <div
+                style={{
+                  alignItems: "center",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "10px",
+                  marginBottom: "18px",
+                }}
+              >
+                <p
+                  style={{
+                    color: "#9cff57",
+                    fontSize: "1.9rem",
+                    fontWeight: "bold",
+                    lineHeight: 1,
+                    margin: 0,
+                  }}
+                >
+                  {topDeal.price}
+                </p>
+
+                {topDeal.discount && (
+                  <span
+                    style={{
+                      background: "rgba(156, 255, 87, 0.12)",
+                      border: "1px solid rgba(156, 255, 87, 0.28)",
+                      borderRadius: "8px",
+                      color: "#9cff57",
+                      display: "inline-block",
+                      fontSize: "0.84rem",
+                      fontWeight: "bold",
+                      padding: "4px 8px",
+                    }}
+                  >
+                    {topDeal.discount}
+                  </span>
+                )}
+              </div>
+
+              <a
+                href={getDealUrl(topDeal)}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  alignItems: "center",
+                  background: "#9cff57",
+                  borderRadius: "10px",
+                  color: "#071006",
+                  display: "flex",
+                  fontSize: "0.95rem",
+                  fontWeight: "bold",
+                  justifyContent: "center",
+                  minHeight: "44px",
+                  padding: "10px 16px",
+                  textDecoration: "none",
+                  width: "100%",
+                }}
+              >
+                View Deal {"\u2192"}
+              </a>
+            </div>
+          </section>
         )}
 
         <h2 id="product-deals-controls" style={{ marginBottom: "20px", scrollMarginTop: "88px" }}>Product Deals</h2>
