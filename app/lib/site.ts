@@ -7,4 +7,4 @@ export const canonicalUrl = `${siteUrl}/`;
 export const siteTitle = "GoblinTechUK - UK Tech Deal Hunter";
 
 export const siteDescription =
-  "GoblinTechUK hunts the best UK tech, gaming and electronics deals from trusted retailers.";
+  "Discover the best UK tech, gaming and electronics deals from trusted retailers, with hand-picked offers, discounts and daily updates from GoblinTechUK.";
