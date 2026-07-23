@@ -385,13 +385,12 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
 
   const isTopDealCandidate = (deal: Deal) => {
     const hasUsablePrice = Number.isFinite(getPriceNumber(deal.price));
-    const topDealScore = getTopDealScore(deal);
 
     return Boolean(
-      deal.image &&
+      deal.category === "Laptops" &&
+        deal.image &&
         hasUsablePrice &&
-        isAffiliateDeal(deal) &&
-        (deal.category !== "Accessories" || topDealScore >= 85)
+        isAffiliateDeal(deal)
     );
   };
 
