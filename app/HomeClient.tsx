@@ -524,11 +524,12 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
         .featured-offers-panel,
         .featured-offer-card,
         .offer-partner-grid button,
+        .top-deal-card,
         .deal-card {
           background: linear-gradient(180deg, rgba(22, 26, 31, 0.98), rgba(16, 20, 25, 0.98)) !important;
           border-color: var(--goblin-border) !important;
           box-shadow: var(--goblin-shadow) !important;
-          transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+          transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease, transform 180ms ease;
         }
 
         .featured-offers-panel,
@@ -540,11 +541,15 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
         .featured-offers-panel:hover,
         .featured-offer-card:hover,
         .offer-partner-grid button:hover,
+        .top-deal-card:hover,
         .deal-card:hover {
           border-color: var(--goblin-border-strong) !important;
           box-shadow: var(--goblin-hover-glow) !important;
         }
 
+        .top-deal-card:hover {
+          transform: translateY(-2px);
+        }
         .category-button,
         .deal-search,
         .deal-sort {
