@@ -2,38 +2,26 @@
   {
     "title": "Acer Projector, Home Cinema Series, X1128i Model, Entry/HD, 4500 lm Brightness, Black",
     "cleanTitle": "Acer Projector, Home Cinema Series, X1128i Model, Entry/HD, 4500 lm Brightness, Black",
-    "price": "£329.99",
+    "price": "£299.99",
     "category": "Other",
     "quality": "Worth Checking",
     "source": "Acer UK Awin Product Feed",
     "link": "https://store.acer.com/en-gb/acer-projector-x1128i-black",
     "image": "https://static2-ecemea.acer.com/media/catalog/product/_/_/___x__x1128i_x1228i_x1328wi_1000main_mr.jtu11.002.png",
     "merchant": "Acer",
-    "timestamp": "2026-08-02T11:25:04"
+    "timestamp": "2026-08-10T21:01:28"
   },
   {
     "title": "Acer Home Cinema, X1228i, Projector, Entry/HD, 4500lm, Black",
     "cleanTitle": "Acer Home Cinema, X1228i, Projector, Entry/HD, 4500lm, Black",
-    "price": "£299.99",
+    "price": "£349.99",
     "category": "Other",
     "quality": "Worth Checking",
     "source": "Acer UK Awin Product Feed",
     "link": "https://store.acer.com/en-gb/acer-projector-x1228i-black",
     "image": "https://static2-ecemea.acer.com/media/catalog/product/_/_/___x__x1128i_x1228i_x1328wi_1000main_mr.jtv11.002.png",
     "merchant": "Acer",
-    "timestamp": "2026-08-02T11:25:04"
-  },
-  {
-    "title": "Lenovo Legion Pro 7 OLED 16IAX10H Intel Core Ultra 9 275HX 64GB RAM 1TB SSD RTX 5090 16\" Windows 11 Home Gaming Laptop",
-    "cleanTitle": "Lenovo Legion Pro 7 OLED 16IAX10H Intel Core Ultra 9 275HX 64GB RAM 1TB SSD RTX 5090 16\" Gaming Laptop",
-    "price": "£3749.99",
-    "category": "Laptops",
-    "quality": "Worth Checking",
-    "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/83f5000uuk-lenovo-legion-pro-intel-core-ultra-9-275h",
-    "image": "https://cdn.box.co.uk/catalog/product/e/5/e552e179939fdf42f2f84dfee4c4db30.jpg",
-    "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:28"
   },
   {
     "title": "ASUS ROG Zephyrus G14 (2026) GU405AW-SY003W Intel Core Ultra 9 386H 32GB RAM 2TB SSD GeForce RTX 5080 14\" Windows 11 Home Gaming Laptop",
@@ -45,7 +33,7 @@
     "link": "https://box.co.uk/gu405aw-sy003w-asus-rog-zephyrus-g14-intel-laptop",
     "image": "https://cdn.box.co.uk/catalog/product/f/9/f95f068e8e2f3de0566f7b2d70328493.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "ASUS ROG Strix SCAR 18 (2026) G835 Intel Core Ultra 9 290HX 32GB 2TB SSD NVIDIA GeForce RTX 5080 18\" Windows 11 Home Gaming Laptop",
@@ -57,7 +45,19 @@
     "link": "https://box.co.uk/g835lwg-tq313w-acer-rog-strix-scar-18-g835-intel-u9-laptop",
     "image": "https://cdn.box.co.uk/catalog/product/e/5/e5a7b4c12df606f79ec210a7ab7a66b8.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
+  },
+  {
+    "title": "ASUS ROG Zephyrus G16 GU606AW-TB026W Intel Core Ultra 9 386H 32GB RAM 2TB SSD GeForce RTX 5080 16\" Windows 11 Home Gaming Laptop",
+    "cleanTitle": "ASUS ROG Zephyrus G16 GU606AW-TB026W Intel Core Ultra 9 386H 32GB RAM 2TB SSD GeForce RTX 5080 16\" Gaming Laptop",
+    "price": "£4499.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Box.co.uk Awin Product Feed",
+    "link": "https://box.co.uk/gu606aw-tb026w-asus-rog-zephyrus-g16-gaming-laptop",
+    "image": "https://cdn.box.co.uk/catalog/product/b/5/b5d42e41a8910435eb557c6cb49b2a86.jpg",
+    "merchant": "Box",
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Lenovo Legion Pro 7 OLED 16IAX10H Intel Core Ultra 9 275HX 32GB RAM 1TB SSD RTX 5080 16\" Windows 11 Home Gaming Laptop",
@@ -69,7 +69,7 @@
     "link": "https://box.co.uk/83f5000ruk-lenovo-legion-pro-intel-core-ultra-9-275h",
     "image": "https://cdn.box.co.uk/catalog/product/d/a/da99e5b1f9e62babc4617007bdc2c790.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Acer Nitro N20 Intel Core i5-13420H 16GB RAM 512GB SSD GeForce RTX 5060 Windows 11 Gaming Desktop PC",
@@ -77,11 +77,23 @@
     "price": "£769.99",
     "category": "Gaming",
     "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/acer-nitro-rtx5060-pc-dg-bqbek-00e.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/a/c/acer-nitro-20-n20-gaming-pc-nvidia-geforce-rtx-5060-intel-core-i5-512gb-ssd-red-black-20-1-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "MSI Katana 15 HX B14WGK-053UK Intel Core i7-14650HX 16GB RAM 1TB SSD RTX 5070 15.6\" Windows 11 Home Gaming Laptop",
+    "cleanTitle": "MSI Katana 15 HX B14WGK-053UK Intel Core i7-14650HX 16GB RAM 1TB SSD RTX 5070 15.6\" Gaming Laptop",
+    "price": "£1399",
+    "category": "Laptops",
+    "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/dg-bqbek-00e-acer-nitro-n20-intel-i5-rtx-5060-gaming-pc",
-    "image": "https://cdn.box.co.uk/catalog/product/7/b/7b3274f92b8d970a8eace1ca970eb35c.jpg",
+    "link": "https://box.co.uk/9s7-1587c1-053-msi-katana-15-hx-gaming-laptop",
+    "image": "https://cdn.box.co.uk/catalog/product/4/4/4460ffffba95ad75d36d9ad5bfa83aaf.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Acer Nitro V16 AI AMD Ryzen 7 260 16GB RAM 1TB SSD GeForce RTX 5060 16\" Windows 11 Copilot+ Gaming Laptop",
@@ -93,19 +105,7 @@
     "link": "https://box.co.uk/nh-qyxek-006-acer-nitro-v16-amd-ryzen-7-32gb-laptop",
     "image": "https://cdn.box.co.uk/catalog/product/0/3/0340134474863ec80cdc4a4b9b0babb5.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
-  },
-  {
-    "title": "Lenovo LOQ 17IRX10 Intel Core i7-14700HX 24GB RAM 1TB SSD RTX 5070 17.3\" Windows 11 Home Gaming Laptop",
-    "cleanTitle": "Lenovo LOQ 17IRX10 Intel Core i7-14700HX 24GB RAM 1TB SSD RTX 5070 17.3\" Gaming Laptop",
-    "price": "£1499.99",
-    "category": "Laptops",
-    "quality": "Worth Checking",
-    "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/83jh0007uk-lenovo-loq-17irx10-intel-i7-gaming-laptop",
-    "image": "https://cdn.box.co.uk/catalog/product/8/6/861682210405a2d3f7b310b05adf03f3.jpg",
-    "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "ASUS TUF Gaming A16 (2024) FA608 AMD Ryzen 7 260 16GB RAM 1TB SSD NVIDIA GeForce RTX 5060 16\" Windows 11 Home Gaming Laptop",
@@ -117,19 +117,19 @@
     "link": "https://box.co.uk/fa608umi-tu168w-asus-tuf-gaming-a16-amd-ryzen-7-260",
     "image": "https://cdn.box.co.uk/catalog/product/c/7/c72e826a7146198f7a5d3a346943c2c3.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Lenovo LOQ 15IRX10 Intel Core i7-13700HX 16GB RAM 1TB SSD RTX 5060 15.6\" 144Hz Windows 11 Home AI Gaming Laptop",
     "cleanTitle": "Lenovo LOQ 15IRX10 Intel Core i7-13700HX 16GB RAM 1TB SSD RTX 5060 15.6\" 144Hz AI Gaming Laptop",
-    "price": "£1297.99",
+    "price": "£1249.99",
     "category": "Laptops",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/83je00m0uk-lenovo-loq-15irx10-i7-16gb-1tb-rtx5060-ai-gaming",
     "image": "https://cdn.box.co.uk/catalog/product/0/f/0fb7e9df492ea8dbe72c91514126267f.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Acer Predator PO3-665 Intel Core i5-14400F 16GB RAM 512GB SSD RTX 5070 Windows 11 Home Gaming Desktop PC",
@@ -137,47 +137,47 @@
     "price": "£1648.99",
     "category": "Gaming",
     "quality": "Worth Checking",
-    "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/dge4uek007-acer-predator-po3-665-intel-core-i5-14400f",
-    "image": "https://cdn.box.co.uk/catalog/product/1/4/1448b4ea71b1f324a606fa0b68e08b7e.jpg",
-    "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/acer-predator-po3-665-dge4uek007.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/a/c/acer-predator-po3-665-intel-core-i5-14400f-gaming-desktop-pc-20-3-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
   },
   {
     "title": "Medion Erazer Bandit P20 Intel Core Ultra 7 265F 32GB RAM 1TB SSD RTX 5060 Ti Windows 11 Gaming Desktop PC",
     "cleanTitle": "Medion Erazer Bandit P20 Intel Core Ultra 7 265F 32GB RAM 1TB SSD RTX 5060 Ti Gaming Desktop PC",
-    "price": "£1679.99",
+    "price": "£1769.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/10025873-medion-erazer-bandit-p20-intel-7-265f-gaming-desktop-pc",
     "image": "https://cdn.box.co.uk/catalog/product/4/d/4d8138dfe5b1a974ee89c7e7d962f9f1.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Medion Erazer Hunter X35 10026032 AMD Ryzen 7-9800X3D 32GB RAM 2TB SSD RTX 5080 Windows 11 Home Gaming PC",
     "cleanTitle": "Medion Erazer Hunter X35 10026032 AMD Ryzen 7-9800X3D 32GB RAM 2TB SSD RTX 5080 Gaming PC",
-    "price": "£3197.99",
+    "price": "£3198.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/10026032-medion-erazer-hunter-x35-amd-ryzen-7-9800x3d",
     "image": "https://cdn.box.co.uk/catalog/product/9/9/9932678efe3b68fefe84babcd1d2e411.png",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Medion Erazer Tank X15 AMD Ryzen 7 7800 32GB RAM 2TB SSD RTX NVIDIA GeForce 5070 Windows 11 Home Gaming PC",
     "cleanTitle": "Medion Erazer Tank X15 AMD Ryzen 7 7800 32GB RAM 2TB SSD RTX NVIDIA GeForce 5070 Gaming PC",
-    "price": "£2297.99",
+    "price": "£2289.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/10026054-medion-erazer-tank-x15-amd-ryzen-7-pc",
     "image": "https://cdn.box.co.uk/catalog/product/8/7/87a2b4e5ad655423bf647a0116cc5d93.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Acer Nitro N20 Intel Core i5-13420H 16GB RAM 512GB SSD RTX 3050 Windows 11 Home Gaming Desktop PC",
@@ -185,71 +185,59 @@
     "price": "£789.99",
     "category": "Gaming",
     "quality": "Worth Checking",
-    "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/dg-bqbek-005-acer-nitro-n20-gaming-desktop-intel-i5",
-    "image": "https://cdn.box.co.uk/catalog/product/9/7/9730656f709e97fbcdb5568ba66cff34.jpg",
-    "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/acer-nitro-n20-gaming-dg-bqbek-005.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/A/c/Acer-20Tower-20PC-20Nitro-20N20-20Intel-20Gaming-20-7-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
   },
   {
     "title": "Acer Predator PO3-665 Intel Core i5-14400F 16GB RAM 512GB SSD RTX 5060 Windows 11 Home Gaming Desktop PC",
     "cleanTitle": "Acer Predator PO3-665 Intel Core i5-14400F 16GB RAM 512GB SSD RTX 5060 Gaming Desktop PC",
-    "price": "£1149.99",
+    "price": "£1099.99",
     "category": "Gaming",
     "quality": "Worth Checking",
-    "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/dg-e4euk-001-acer-predator-po3-665-intel-core-i5-14400f",
-    "image": "https://cdn.box.co.uk/catalog/product/b/e/bee3a7f83d076e03f4f8289c022f4920.jpg",
-    "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/acer-predator-po3-665-dg-e4euk-001.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/a/c/acer-predator-po3-665-intel-core-i5-14400f-gaming-desktop-pc-20-14-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
   },
   {
     "title": "ASUS GeForce RTX 5080 PROART 16GB OC Graphics Card",
     "cleanTitle": "ASUS GeForce RTX 5080 PROART 16GB OC Graphics Card",
-    "price": "£1539.99",
+    "price": "£1670.99",
     "category": "GPUs",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/asus-proart-geforce-rtx5080-o16g-gpu-90yv0n30-m0na00",
     "image": "https://cdn.box.co.uk/catalog/product/2/c/2cf7f649c0f2e47dba942857a3a678ea.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
-    "title": "ASUS TUF Gaming GeForce RTX 5080 BTF 16GB Graphics Card - Black",
-    "cleanTitle": "ASUS TUF Gaming GeForce RTX 5080 BTF 16GB Graphics Card - Black",
-    "price": "£1544.99",
+    "title": "ASUS Geforce RTX 5070 Ti TUF GAMING 16GB OC Graphics Card - White",
+    "cleanTitle": "ASUS Geforce RTX 5070 Ti TUF GAMING 16GB OC Graphics Card - White",
+    "price": "£1263.5",
     "category": "GPUs",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/asus-tuf-gaming-rtx-5080-16gb-gpu-90yv0pu0-m0na00",
-    "image": "https://cdn.box.co.uk/catalog/product/2/2/2295a5fc218afc2b814c583185e2845c.jpg",
+    "link": "https://box.co.uk/asus-tuf-rtx5070ti-o16g-white-gpu-90yv0md3-m0na00",
+    "image": "https://cdn.box.co.uk/catalog/product/3/7/377af2154cb5d12a42c4fcd0687e0aac.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
-  },
-  {
-    "title": "ASUS Geforce RTX 5070 Prime 12GB OC Graphics Card - White",
-    "cleanTitle": "ASUS Geforce RTX 5070 Prime 12GB OC Graphics Card - White",
-    "price": "£619.99",
-    "category": "GPUs",
-    "quality": "Worth Checking",
-    "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/asus-prime-rtx5070-o12g-white-gpu-90yv0m19-m0na00",
-    "image": "https://cdn.box.co.uk/catalog/product/0/1/0183b9a5c7ec244dbb55900101405a76.jpg",
-    "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Dell Pro Precision 7 T1 Intel Core Ultra 7 265 32GB RAM 1TB SSD RTX 5060 Windows 11 Pro Business Desktop",
     "cleanTitle": "Dell Pro Precision 7 T1 Intel Core Ultra 7 265 32GB RAM 1TB SSD RTX 5060 Business Desktop",
-    "price": "£2685.49",
+    "price": "£2672.49",
     "category": "SSDs",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/yvd95-dell-precision-7-t1-desktop-pc",
     "image": "https://cdn.box.co.uk/catalog/product/4/d/4dc1aa03b62f9605cacbbed7dc96f054.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Medion ERAZER Recon E45 AMD Ryzen 5-5500 16GB RAM 1TB SSD RTX 5060 Windows 11 Home Gaming PC",
@@ -261,7 +249,7 @@
     "link": "https://box.co.uk/10026038-medion-erazer-recon-e45-gaming-pc",
     "image": "https://cdn.box.co.uk/catalog/product/8/1/810c8f1949672594fef835fb40562e5e.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "ASUS Vivobook S 14 OLED S5406SA Intel Core Ultra 7 256V 16GB RAM 1TB SSD 14\" Windows 11 Home Copilot+ Laptop",
@@ -273,7 +261,7 @@
     "link": "https://box.co.uk/s5406sa-qd006w-asus-vivobook-s-14-oled-aptop-intel-u7",
     "image": "https://cdn.box.co.uk/catalog/product/5/d/5d3db15e24badd7feb9ff2ab6a8b32bc.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Samsung 990 PRO MZ-V9P2T0BW 2TB M.2 NVMe PCIe 4.0 SSD Solid State Drive",
@@ -285,7 +273,7 @@
     "link": "https://box.co.uk/mz-v9p2t0bw-samsung-990-pro-m-2-2tb-pci-express-4",
     "image": "https://cdn.box.co.uk/catalog/product/4/5/45af402962ca6dc177799745a333367d.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "PNY GeForce RTX 5060 Ti OC 16GB Graphics Card",
@@ -297,19 +285,31 @@
     "link": "https://box.co.uk/vcg5060t16dfxpb1-o-pny-geforce-rtx-5060-ti-16gb-gpu",
     "image": "https://cdn.box.co.uk/catalog/product/c/c/cc28938fab028d7be3ef19529119a175.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "MSI GeForce RTX 5060 Ti 16GB VENTUS 2X OC PLUS Graphics Card",
     "cleanTitle": "MSI GeForce RTX 5060 Ti 16GB VENTUS 2X OC PLUS Graphics Card",
-    "price": "£549.99",
+    "price": "£554.99",
     "category": "GPUs",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/geforce-rtx-5060-ti-16g-ventus-2x-oc-plus-msi-gpu",
     "image": "https://cdn.box.co.uk/catalog/product/6/8/688d3da53e0dcc1781d80fb4d64a012f.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
+  },
+  {
+    "title": "ASUS Dual GeForce RTX 5060 Ti OC Edition 16GB GDDR7 Graphics Card - White",
+    "cleanTitle": "ASUS Dual GeForce RTX 5060 Ti OC Edition 16GB GDDR7 Graphics Card - White",
+    "price": "£740.14",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Box.co.uk Awin Product Feed",
+    "link": "https://box.co.uk/90yv0mh6-m0na00-asus-dual-geforce-rtx-5060-ti-gpu",
+    "image": "https://cdn.box.co.uk/catalog/product/b/7/b77354bd231e8a8ea964890ec25477c4.jpg",
+    "merchant": "Box",
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Samsung 990 PRO MZ-V9P1T0BW 1TB M.2 NVMe PCIe 4.0 SSD Solid State Drive",
@@ -317,11 +317,11 @@
     "price": "£209.99",
     "category": "SSDs",
     "quality": "Worth Checking",
-    "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/mz-v9p1t0bw-samsung-990-pro-m-2-1tb-pci-express-4",
-    "image": "https://cdn.box.co.uk/catalog/product/f/f/ffe18d635d6fae8e77fc793afeb343d4.jpg",
-    "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/samsung-1tb-mz-v9p1t0bw.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/a/b/ab335a5e4fc7a15945a0be672d2a3c7f.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
   },
   {
     "title": "Dell 15 DC15255 AMD Ryzen 7 7730U 16GB RAM 1TB SSD AMD Radeon 15.6\" Windows 11 Home Laptop",
@@ -333,7 +333,7 @@
     "link": "https://box.co.uk/ynf2k-dell-15-dc15255-amd-radeon-16gb-laptop",
     "image": "https://cdn.box.co.uk/catalog/product/d/e/de0e0be0d46ba6ace697d6e087a3282b.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "ASUS VivoBook S14 S3407VA-LY009W Intel Core i7-13620H 16GB RAM 1TB SSD 14\" WUXGA IPS LED Windows 11 Home Laptop",
@@ -345,7 +345,7 @@
     "link": "https://box.co.uk/s3407va-ly009w-asus-asus-vivobook-s-intel-core-i7-13620h",
     "image": "https://cdn.box.co.uk/catalog/product/0/9/097508637066ded69cb554c88261661b.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "ASUS Zenbook 14 OLED UM3406GA-QD034W AMD Ryzen AI 5 430 16GB Ram 1TB SSD 14\" Windows 11 Home Copilot+ Laptop",
@@ -357,7 +357,7 @@
     "link": "https://box.co.uk/um3406ga-qd034w-asus-zenbook-14-oled-16gb-laptop",
     "image": "https://cdn.box.co.uk/catalog/product/6/7/6724abf4952b2f7f903996dfce08930c.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "GIGABYTE GeForce RTX 3050 WINDFORCE V2 6GB OC Graphics Card",
@@ -369,7 +369,7 @@
     "link": "https://box.co.uk/gv-n3050wf2ocv2-6gd-gigabyte-rtx-3050-windforce-oc-v2-6g-gpu",
     "image": "https://cdn.box.co.uk/catalog/product/4/7/47eb0160d1255944a540b5b45f57bee1.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "GIGABYTE GeForce RTX 5050 D6 8GB Graphics Card",
@@ -381,31 +381,7 @@
     "link": "https://box.co.uk/gv-n5050d6-8gd-gigabyte-geforce-rtx-5050-d6-8gb-gpu",
     "image": "https://cdn.box.co.uk/catalog/product/3/f/3f9d441bb2d67ce9a9a7563a1d24da23.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
-  },
-  {
-    "title": "GIGABYTE GeForce RTX 5060 EAGLE MAX OC 8GB GDDR7 Graphics Card",
-    "cleanTitle": "GIGABYTE GeForce RTX 5060 EAGLE MAX OC 8GB GDDR7 Graphics Card",
-    "price": "£330.42",
-    "category": "GPUs",
-    "quality": "Worth Checking",
-    "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/gv-n5060eaglemax-oc-8gd-gigabyte-geforce-rtx5060-gpu",
-    "image": "https://cdn.box.co.uk/catalog/product/d/3/d39b4afd133c29647e7a690125063842.jpg",
-    "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
-  },
-  {
-    "title": "Palit GeForce RTX 5060 Ti White 8GB OC Gaming Graphics Card",
-    "cleanTitle": "Palit GeForce RTX 5060 Ti White 8GB OC Gaming Graphics Card",
-    "price": "£344.99",
-    "category": "GPUs",
-    "quality": "Worth Checking",
-    "source": "Box.co.uk Awin Product Feed",
-    "link": "https://box.co.uk/ne7506tu19p1-gb2062m-palit-rtx5060ti-white-8g-oc-gpu",
-    "image": "https://cdn.box.co.uk/catalog/product/4/c/4c7bf8569d8b88d4742cbea06afc9fdd.jpg",
-    "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Kingston FURY Renegade 2TB M.2 3D TLC SSD - PCIe 4.0 NVMe with Heatsink - Black Gaming SSD",
@@ -417,43 +393,43 @@
     "link": "https://box.co.uk/kingston-technology-renegade-2tb-sfyrdk-2000g",
     "image": "https://cdn.box.co.uk/catalog/product/f/d/fdc142f66efa30ab6ba36ef8f0d4bdd7.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Kingston NV3 2TB M.2 NVMe SSD - Ultra-Fast, Low Power, Compact Storage Solution",
     "cleanTitle": "Kingston NV3 2TB M.2 NVMe SSD - Ultra-Fast, Low Power, Compact Storage Solution",
-    "price": "£249.99",
+    "price": "£245.99",
     "category": "SSDs",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/snv3s-2000g-kingston-nv3-2tb-m-2-nvme-pcie-4-0-ssd",
     "image": "https://cdn.box.co.uk/catalog/product/f/c/fcd9a78849af42c84673b970194c325d.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Kingston NV3 1TB M.2 2280 PCIe 4.0 NVMe SSD - Ultra-fast, Low Power, Compact Storage Solution",
     "cleanTitle": "Kingston NV3 1TB M.2 2280 PCIe 4.0 NVMe SSD - Ultra-fast, Low Power, Compact Storage Solution",
-    "price": "£143.99",
+    "price": "£139.99",
     "category": "SSDs",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/snv3s-1000g-kingston-nv3-1tb-m-2-nvme-pcie-4-0-ssd",
     "image": "https://cdn.box.co.uk/catalog/product/2/e/2ece30fb9e38705504160cea7496ec86.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Crucial BX500 240GB 2.5\" SATA 3.0 Micron 3D NAND SSD - Black",
     "cleanTitle": "Crucial BX500 240GB 2.5\" SATA 3.0 Micron 3D NAND SSD - Black",
-    "price": "£50.95",
+    "price": "£49.99",
     "category": "SSDs",
     "quality": "🔥 GOOD PRICE",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/ct240bx500ssd1-crucial-p3-plus-4tb-m-2-nvme",
     "image": "https://cdn.box.co.uk/catalog/product/8/e/8e63406cd7d53da010b7572e6b6ea075.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Kingston NV3 500GB M.2 NVMe PCIe 4.0 SSD - Lightning-Fast & Power-Efficient Storage Solution",
@@ -465,7 +441,7 @@
     "link": "https://box.co.uk/snv3s-500g-kingston-nv3-500gb-m-2-nvme-pcie-4-0-ssd",
     "image": "https://cdn.box.co.uk/catalog/product/d/8/d87fca078e82fc6f190977133f1372b6.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Gigabyte H610M S2H V3 mATX LGA1700 Board - 64GB DDR4, Smart Fan 6, Hybrid Cores Opt, GbE LAN, NVMe M.2",
@@ -477,7 +453,31 @@
     "link": "https://box.co.uk/h610m-s2h-v3-ddr4-gigabyte-matx-lga-1700-motherboard",
     "image": "https://cdn.box.co.uk/catalog/product/4/f/4fadfadd157b5ba529d623591ccacb01.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
+  },
+  {
+    "title": "ASUS GeForce RTX 3050 DUAL OC 6GB Ampere Graphics Card",
+    "cleanTitle": "ASUS GeForce RTX 3050 DUAL OC 6GB Ampere Graphics Card",
+    "price": "£171.99",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Box.co.uk Awin Product Feed",
+    "link": "https://box.co.uk/asus-geforce-rtx-3050-dual-oc-dual-rtx3050-o6g",
+    "image": "https://cdn.box.co.uk/catalog/product/8/7/871ab580b69f9d39f66017a3af432463.jpg",
+    "merchant": "Box",
+    "timestamp": "2026-08-10T21:01:43"
+  },
+  {
+    "title": "ASUS GeForce RTX 3050 LP BRK 6GB OC Edition Graphics Card",
+    "cleanTitle": "ASUS GeForce RTX 3050 LP BRK 6GB OC Edition Graphics Card",
+    "price": "£288.61",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Box.co.uk Awin Product Feed",
+    "link": "https://box.co.uk/90yv0kq0-m0na00-dual-rtx-3050-lp-brk-6g-oc",
+    "image": "https://cdn.box.co.uk/catalog/product/1/3/13f692c596cab7339c0f386d88f425b8.jpg",
+    "merchant": "Box",
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Origin Storage TLC830 Pro 256GB M.2 80mm NVMe SSD - Fast Speeds & Enhanced Durability",
@@ -489,7 +489,7 @@
     "link": "https://box.co.uk/otlc2563dnvmem-2-80-origin-storage-inception-256-gb",
     "image": "https://cdn.box.co.uk/catalog/product/d/6/d6d1f72156bbad39a0068818690d76ad.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "MSI MPG A850GS 850W ATX 3.1 80+ Gold Power Supply - PCIe 5.0 Compatible, Modular PSU, NVIDIA GeForce RTX Support",
@@ -501,31 +501,31 @@
     "link": "https://box.co.uk/mpg-a850gs-pcie5-msi-850w-atx-80p-gold",
     "image": "https://cdn.box.co.uk/catalog/product/9/3/9382876cb19b8e2a15fb7e0896ffe4aa.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "ASUS PRIME H810M-A-CSM Intel Core Ultra Processor Motherboard - Advanced AI Ready & Stable Performance Optimisation",
     "cleanTitle": "ASUS PRIME H810M-A-CSM Intel Core Ultra Motherboard - Advanced AI Ready & Stable Performance Optimisation",
-    "price": "£94.98",
+    "price": "£87.71",
     "category": "Hardware",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/asus-prime-h810m-a-csm-ddr5-matx-90mb1kk0-m0eayc",
     "image": "https://cdn.box.co.uk/catalog/product/3/6/365eb990298d7aad44ad47aa66f2a405.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "ASUS PRIME B860-PLUS WIFI Motherboard - Intel Core Ultra Processor Support | Robust Power Design | Advanced AI Ready | Comprehensive Cooling Solutions",
     "cleanTitle": "ASUS PRIME B860-PLUS WIFI Motherboard - Intel Core Ultra Support| Robust Power Design| Advanced AI Ready| Comprehensive Cooling So",
-    "price": "£148.99",
+    "price": "£149.99",
     "category": "Hardware",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/asus-prime-b860-plus-wif-ddr5-atx-90mb1k50-m0eay0",
     "image": "https://cdn.box.co.uk/catalog/product/3/9/391dca242f20006c083bf73342af178b.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "ASUS PRIME Z890-P DDR5 ATX Motherboard - Intel Core Ultra Processor Compatible, AEMP III, DIMM Fit Technology",
@@ -537,19 +537,19 @@
     "link": "https://box.co.uk/90mb1i70-m0eay0-asus-prime-z890-p-lga-1851-ddr5-atx",
     "image": "https://cdn.box.co.uk/catalog/product/e/6/e648e26f47064975bb84c6206c5325cc.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "ASUS X870 MAX GAMING WIFI7 W Motherboard - AMD Ryzen 9000 Series - AI Cooling II - DDR5 Support - Up to 128 Gbps M.2 Slots",
     "cleanTitle": "ASUS X870 MAX GAMING WIFI7 W Motherboard - AMD Ryzen 9000 Series - AI Cooling II - DDR5 Support - Up to 128 Gbps M.2 Slots",
-    "price": "£227.99",
+    "price": "£228.99",
     "category": "Hardware",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/asus-x870-max-gaming-wifi7-white-90mb1lz0-m0eay0",
     "image": "https://cdn.box.co.uk/catalog/product/0/2/02a51c313c068fbd798f03f7954bf566.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "New Open Box - LG OLED48C46LA 48\" Smart 4K Ultra HD HDR OLED webOS Smart TV with Amazon Alexa",
@@ -561,19 +561,19 @@
     "link": "https://box.co.uk/oled48c46la-aek-ob-lg-48-inch-4k-uhd-smart-tv",
     "image": "https://cdn.box.co.uk/catalog/product/2/d/2d9adbbe2d34e2138f2f8d4d4e23aac1.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "AMD Ryzen AM4 Compatible Motherboards - High Performance Gaming & PC Build Essentials",
     "cleanTitle": "AMD Ryzen AM4 Compatible Motherboards - High Performance Gaming & PC Build Essentials",
-    "price": "£188.99",
+    "price": "£189.99",
     "category": "Hardware",
     "quality": "Worth Checking",
     "source": "Box.co.uk Awin Product Feed",
     "link": "https://box.co.uk/asus-tuf-gaming-b850-plus-atx-am5-90mb1j30-m0eay0",
     "image": "https://cdn.box.co.uk/catalog/product/b/b/bbbbf5e1cc8fb333645d992c889dbe50.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "New Open Box - LG 50QNED87T6B 50\" 4K UHD 120Hz AI QNED HDR10 WiFi Smart TV with Amazon Alexa",
@@ -585,7 +585,7 @@
     "link": "https://box.co.uk/50qned87t6b-aek-ob-lg-50-inch-4k-uhd-smart-tv",
     "image": "https://cdn.box.co.uk/catalog/product/0/3/032af5ee0ca106b22fc232cc448a1705.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "EPOS Impact SC 230 Wired Monaural Noise-Cancelling Microphone Headset - Black",
@@ -597,7 +597,7 @@
     "link": "https://box.co.uk/1000514-epos-headset",
     "image": "https://cdn.box.co.uk/catalog/product/0/6/0661816239ffc6a9a473fd97a917537f.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Microsoft Modern USB-C Wired Headset Black - I6P-00005 | Teams Certified | Noise Cancelling Microphone",
@@ -609,7 +609,7 @@
     "link": "https://box.co.uk/i6p-00005-microsoft-modern-usb-c-wired-headset",
     "image": "https://cdn.box.co.uk/catalog/product/5/d/5d1501f5ccfaefab229160d0f5a63815.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Jabra BIZ 2300 UC Mono USB Wired HD Voice Headset Air Shock Microphone - Black",
@@ -621,7 +621,7 @@
     "link": "https://box.co.uk/2393-829-109-jabra-biz-2300-uc-mono-wired-headset",
     "image": "https://cdn.box.co.uk/catalog/product/8/3/833a3dcb26d37bb415fa0f69ca7aa834.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Jabra GN2100 3 IN 1 Flexible Microphone Boom Mono wired Headset - Black",
@@ -633,7 +633,7 @@
     "link": "https://box.co.uk/2126-82-04-jabra-gn2100-flex-mono-wired-headset",
     "image": "https://cdn.box.co.uk/catalog/product/3/d/3d5cfa6eefdea38253957bc9e6fd9b16.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Poly Savi 8240-m UC Mono USB-A Dect Noise-Canceling Microphone Headset - Black",
@@ -645,7 +645,7 @@
     "link": "https://box.co.uk/211201-02-poly-savi-8240-mono-usb-a-dect-headset-blk",
     "image": "https://cdn.box.co.uk/catalog/product/6/f/6f80b2f7dac83beb9f3b1c50562dd53c.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "POLY W8220/A UC Wireless Noise Cancelling Microphone Office Headset - Black",
@@ -657,7 +657,7 @@
     "link": "https://box.co.uk/207325-12-poly-w8220-a-wireless-office-headset-black",
     "image": "https://cdn.box.co.uk/catalog/product/8/6/86c874d222b9d973cace28d661e6fc33.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Poly Studio P5 Webcam with Voyager 4220 UC Wireless Headset",
@@ -669,7 +669,7 @@
     "link": "https://box.co.uk/2200-87140-025-poly-studio-p5-webcam-4220-uc-headset",
     "image": "https://cdn.box.co.uk/catalog/product/5/c/5c6356714e14557459c0c4b93407fbc2.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "Lenovo Performance FHD USB-C Webcam with Microphone - Black",
@@ -681,43 +681,43 @@
     "link": "https://box.co.uk/4xc1d66055-lenovo-performance-fhd-webcam-black",
     "image": "https://cdn.box.co.uk/catalog/product/1/7/17482297fdf6ecfcd6ae51f56a89f6de.jpg",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:31"
+    "timestamp": "2026-08-10T21:01:43"
   },
   {
     "title": "NiPoGi AM21 Mini PC Windows 11 Pro, AMD Ryzen7 8745HS (8C/16T, up to 4.9GHz),Mini Gaming PC (16+16) GB DDR5 5600MHz 1TB M.2 SSD, Mini Computer Radeon",
     "cleanTitle": "NiPoGi AM21 Mini PC, AMD Ryzen7 8745HS,Mini Gaming PC 32GB DDR5 5600MHz 1TB M.2 SSD, Mini Radeon",
-    "price": "£559.99",
+    "price": "£579.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Amazon Awin Product Feed",
     "link": "https://www.amazon.co.uk/dp/B0GWPR6GG9?maas=maas_adg_api_581865094917226669_static_12_201&ref_=aa_maas&tag=maas&aa_campaignid=PBa13e0ad6af083e8b33e3bcf49c20fca9&aa_adgroupid=6e03ccbb2a3b8ab3064a252f224a9726_PBSEP_!!!affid!!!_118045_&aa_creativeid=89a4o4BEylsM3gjifBlQ6h3_bG2i6NN32zQrmLzRMJ_bm46TE_c",
     "image": "https://m.media-amazon.com/images/I/41pzZDuGCuL._SS500_.jpg",
     "merchant": "Amazon",
-    "timestamp": "2026-08-02T11:25:52"
+    "timestamp": "2026-08-10T21:01:55"
   },
   {
     "title": "ACEMAGIC M5 Mini Gaming PC, Intel Core 14500HX Mini Computer (14C(6P+8E)/20T, 4.9GHz), 16GB RAM 512GB PCle4.0 SSD Micro Desktop PC, Triple 4K Display,",
     "cleanTitle": "ACEMAGIC Intel Core 14500HX 16GB RAM 16GB 512GB Gaming PC SSD Mini PC 4K",
-    "price": "£398.98",
+    "price": "£459.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Amazon Awin Product Feed",
     "link": "https://www.amazon.co.uk/dp/B0GKGJN14S?maas=maas_adg_api_579643540806552942_static_12_201&ref_=aa_maas&tag=maas&aa_campaignid=PB484f23773ed9e6d203e9015f9756c443&aa_adgroupid=91842160a9cfd09dbcb90f7401619ac7_PBSEP_!!!affid!!!_118045_&aa_creativeid=e46fzeqA0bcjELJTQP8ZL1RIiWBiATIUzJlx5xxe9HIqJdw_c",
     "image": "https://m.media-amazon.com/images/I/41ac3i0vpxL._SS500_.jpg",
     "merchant": "Amazon",
-    "timestamp": "2026-08-02T11:25:52"
+    "timestamp": "2026-08-10T21:01:55"
   },
   {
-    "title": "ACEMAGICIAN Matrix Mini M1 Mini PC, AMD Ryzen 7 6800H(up to 4.7GHz), 32GB DDR5 RAM&1TB PCIe SSD, Radeon 680M Graphics, Windows 11 Pro, Triple 4K Outpu",
-    "cleanTitle": "ACEMAGICIAN Matrix Mini M1 Mini PC, AMD Ryzen 7 6800H, 32GB DDR5 RAM&1TB PCIe SSD, Radeon 680M, Triple 4K",
-    "price": "£499.99",
+    "title": "ACEMAGICIAN M1 Mini PC, AMD Ryzen 7 7735HS (8C/16T, up to 4.75Ghz), 16GB LPDDR5 512GB M.2 SSD Windows 11 Pro Mini PC with AMD Radeon 680M | 4K Triple",
+    "cleanTitle": "ACEMAGICIAN M1 Mini PC, AMD Ryzen 7 7735HS, 16GB LPDDR5 512GB M.2 SSD Mini PC Radeon 680M| 4K Triple",
+    "price": "£399.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Amazon Awin Product Feed",
-    "link": "https://www.amazon.co.uk/dp/B0DTH2VNPW?maas=maas_adg_api_579643540806552942_static_12_201&ref_=aa_maas&tag=maas&aa_campaignid=PB484f23773ed9e6d203e9015f9756c443&aa_adgroupid=9dee160fb804b2ef2b17e627e63d215f_PBSEP_!!!affid!!!_118045_&aa_creativeid=68a08ZUj4QS6YvNcLSYx_aByDxR5zSisOt7350mf1ZJ39UXU_c",
-    "image": "https://m.media-amazon.com/images/I/31eyptDZKGL._SS500_.jpg",
+    "link": "https://www.amazon.co.uk/dp/B0DTDT66QW?maas=maas_adg_api_579643540806552942_static_12_201&ref_=aa_maas&tag=maas&aa_campaignid=PB484f23773ed9e6d203e9015f9756c443&aa_adgroupid=50febf6c1834d0d575c2af5c4332766f_PBSEP_!!!affid!!!_118045_&aa_creativeid=2df1D56a0uGnS6VB_bplGOIipIidWLyNVCWYA_byO10npQ_aEI_c",
+    "image": "https://m.media-amazon.com/images/I/41FRdFVYBjL._SS500_.jpg",
     "merchant": "Amazon",
-    "timestamp": "2026-08-02T11:25:52"
+    "timestamp": "2026-08-10T21:01:55"
   },
   {
     "title": "NiPoGi E3B Mini PC AMD Ryzen 5 7430U(up to 4.3GHz 6C/12T) Mini Computer 32GB DDR4(Dual Channel) 1TB M.2 SSD Mini PC Windows 11 Pro 4K Triple Display/W",
@@ -729,19 +729,19 @@
     "link": "https://www.amazon.co.uk/dp/B0FZJYTKV2?maas=maas_adg_api_581865094917226669_static_12_201&ref_=aa_maas&tag=maas&aa_campaignid=PBa13e0ad6af083e8b33e3bcf49c20fca9&aa_adgroupid=c3ade1fa289d7d2ecc3a80dbc0f25b4d_PBSEP_!!!affid!!!_118045_&aa_creativeid=7c5bG_bzILdbQzpP1S3qvzCqQnPteDmFv99moIesaeIE6Fc0_c",
     "image": "https://m.media-amazon.com/images/I/41+MEBHDv7L._SS500_.jpg",
     "merchant": "Amazon",
-    "timestamp": "2026-08-02T11:25:52"
+    "timestamp": "2026-08-10T21:01:55"
   },
   {
-    "title": "ACEMAGIC M5 Mini PC Core i9-14900HX(24C/32T, up to 5.8GHz), 32GB DDR4 1TB NVMe PCIe4.0 SSD Mini Computer, Windows 11Pro BT5.2 WiFi6 HDMI Desktop, Supp",
-    "cleanTitle": "ACEMAGIC M5 Mini PC Core i9-14900HX, 32GB DDR4 1TB NVMe PCIe4.0 SSD Mini, Windows 11Pro BT5.2 WiFi6 HDMI Desktop, Supp",
-    "price": "£664.99",
+    "title": "NiPoGi E3B Mini PC AMD Ryzen 5 7430U(Beats 7545U/7730U,up to 4.3GHz 6C/12T) Mini Computer 32GB DDR4 512GB M.2 SSD Mini PC Windows 11 Pro 4K Triple Dis",
+    "cleanTitle": "NiPoGi E3B Mini PC AMD Ryzen 5 7430U Mini 32GB DDR4 512GB M.2 SSD Mini PC 4K Triple Dis",
+    "price": "£499.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Amazon Awin Product Feed",
-    "link": "https://www.amazon.co.uk/dp/B0GL219MG2?maas=maas_adg_api_579643540806552942_static_12_201&ref_=aa_maas&tag=maas&aa_campaignid=PB484f23773ed9e6d203e9015f9756c443&aa_adgroupid=93c61f1090478947db28d928a4c2f4d8_PBSEP_!!!affid!!!_118045_&aa_creativeid=aac21PdNNl9CbTRMIwlIaa7stRFiTuzVu3vxOvkx3_b8yfvI_c",
-    "image": "https://m.media-amazon.com/images/I/41Z2U-w95FL._SS500_.jpg",
+    "link": "https://www.amazon.co.uk/dp/B0DQS6FW9X?maas=maas_adg_api_581865094917226669_static_12_201&ref_=aa_maas&tag=maas&aa_campaignid=PBa13e0ad6af083e8b33e3bcf49c20fca9&aa_adgroupid=cc3c284624cfd0123fb75eb5b7a083fb_PBSEP_!!!affid!!!_118045_&aa_creativeid=76deYPwoOi3q_arazs6D4AultUG3F6wcu0ctNVlAD9xBJPXQ_c",
+    "image": "https://m.media-amazon.com/images/I/31TBXCLzdjL._SS500_.jpg",
     "merchant": "Amazon",
-    "timestamp": "2026-08-02T11:25:52"
+    "timestamp": "2026-08-10T21:01:55"
   },
   {
     "title": "ExoBook i9 RTX 5070Ti Gaming Laptop",
@@ -753,7 +753,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/exobook-16-i9-rtx-5070ti-gaming-laptop/?attribute_choose-your-spec=16GB+RAM%2C+1TB+SSD",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F09%2FLaptop-4.png&feedId=114156&k=27db282fc4f9e7788974f21f70364da81e3507e9",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "ExoBook Core Ultra 9 RTX 5090 - Grade 1",
@@ -765,7 +765,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/exobook-core-ultra-9-rtx-5090-grade-1/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FExoBook-Hero-Final-.png&feedId=113989&k=0dda06868db5fc91fb447e11dff7a93f68dd7ac1",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Crystal i5 13400F RTX 4070",
@@ -777,7 +777,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/stormforce-prism-ryzen-7-7800x3d-rtx-4070ti-super-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F07%2FHyte-Y40-Blk-RGB-Shadow.webp&feedId=113989&k=6a0f81bcfd12c0ff27d0b6f090d932ea54d2233f",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "ExoBook 16 RTX 5090 Gaming Laptop",
@@ -789,7 +789,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/exobook-16-rtx-5090-gaming-laptop/?attribute_choose-your-spec=32GB+RAM%2C+2TB+SSD",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FExoBook-Hero-Final-.png&feedId=114156&k=fb3edd2fcd1f3a2afd0a17141add4243e2b24e34",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "ExoBook Core Ultra 9 RTX 5070Ti - Grade 1",
@@ -801,7 +801,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/exobook-core-ultra-9-rtx-5070ti-grade-1/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FExoBook-Hero-Final-.png&feedId=113989&k=0dda06868db5fc91fb447e11dff7a93f68dd7ac1",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Zenith Elite AMD",
@@ -813,7 +813,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/zenith-elite-amd-ryzen-7-7800x3d-geforce-rtx-5070-ti-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FZenith-Cougar-DuoFace-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FZenith-Cougar-DuoFace-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FZenith-Cougar-DuoFace-Direct-Shot.webp&feedId=114147&k=9976e42d64dcbac71516918acb483b13913ba435",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "ExoBook 16 RTX 5080 Gaming Laptop",
@@ -825,7 +825,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/exobook-16-rtx-5080-gaming-laptop/?attribute_choose-your-spec=32GB+RAM%2C+2TB+SSD",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FExoBook-Hero-Final-.png&feedId=114156&k=fb3edd2fcd1f3a2afd0a17141add4243e2b24e34",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "PANO 100R PBM Ultimate",
@@ -837,7 +837,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/pano-100r-pbm-amd-ryzen-7-9800x3d-rtx-5080-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2FMSI-Pano-100R-PZ-ATX-Hero.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2FMSI-Pano-100R-PZ-ATX-Side.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F11%2FmsiB650sMBD3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2Fmsi-ventus-ai-kv.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2Fimage-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2FA13-360.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2FS360.webp&feedId=114147&k=431ff9c2629ec6d29f6ab976c117c81d10a85a77",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Midnight Pro AMD - PBM",
@@ -849,7 +849,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/midnight-pro-pbm-amd-ryzen-7-9800x3d-rtx-5080-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2FMidnight-Vortex-King-95-Pro-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2FMidnight-Vortex-King-95-Pro-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2FMidnight-Vortex-King-95-Pro-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2FMidnight-Vortex-King-95-Pro-Direct-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F01%2F71k4svefeDL.jpg&feedId=114147&k=0a503816bd78d7c25fbcb31091a6bef0b95930bb",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Celestia Ultra AMD",
@@ -861,7 +861,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/celestia-ultra-amd-ryzen-7-9800x3d-rtx-5070ti-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FCelestia-Jonsbo-D400-Mid-Tower-ATX-White-Hero.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FCelestia-Jonsbo-D400-Mid-Tower-ATX-White-Front.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F1522-5974.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F2511-9255-1.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F2511-9255-2.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F2511-9255-3.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F1209-2467.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F2511-9255.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F1209-2459.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FCelestia-Ultra-AMD.png&feedId=114147&k=145b412d2ad790847e133486c554566d2174902e",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Titan Ultra AMD - PBM",
@@ -873,7 +873,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/titan-ultra-pbm-amd-ryzen-7-9800x3d-rtx-5070ti-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Direct-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F11%2FB650M-PROJECT-ZERO-SMALL-03.webp&feedId=114147&k=b7c0456e9ad0a577e509378dc9bc3e277ddcf4be",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Titan Xtreme AMD - PBM",
@@ -885,7 +885,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/titan-xtreme-pbm-amd-ryzen-7-7800x3d-rtx-5080-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Direct-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2F1209-2421.jpg&feedId=114147&k=9bd3bc6f89503d980515f7f327fca3e87fba962a",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Echelon Flight AMD",
@@ -897,7 +897,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/echelon-flight-amd-ryzen-7-7800x3d-rtx-5070-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FEchelon-Be-Quiet-Pure-Base-501Gaming-Hero.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FEchelon-Be-Quiet-Pure-Base-501-Gaming-Front.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F2511-9194-2-1.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FBe-Quiet-Pure-Base-501-Airflow-Gaming-Case-ATX.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FEchealon.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FEchealon.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FEchealon-1.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FEchealon-2.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2Fechelon-scaled.jpg&feedId=114147&k=be89f25b0d87b5e3ba1d177243966bd468b6de18",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Cyclone Pro AMD",
@@ -909,19 +909,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/cyclone-pro-amd-ryzen-7-7800x3d-rtx-5070-ti-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FCyclone-Cougar-CFV235-Hero-Shot-v3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FCyclone-Cougar-CFV235-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FCyclone-Cougar-CFV235-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FCyclone-Cougar-CFV235-Direct-Shot.webp&feedId=114147&k=22439087b7b96b608117365e1dc4b88bc1ea819a",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
-  },
-  {
-    "title": "Zenith Ryzen 7800X3D RTX 5070Ti No OS",
-    "cleanTitle": "Zenith Ryzen 7800X3D RTX 5070Ti No OS",
-    "price": "£2049.99",
-    "category": "Gaming",
-    "quality": "Worth Checking",
-    "source": "Stormforce Gaming Awin Product Feed",
-    "link": "https://www.stormforcegaming.co.uk/product/zenith-ryzen-7800x3d-rtx-5070ti-no-os-gaming-pc/",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Direct-Shot.webp&feedId=113989&k=69ed2411c6c96b766df21cf6c554d9feab1ee3a1",
-    "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Titan Prime AMD",
@@ -933,19 +921,31 @@
     "link": "https://www.stormforcegaming.co.uk/product/titan-prime-amd-ryzen-7-9800x3d-rtx-5070-ti-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FTitan-Cougar-FV270-Black-Direct-Shot.webp&feedId=114147&k=3c7d5689d8ccaf10f956b00315098dd39dcb09a6",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
-    "title": "Zenith Ryzen 7800X3D RTX 5070Ti",
-    "cleanTitle": "Zenith Ryzen 7800X3D RTX 5070Ti",
-    "price": "£2149.99",
+    "title": "Obsidian Ultra AMD",
+    "cleanTitle": "Obsidian Ultra AMD",
+    "price": "£1999.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Stormforce Gaming Awin Product Feed",
-    "link": "https://www.stormforcegaming.co.uk/product/zenith-ryzen-7800x3d-rtx-5070ti/",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Direct-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Side-Shot.webp&feedId=113989&k=347076c69e8be8a353ab36773c20e8dfe054269b",
+    "link": "https://www.stormforcegaming.co.uk/product/obsidian-ultra-amd-ryzen-7-7800x3d-rtx-5070-gaming-pc/",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FDefiance-Atlas-M4-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FDefiance-Atlas-M4-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FDefiance-Atlas-M4-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FDefiance-Atlas-M4-Direct-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FiRacing.png&feedId=114147&k=4f340dcdd7e7ef46a488e9d52fda527acfbde592",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
+  },
+  {
+    "title": "Arctic Pro AMD PBM",
+    "cleanTitle": "Arctic Pro AMD PBM",
+    "price": "£2499.99",
+    "category": "Gaming",
+    "quality": "Worth Checking",
+    "source": "Stormforce Gaming Awin Product Feed",
+    "link": "https://www.stormforcegaming.co.uk/product/arctic-pro-pbm-amd-ryzen-7-7800x3d-rtx-5070-gaming-pc/",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FArtic-Cougar-FV270-White-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FArtic-Cougar-FV270-White-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FArtic-Cougar-FV270-White-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FArtic-Cougar-FV270-White-Direct-Shot.webp&feedId=114147&k=b85f73ec7784f630526f73026b9b59dae5d9aeb3",
+    "merchant": "Stormforce Gaming",
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Spectra Ryzen 9700X RTX 5070",
@@ -957,19 +957,19 @@
     "link": "https://www.stormforcegaming.co.uk/product/spectra-ryzen-9700x-rtx-5070-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2Fimage-4.webp&feedId=113989&k=2f87c37bdcebe236ef9cc063aaf8250f96eb2f6f",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Obsidian Prime AMD",
     "cleanTitle": "Obsidian Prime AMD",
-    "price": "£1749.99",
+    "price": "£1799.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Stormforce Gaming Awin Product Feed",
     "link": "https://www.stormforcegaming.co.uk/product/obsidian-prime-amd-ryzen-7-7700-rtx-5070-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FDefiance-Atlas-M4-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FDefiance-Atlas-M4-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FDefiance-Atlas-M4-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FDefiance-Atlas-M4-Direct-Shot.webp&feedId=114147&k=81c2004fa6d3e81d90ee6c0976487c51425b0346",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Sentinel Core Ultra 245KF RTX 5070 No OS",
@@ -981,7 +981,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/sentinel-core-ultra-245kf-rtx-5070-no-os-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FFV150-Mini-Blk-e1769681327722.webp&feedId=113989&k=ee6e79b759c0f25f41031a552bb0d73b3161f9f4",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Zenith Pro AMD",
@@ -993,7 +993,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/zenith-pro-amd-ryzen-7-5700x-rtx-5070-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F04%2FZenith-Cougar-DuoFace-Direct-Shot.webp&feedId=114147&k=69ed2411c6c96b766df21cf6c554d9feab1ee3a1",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Carbon Core AMD",
@@ -1005,7 +1005,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/carbon-core-amd-ryzen-5-5500-rtx-3050-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FCarbon-Cougar-FV150-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FCarbon-Cougar-FV150-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FCarbon-Cougar-FV150-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FCarbon-Cougar-FV150-Direct-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2021%2F08%2FApex-Legends-200x300-1.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FApex-Legends.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FApex.png&feedId=114147&k=b1a6be9bd95d5b714855671470c61d8a7dce9492",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Vector Core AMD PBM",
@@ -1017,7 +1017,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/vector-core-pbm-amd-ryzen-5-4500-rtx-3050-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2FVector-MSI-MAG-FORGE-320R-Airflow-ATX-Hero.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F08%2FVector-MSI-MAG-FORGE-320R-Airflow-ATX-Front.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F06%2Fc65c4c5b_msi-a520m-a_pro-3d1.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F01%2FSSDGeneric.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F05%2FMAG-FORGE-320R-AIRFLOW-770x616-2.png&feedId=114147&k=0b0091a2a2d195f50bde029371900683bbb959cf",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Lunar Origin AMD",
@@ -1029,19 +1029,19 @@
     "link": "https://www.stormforcegaming.co.uk/product/lunar-origin-amd-ryzen-5-5500-rtx-5050-gaming-pc/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FLunar-Cougar-FV150-Mini-White-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FLunar-Cougar-FV150-Mini-White-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FLunar-Cougar-FV150-Mini-White-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FLunar-Cougar-FV150-Mini-White-Direct-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F2511-9229-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F2511-9229.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2F2511-9229-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F01%2FCougar-FV150-Mini-RGB-White-MATX.png&feedId=114147&k=84308828b054c1f85f172c4c0e77f1d64b32f97c",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
-    "title": "Carbon Core Intel",
-    "cleanTitle": "Carbon Core Intel",
-    "price": "£849.99",
+    "title": "Recon Core Intel",
+    "cleanTitle": "Recon Core Intel",
+    "price": "£879.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Stormforce Gaming Awin Product Feed",
-    "link": "https://www.stormforcegaming.co.uk/product/carbon-core-intel-core-i5-rtx-3050-gaming-pc/",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FCarbon-Cougar-FV150-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FCarbon-Cougar-FV150-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FCarbon-Cougar-FV150-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F10%2FCarbon-Cougar-FV150-Direct-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F09%2FGigabyte-RTX-3050-Windforce-OC-GV-N3050WF2OC-6GD.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F09%2FWD-1TB-Green-SN3000-M.2-NVMe-WDS100T4G0E-BOX.avif%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FCougar-FV150-Mini-Black-GPU-Front-Angle.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FCougar-FV150-Mini-Black-GPU-Front.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FCougar-FV150-Mini-Black-GPU-Hero.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FCougar-FV150-Mini-Black-GPU-Side.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FCougar-FV150-Mini-Black-No-GPU-Front-Angle.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FCougar-FV150-Mini-Black-No-GPU-Hero.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FCougar-FV150-Mini-Black-No-GPU-Side.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FOverwatch.png&feedId=114147&k=333f8df8de6395cc788fb0da7f65068e555d64bc",
+    "link": "https://www.stormforcegaming.co.uk/product/recon-core-intel-core-i5-rtx-3050-gaming-pc/",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FRecoil-Athena-M3-Hero-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FRecoil-Athena-M3-Side-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FRecoil-Athena-M3-Front-On-Shot.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FRecoil-Athena-M3-Direct-Shot.webp&feedId=114147&k=dcbb0ab58e22944ec79391853bdb1663dd14e0cf",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "MSI MAG 255F E20",
@@ -1053,7 +1053,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/msi-mag-255f-e20-25-1080p-gaming-monitor/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20-4.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20-5.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMAG-255F-E2.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20-1.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20-2.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20-3.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20-4.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-255F-E20-5.png&feedId=113989&k=e3f66fc2c6296441933f2859cacc0fadca959743",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "MSI MAG 244C",
@@ -1065,7 +1065,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/msi-mag-244c-24-1080p-curved-gaming-monitor/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2FMSI-MAG-244C.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2FMSI-MAG-244C-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2FMSI-MAG-244C-4.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2FMSI-MAG-244C-5.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2FMSI-MAG-244C-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2FMSI-MAG-244C.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2FMSI-MAG-244C-4.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2FMSI-MAG-244C-3.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2FMSI-MAG-244C-2.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F05%2FMSI-MAG-244C.png&feedId=113989&k=416a25615a42408a589c2adc09169cdbe8b928e9",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Cooler Master GA2701S",
@@ -1077,7 +1077,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/cooler-master-ga2701s-27-full-hd-ips-gaming-monitor-1ms-100hz/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2FCooler-Master-GA2701S.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2FCooler-Master-GA2701S-5.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2FCooler-Master-GA2701S-4.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2FCooler-Master-GA2701S-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2FCooler-Master-GA2701S-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2Fsmart-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2Fsmart-6.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2Fsmart-5.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2Fsmart-4.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2Fsmart-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2Fsmart-1.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2FGA2701S.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F06%2FCooler-Master-GA2701S.png&feedId=113989&k=5e93ab0a5af2e154c17d17e2a5332086c0066230",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "MSI MAG 274CXF",
@@ -1089,7 +1089,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/msi-mag-274cxf-27-1080p-gaming-monitor/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-274CXF.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-274CXF-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-274CXF-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-274CXF-4.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2F274CXF.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2025%2F04%2FMSI-MAG-274CXF.png&feedId=113989&k=bb4b5b380cb0785164160fe87d78065bfcf6bb24",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "SureFire Bunker SSD 512GB Black",
@@ -1101,7 +1101,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/surefire-bunker-ssd-512gb-black/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FHero-Image-SureFire-Bunker-SSD-512GB-Black.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FSureFire-Bunker-SSD-512GB-Black-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FSureFire-Bunker-SSD-512GB-Black-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FSureFire-Bunker-SSD-512GB-Black-4.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FSureFire-HDD_SSD_angled_Red-LED-scaled.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2F53683-Packaging-Flat.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FSureFire-Gaming-HDD-SSD_53681-53682-53683-53684_Lifestyle_2021_AB_4-2-scaled.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FSureFire-Gaming-HDD-SSD_53681-53682-53683-53684_Lifestyle_2021_AB_12-2-scaled.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FSureFire-Gaming-HDD-SSD_53681-53682-53683-53684_Lifestyle_2021_AB_20-2-scaled.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FSureFire-HDD_SSD_angled_Red-LED-1-scaled.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FSureFire-HDD_SSD_Top_Red-LED-scaled.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2F53681_53682_53683_53684-Angled-With-USB-Cable-2-scaled.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F03%2FSureFire-2.5%E2%80%B3-Gaming-Bunker-SSD-USB-3.2-Gen-1-512GB-Black.png&feedId=113989&k=e10e30457ce94965fb09b3b697cf0bba412c4464",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Elgato Stream Deck Mini Control Pad",
@@ -1113,7 +1113,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/elgato-stream-deck-mini-control-pad/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FHero-Image-Elgato-Stream-Deck-Mini-Control-Pad.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FElgato-Stream-Deck-Mini-Control-Pad-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FElgato-Stream-Deck-Mini-Control-Pad-4.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FElgato-Stream-Deck-Mini-Control-Pad-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_3.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_4.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_5.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_6.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_7.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_8.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_9.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_10.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_11.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_12.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_13.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_14.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_15.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_16.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_17.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_18.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_Hero.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_1.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FStream_Deck_Mini_2.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2Fstream-deck-howto-folders.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2Fstream-deck-howto-twitter.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2Fstream-deck-howto-obs.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2Fstream-deck-howto-hotkeys.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2Fstream-deck-howto-custom-icons.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FElgato-Stream-Deck-Mini.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FElgato_Banner.jpg&feedId=113989&k=d449cf56a30962aa95cae83ee5e102abdf690dd5",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Elgato Stream Deck Neo Control Pad",
@@ -1125,7 +1125,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/elgato-stream-deck-neo/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FHero-Image-Elgato-Stream-Deck-Neo-Control-Pad.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FElgato-Stream-Deck-Neo-Control-Pad-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FElgato-Stream-Deck-Neo-Control-Pad-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F125011.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F125011-2-scaled.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F125011-3-scaled.webp&feedId=113989&k=82986d9b2a8129a6d13a5fa7852814ae6d8ae9c0",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Elgato Stream Deck MK:2 Control Pad",
@@ -1137,19 +1137,19 @@
     "link": "https://www.stormforcegaming.co.uk/product/elgato-stream-deck/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FHero-Image-Elgato-Stream-Deck-MK2-Control-Pad.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FElgato-Stream-Deck-MK2-Control-Pad-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FElgato-Stream-Deck-MK2-Control-Pad-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F121648.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F121648-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F121648-3.webp&feedId=113989&k=bf4561d37744d67ecc600731f0aa5e8f435dc86e",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
-    "title": "Cherry XTRFY GP5 Amnis Blue XL Mouse Pad",
-    "cleanTitle": "Cherry XTRFY GP5 Amnis Blue XL Mouse Pad",
-    "price": "£27.99",
+    "title": "Razer Gigantus V2 2XL Gaming Mouse Pad",
+    "cleanTitle": "Razer Gigantus V2 2XL Gaming Mouse Pad",
+    "price": "£29.99",
     "category": "Accessories",
     "quality": "Worth Checking",
     "source": "Stormforce Gaming Awin Product Feed",
-    "link": "https://www.stormforcegaming.co.uk/product/cherry-xtrfy-gp5-amnis-blue-xl-mouse-pad/",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F03%2F1910-4051.png&feedId=113989&k=a6ea02d58e4b5bdb11103e3afc022fc029a3d50d",
+    "link": "https://www.stormforcegaming.co.uk/product/razer-gigantus-v2-2xl/",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FHero-Image-Razer-Gigantus-V2-XXL-Gaming-Mouse-Pad-1.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FRazer-Gigantus-V2-XXL-Gaming-Mouse-Pad-3.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FRazer-Gigantus-V2-XXL-Gaming-Mouse-Pad-2.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FRazer-Gigantus-V2-XXL-Gaming-Mouse-Pad-4.webp%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FGigantus_V2_XXL_Angled.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FGigantus_V2_XXL_Angled2.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FGigantus_V2_XXL_Boxed.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FGigantus_V2_XXL_Boxed2.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FGigantus_V2_XXL_Straight.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FGigantus_V2_XXL_Top.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2FGigantus_V2_XXL_With_Mouse.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2024%2F04%2Frazer-brandpage-maxgaming2.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2F1920-0031.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2023%2F02%2F1920-0031-1.png&feedId=113989&k=dde0ce5ebb396a795d923e56526498d71743ba7e",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "KOORUI G2411P",
@@ -1161,7 +1161,7 @@
     "link": "https://www.stormforcegaming.co.uk/product/koorui-g2411p/",
     "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2FG2411P.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F10.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F11.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F4.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F3.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F2.jpg%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2Flogo%E7%BB%84%E5%90%88-%E7%BA%A220250326.png%7Chttps%3A%2F%2Fwww.stormforcegaming.co.uk%2Fwp-content%2Fuploads%2F2026%2F02%2F1.jpg&feedId=113989&k=8092f5291e9ee70723b4cb2534a8c261b4b002a9",
     "merchant": "Stormforce Gaming",
-    "timestamp": "2026-08-02T11:25:54"
+    "timestamp": "2026-08-10T21:01:57"
   },
   {
     "title": "Acer Nitro V 16 AI ANV16-42-R4RG AMD Ryzen 7 260 Laptop 40.6 cm (16\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD NVIDIA GeForce RTX 5060 Wi-Fi 6E (802.11ax) Windows 11 Home Black",
@@ -1173,19 +1173,19 @@
     "link": "https://www.quzo.co.uk/acer-nitro-v16-ai-anv1642-gaming-laptop-amd-ryzen-7-260-16gb-512gb-ssd-nvidia-geforce-rtx-5060--nhqyxek005-pid409626.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2026/04/07/acer-nitro-v-16-ai-anv16-42-r4rg-amd-ryzen-7-3-8-ghz-40-6-cm-16-1920-x-1200-pixels-16-gb-512-gb-409626.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE GAMING A16 PRO DYH Gaming Laptop - 16 165Hz QHD Intel Core 7 240H NVIDIA RTX 5080 32GB LPDDR5X 5600MHz 1TB Gen4 SSD Win11 Home 2 Year Warranty Dolby Atmos GAMING A16 PRO DYHG5UKCC4SH",
     "cleanTitle": "GIGABYTE Intel Core 7 RTX 5080 1TB 32GB SSD 165Hz QHD",
-    "price": "£3074.33",
+    "price": "£3024.33",
     "category": "Laptops",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/gigabyte-16-7-240h-w11h-a16-pro-dyh-gaminga16prodyhg5ukcc4sh-pid412655.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/10/22/dyhg5ukcc4sh-pro-intel-32gb-1tb-win-home-gaming-a16-pro-dyhg5ukcc4sh-412655.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE AERO X16 2WH Gaming Laptop - 16 165Hz WQXGA Ryzen AI 9 HX 370 NVIDIA RTX 5070 32GB DDR5 5600MHz 2TB Gen4 SSD Win 11 Pro 2 Year Warranty Dolby Atmos AERO X16 2WHA3UKC65DP",
@@ -1197,7 +1197,7 @@
     "link": "https://www.quzo.co.uk/gigabyte-16-ai-9-w11p-aero-x16-2-5070-aerox162wha3ukc65dp-pid405333.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/07/01/gigabyte-aero-x16-2wh-gaming-laptop--16-165hz-wqxga-ryzen-ai-9-hx-370-nvidia-rtx-5070-32gb-ddr5-405333.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "MSI Katana 17 B13VEK-015UK Intel Core i7 i7-13620H Laptop 43.9 cm (17.3\") Full HD 16 GB DDR5-SDRAM 1 TB SSD NVIDIA GeForce RTX 4050 Wi-Fi 6 (802.11ax) Windows 11 Home Black",
@@ -1209,31 +1209,31 @@
     "link": "https://www.quzo.co.uk/katana-17-b13vek015uk173-fhd-1920x1080-144hz-45-ntsc-rtx-4050-8gbx2-1tb-nvme-pcie-ssd-gen4x4-wo-9s717l541015-pid338990.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2023/05/msi-katana-17--intel-core-i7-3-6-ghz-43-9-cm-17-3-1920-x-1080-pixels-16-gb-1000-gb-9s7-17l541-0-338990.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Acer Nitro V 15 V15 ANV15-52 - Intel Core i7-13620H 16GB 1TB SSD NVIDIA GeForce RTX 5060 15.6\" Full HD Windows 11 Gaming Laptop",
     "cleanTitle": "Acer Nitro V 15 V15 ANV15-52 - Intel Core i7-13620H 16GB 1TB SSD NVIDIA GeForce RTX 5060 15.6\" Full HD Gaming Laptop",
-    "price": "£1021.47",
+    "price": "£1071.47",
     "category": "Laptops",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/nitro-v-15-v15-anv1552-intel-core-i713620h-16gb-1tb-ssd-nvidia-geforce-rtx-5060-156-inch-full-h-nhqzaek004-pid407299.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/08/06/acer-nitro-v-15-v15-anv15-52--intel-core-i7-13620h-16gb-1tb-ssd-nvidia-geforce-rtx-5060-15-6-fu-407299.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
-    "title": "Acer Nitro V 15 V15 ANV15-52 - Intel Core i5-13420H 16GB 1TB SSD NVIDIA GeForce RTX 5060 15.6\" Full HD Windows 11 Gaming Laptop",
-    "cleanTitle": "Acer Nitro V 15 V15 ANV15-52 - Intel Core i5-13420H 16GB 1TB SSD NVIDIA GeForce RTX 5060 15.6\" Full HD Gaming Laptop",
-    "price": "£820.73",
+    "title": "Acer Nitro V 15 V15 ANV15-52 - Intel Core i5-13420H 16GB 512GB SSD NVIDIA GeForce RTX 4050 15.6\" FHD 165Hz Windows 11 Gaming Laptop",
+    "cleanTitle": "Acer Nitro V 15 V15 ANV15-52 - Intel Core i5-13420H 16GB 512GB SSD NVIDIA GeForce RTX 4050 15.6\" FHD 165Hz Gaming Laptop",
+    "price": "£868.72",
     "category": "Laptops",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/156-inch-core-i5-16gb-1tb-5060-win-h-black-nhqzaek002-pid409443.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/09/04/acer-nitro-v-15-v15-anv15-52--intel-core-i5-13420h-16gb-1tb-ssd-nvidia-geforce-rtx-5060-15-6-fu-409443.webp",
+    "link": "https://www.quzo.co.uk/156-inch-corei5-16gb-512gb-4050-win-h-black-nhquaek003-pid407300.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/08/29/15-6-inch-corei5-16gb-512gb-4050-win-h-black-nh-quaek-003-407300.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Acer NITRO 20 N20 Gaming Desktop - Intel Core i5-13420H 16GB 512GB SSD NVIDIA GeForce RTX 3050 Windows 11 Black",
@@ -1245,43 +1245,43 @@
     "link": "https://www.quzo.co.uk/n20100rpl-intel-core-i513420h-16gb-512gb-nvme-ssd-nvidia-geforce-rtx-3050-6gb-gddr6-dgbqbek005-pid408915.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/08/25/acer-nitro-20-n20-gaming-desktop--intel-core-i5-13420h-16gb-512gb-ssd-nvidia-geforce-rtx-3050-w-408915.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Acer Predator PO3-665 Gaming Desktop - Intel Core i5-14400F 16GB RAM 512GB SSD NVIDIA GeForce RTX 5060 Windows 11 Black",
     "cleanTitle": "Acer Predator PO3-665 Gaming Desktop - Intel Core i5-14400F 16GB RAM 512GB SSD NVIDIA GeForce RTX 5060 Black",
-    "price": "£1372.03",
+    "price": "£1322.03",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/po3665-i514400f-16gb-512gb-w11h-dge4uek001-pid410741.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/10/02/acer-predator-po3-665-gaming-desktop--intel-core-i5-14400f-16gb-ram-512gb-ssd-nvidia-geforce-rt-410741.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Lenovo ThinkStation P2 Tower Gen 2 Intel Core Ultra 7 265 32 GB DDR5-SDRAM 1 TB SSD NVIDIA GeForce RTX 5060 Windows 11 Pro Workstation Black",
     "cleanTitle": "Lenovo ThinkStation P2 Tower Gen 2 Intel Core Ultra 7 265 32 GB DDR5-SDRAM 1 TB SSD NVIDIA GeForce RTX 5060 Workstation Black",
-    "price": "£2097.47",
+    "price": "£2047.47",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/ts-p2-twr-g2-u7265-321tb-w11p-30jq003quk-pid409613.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/09/09/lenovo-thinkstation-p2-tower-gen-2-intel-core-ultra-7-265-32-gb-ddr5-sdram-1-tb-windows-11-pro--409613.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "HP Z1 Tower G1i Intel Core Ultra 9 285 32 GB DDR5-SDRAM 1 TB SSD NVIDIA GeForce RTX 5060 Ti Windows 11 Pro Workstation AI Workstation AI PC Black",
     "cleanTitle": "HP Z1 Tower G1i Intel Core Ultra 9 285 32 GB DDR5-SDRAM 1 TB SSD NVIDIA GeForce RTX 5060 Ti Workstation AI Workstation AI PC Black",
-    "price": "£2939.13",
+    "price": "£3255.82",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/z1-twr-base-unit-g1i-500w-rcto-b76rmetabu-pid407112.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/08/01/hp-z1-tower-g1i-desktop-pc-intel-core-ultra-9-285-32-gb-ddr5-sdram-windows-11-pro-b76rmetabu-407112.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE AORUS FO32U 31.5 UHD Gaming Monitor - 3840 x 2160 (UHD) 165Hz 0.03ms 250 cd/m2 FreeSync Premium Pro DisplayHDR True Black 400 HDMI 2.1 Displayport 1.4",
@@ -1293,23 +1293,23 @@
     "link": "https://www.quzo.co.uk/aorus-315-oled-monitor-spk-fo32u-aorusfo32u-pid391257.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2024/11/19/aorus-31-5-oled-monitor-spk-fo32u-aorus-fo32u-391257.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Lenovo ThinkCentre neo Ultra Intel Core i7 i7-14700 32 GB DDR5-SDRAM 1 TB SSD NVIDIA GeForce RTX 4060 Windows 11 Pro Mini PC Grey",
     "cleanTitle": "Lenovo ThinkCentre neo Ultra Intel Core i7 i7-14700 32 GB DDR5-SDRAM 1 TB SSD NVIDIA GeForce RTX 4060 Mini PC Grey",
-    "price": "£1589.57",
+    "price": "£1639.57",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/thinkcentre-neo-ultra-i714700-12w1002juk-pid406375.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/07/24/lenovo-thinkcentre-neo-ultra-2-1-ghz-intel-core-i7-i7-14700-32-gb-1-tb-windows-11-pro-12w1002ju-406375.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
-    "title": "T1A DELL Latitude 5320 Intel Core i7 i7-1185G7 Laptop 33.8 cm (13.3\") Full HD 16 GB 256 GB SSD Windows 11 Pro UK English Silver",
-    "cleanTitle": "T1A DELL Latitude 5320 Intel Core i7 i7-1185G7 Laptop 33.8 cm (13.3\") Full HD 16 GB 256 GB SSD UK English Silver",
+    "title": "T1A DELL Latitude 5320 Intel Core i7 i7-1185G7 Laptop 33.8 cm (13.3\") Full HD 16 GB 256 GB SSD Windows 11 Pro Silver QWERTY UK English",
+    "cleanTitle": "T1A DELL Latitude 5320 Intel Core i7 i7-1185G7 Laptop 33.8 cm (13.3\") Full HD 16 GB 256 GB SSD Silver QWERTY UK English",
     "price": "£391.74",
     "category": "Laptops",
     "quality": "Worth Checking",
@@ -1317,7 +1317,7 @@
     "link": "https://www.quzo.co.uk/t1a-dell-latitude-5320-i71185g7-260-ghz-133in-fhd256-gb-nvme-16-gb-ram-mar-win11-pro-barga1n-l5320ukb103-pid403293.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/10/20/t1a-dell-latitude-5320-intel-core-i7-33-8-cm-13-3-1920-x-1080-pixels-16-gb-256-gb-windows-11-pr-403293.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "T1A DELL Latitude 5320 Intel Core i7 i7-1185G7 Laptop 33.8 cm (13.3\") Full HD 16 GB 256 GB SSD Windows 10 Pro UK English Silver",
@@ -1329,7 +1329,7 @@
     "link": "https://www.quzo.co.uk/dell-latitude-5320-11th-gen-intel-core-i71185g7-260-ghz-256-gb-nvme-16-gb-ram-133-in-fhd-uk-key-l5320ukt003-pid402240.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/10/20/t1a-dell-latitude-5320-intel-core-i7-33-8-cm-13-3-1920-x-1080-pixels-16-gb-256-gb-windows-10-pr-402240.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE GeForce RTX 5090 WINDFORCE OC 32G Graphics Card",
@@ -1341,19 +1341,19 @@
     "link": "https://www.quzo.co.uk/gigabyte-nvidia-geforce-rtx-5090-windforce-oc-32g-graphics-card-32gb-gddr7-21760-cuda-cores-246-gvn5090wf3oc32gd-pid408890.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/08/22/gigabyte-geforce-rtx-5090-windforce-oc-32g-graphics-card--32gb-gddr7-512bit-pci-e-5-0-2467mhz-c-408890.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
-    "title": "GIGABYTE AORUS GeForce RTX 5090 MASTER 32G Graphics Card - 32GB GDDR7 512bit PCI-E 5.0 2655MHz Core Clock 3 x DP 2.1a 1 x HDMI 2.1b GV-N5090AORUS M-32GD",
+    "title": "GIGABYTE AORUS GeForce RTX 5090 XTREME WATERFORCE 32G Graphics Card - 32GB GDDR7 512bit PCI-E 5.0 2655MHz Core Clock 3 x DP 2.1a 1 x HDMI 2.1b NVIDIA DLSS 4 GV-N5090AORUSX W-32GD",
     "cleanTitle": "GIGABYTE GeForce RTX 5090 32GB Graphics Card",
-    "price": "£2905.1",
+    "price": "£2687.63",
     "category": "GPUs",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/gigabyte-nvidia-geforce-rtx-5090-aorus-master-32g-graphics-card-32gb-gddr7-21760-cuda-cores-265-gvn5090aorusm32gd-pid404555.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/06/16/gigabyte-nvidia-geforce-rtx-5090-aorus-master-32g-graphics-card-32gb-gddr7-21760-cuda-cores-265-404555.webp",
+    "link": "https://www.quzo.co.uk/gpu-nv-5090-aorus-xtreme-waterforce-32g-gvn5090aorusxw32gd-pid405624.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/07/04/gigabyte-aorus-geforce-rtx-5090-xtreme-waterforce-32g-graphics-card--32gb-gddr7-512bit-pci-e-5--405624.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "HP OMEN 16L TG03-0013na AMD Ryzen 7 8700F 16 GB DDR5-SDRAM 1 TB SSD NVIDIA GeForce RTX 5060 Ti Windows 11 Home Tower PC AI PC Black",
@@ -1365,19 +1365,19 @@
     "link": "https://www.quzo.co.uk/tg030013na-r7-8700f-16gb-1tb-5060ti-bt8e8eaabu-pid412820.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/10/25/hp-omen-16l-tg03-0013na-4-1-ghz-amd-ryzen-7-8700f-16-gb-1-tb-windows-11-home-bt8e8eaabu-412820.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Western Digital WDS800T2X0E internal solid state drive 8 TB M.2 PCI Express 4.0 NVMe 3D TLC NAND",
     "cleanTitle": "Western Digital WDS800T2X0E internal solid state drive 8 TB M.2 PCI Express 4.0 NVMe 3D TLC NAND",
-    "price": "£2896.31",
+    "price": "£1636.66",
     "category": "SSDs",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/8tb-wd-black-sn850x-nvme-ssd-wds800t2x0e-pid396790.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/02/21/western-digital-black-00cdd0-ssd-capacity-8-tb-ssd-form-factor-m-2-read-speed-7200-mbs-write-sp-396790.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Lenovo ThinkStation P3 Ultra SFF Intel Core i7 i7-14700 32 GB DDR5-SDRAM 512 GB SSD NVIDIA RTX A400 Windows 11 Pro Mini Tower Workstation Black",
@@ -1389,103 +1389,127 @@
     "link": "https://www.quzo.co.uk/p3-usff-i714700-32gb-512gb-w11p-30ha008fuk-pid393849.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/01/31/lenovo-thinkstation-p3-ultra-sff-2-1-ghz-intel-core-i7-i7-14700-32-gb-512-gb-windows-11-pro-30h-393849.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Lenovo ThinkStation P3 Tiny Intel Core i7 i7-14700 32 GB DDR5-SDRAM 512 GB SSD NVIDIA RTX A400 Windows 11 Pro Mini PC Workstation Black",
     "cleanTitle": "Lenovo ThinkStation P3 Tiny Intel Core i7 i7-14700 32 GB DDR5-SDRAM 512 GB SSD NVIDIA RTX A400 Mini PC Workstation Black",
-    "price": "£1704.99",
+    "price": "£1654.99",
     "category": "Gaming",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/p3-tiny-i714700-32gb512gb-w11p-30h0008suk-pid394039.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/01/31/lenovo-thinkstation-p3-tiny-2-1-ghz-intel-core-i7-i7-14700-32-gb-512-gb-windows-11-pro-30h0008s-394039.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Samsung MZ-V9P1T0 1 TB M.2 PCI Express 4.0 NVMe V-NAND MLC",
     "cleanTitle": "Samsung MZ-V9P1T0 1 TB M.2 PCI Express 4.0 NVMe V-NAND MLC",
-    "price": "£235.3",
+    "price": "£133.49",
     "category": "SSDs",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/ssd-int-990-pro-1tb-heatsink-pcie-m2-mzv9p1t0gw-pid341349.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2023/06/samsung-mz-v9p1t0-ssd-capacity-1000-gb-ssd-form-factor-m-2-read-speed-7450-mbs-write-speed-6900-341349.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
+  },
+  {
+    "title": "Samsung 990 PRO 1 TB M.2 PCI Express 4.0 NVMe V-NAND MLC",
+    "cleanTitle": "Samsung 990 PRO 1 TB M.2 PCI Express 4.0 NVMe V-NAND MLC",
+    "price": "£232.51",
+    "category": "SSDs",
+    "quality": "Worth Checking",
+    "source": "Quzo UK Awin Product Feed",
+    "link": "https://www.quzo.co.uk/ssd-990-pro-m2-1tb-pcie-40x4-mzv9p1t0bw-pid328502.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2022/11/samsung-990-pro-ssd-capacity-1000-gb-ssd-form-factor-m-2-read-speed-7450-mbs-write-speed-6900-m-328502.jpg",
+    "merchant": "Quzo UK",
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE MO27U2 OLED 4K UHD Gaming Monitor - 3840 x 2160 240Hz 0.03ms 1000 cd/m Display HDR True Black 400 HDMI 2.1 Displayport 1.4",
     "cleanTitle": "GIGABYTE Monitor OLED 4K UHD 240Hz",
-    "price": "£605.02",
+    "price": "£655.02",
     "category": "Monitors",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/gigabyte-27-qdoled-monitor-spk-mo27u2--pid405337.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/07/01/gigabyte-oled-4k-uhd-gaming-monitor--3840-x-2160-240hz-0-03ms-1000-cdm-display-hdr-true-black-4-405337.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
-  },
-  {
-    "title": "GIGABYTE GeForce RTX 5070 EAGLE OC SFF 12G Graphics Card - 12GB GDDR7 192bit PCI-E 5.0 2587 MHz Core Clock 3 x DP 2.1b 1 x HDMI 2.1b NVIDIA DLSS 4 GV-N5070EAGLE OC-12GD",
-    "cleanTitle": "GIGABYTE GeForce RTX 5070 12GB Graphics Card",
-    "price": "£568.43",
-    "category": "GPUs",
-    "quality": "Worth Checking",
-    "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/gigabyte-nvidia-geforce-rtx-5070-eagle-oc-sff-12g-graphics-card-12gb-gddr7-6144-cuda-cores-2587-gvn5070eagleoc12gd-pid399490.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2026/06/19/gigabyte-geforce-rtx-5070-eagle-oc-sff-12g-graphics-card--12gb-gddr7-192bit-pci-e-5-0-2587-mhz--399490.webp",
-    "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
-  },
-  {
-    "title": "GIGABYTE GeForce RTX 5070 GAMING OC 12G Graphics Card",
-    "cleanTitle": "GIGABYTE GeForce RTX 5070 GAMING OC 12G Graphics Card",
-    "price": "£576.55",
-    "category": "GPUs",
-    "quality": "Worth Checking",
-    "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/gigabyte-nvidia-geforce-rtx-5070-gaming-oc-12g-graphics-card-12gb-gddr7-6144-cuda-cores-2625-mh-gvn5070gamingoc12gd-pid399254.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/04/07/gpu-nv-5070-gaming-oc-12g-fan-gv-n5070gaming-oc-12gd-399254.webp",
-    "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF 12G Graphics Card",
     "cleanTitle": "GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF 12G Graphics Card",
-    "price": "£639.34",
+    "price": "£594.76",
     "category": "GPUs",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/gigabyte-nvidia-geforce-rtx-5070-windforce-oc-sff-12g-graphics-card-12gb-gddr7-6144-cuda-cores--gvn5070wf3oc12gd-pid399887.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/04/24/gigabyte-geforce-rtx-5070-windforce-oc-sff-12g-graphics-card--12gb-gddr7-192bit-pci-e-5-0-2542--399887.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
-    "title": "GIGABYTE GeForce RTX 5070 AERO OC 12G Graphics Card",
-    "cleanTitle": "GIGABYTE GeForce RTX 5070 AERO OC 12G Graphics Card",
-    "price": "£653.12",
+    "title": "GIGABYTE GeForce RTX 5070 GAMING OC 12G Graphics Card",
+    "cleanTitle": "GIGABYTE GeForce RTX 5070 GAMING OC 12G Graphics Card",
+    "price": "£626.55",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Quzo UK Awin Product Feed",
+    "link": "https://www.quzo.co.uk/gigabyte-nvidia-geforce-rtx-5070-gaming-oc-12g-graphics-card-12gb-gddr7-6144-cuda-cores-2625-mh-gvn5070gamingoc12gd-pid399254.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/04/07/gpu-nv-5070-gaming-oc-12g-fan-gv-n5070gaming-oc-12gd-399254.webp",
+    "merchant": "Quzo UK",
+    "timestamp": "2026-08-10T21:03:51"
+  },
+  {
+    "title": "GIGABYTE GeForce RTX 5070 AERO OC 12G Graphics Card GeForce RTX 5070 12 GB GDDR7 192 bit 7680 x 4320 pixels PCI Express x16 5.0",
+    "cleanTitle": "GIGABYTE GeForce RTX 5070 AERO OC 12G Graphics Card GeForce RTX 5070 12 GB GDDR7 192 bit 7680 x 4320 pixels PCI Express x16 5.0",
+    "price": "£643.17",
     "category": "GPUs",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/gigabyte-nvidia-geforce-rtx-5070-aero-oc-12g-graphics-card-12gb-gddr7-6144-cuda-cores-2625-mhz--gvn5070aerooc12gd-pid399253.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/04/07/gpu-nv-5070-aero-oc-12g-fan-gv-n5070aero-oc-12gd-399253.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Acer NITRO VG2 Nitro VG272UW2 - 27\" Quad HD (2560x1440) 240Hz 0.5ms ZeroFrame HDR400 AMD FreeSync Premium Gaming Monitor",
     "cleanTitle": "Acer NITRO VG2 Nitro VG272UW2 - 27\" Quad HD (2560x1440) 240Hz 0.5ms ZeroFrame HDR400 AMD FreeSync Premium Gaming Monitor",
-    "price": "£226.01",
+    "price": "£193.95",
     "category": "Monitors",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/69cm-27in-qhd-ips-240hz-1ms05ms-zf-umhv2ee202-pid412883.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/10/27/acer-nitro-vg2-nitro-vg272uw2--27-quad-hd-2560x1440-240hz-0-5ms-zeroframe-hdr400-amd-freesync-p-412883.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
+  },
+  {
+    "title": "Samsung 27\" G70D 144Hz Odyssey Smart Gaming Monitor",
+    "cleanTitle": "Samsung 27\" G70D 144Hz Odyssey Smart Gaming Monitor",
+    "price": "£445.82",
+    "category": "Monitors",
+    "quality": "Worth Checking",
+    "source": "Quzo UK Awin Product Feed",
+    "link": "https://www.quzo.co.uk/odyssey-g7-ls27dg702euxxu-27-inch-4k-uhd--pid396163.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/02/12/samsung-27-g70d-144hz-odyssey-smart-gaming-monitor-68-6-cm-27-3840-x-2160-pixels-4k-ultra-hd-le-396163.webp",
+    "merchant": "Quzo UK",
+    "timestamp": "2026-08-10T21:03:51"
+  },
+  {
+    "title": "Lenovo 4X61U02753 graphics card NVIDIA GeForce RTX 5060 8 GB GDDR7",
+    "cleanTitle": "Lenovo 4X61U02753 graphics card NVIDIA GeForce RTX 5060 8 GB GDDR7",
+    "price": "£449.34",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Quzo UK Awin Product Feed",
+    "link": "https://www.quzo.co.uk/nvidia-geforce-rtx-5060-8gb-4x61u02753-pid413055.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/10/29/lenovo--geforce-rtx-5060-8-gb-gddr7-128-bit-7680-x-4320-pixels-pci-express-5-0-4x61u02753-413055.webp",
+    "merchant": "Quzo UK",
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE GS27U 27\" UHD Gaming Monitor - 3840 x 2160 160Hz 1ms 350 cd/m Display HDR400 HDMI 2.1 Displayport 1.4",
@@ -1497,7 +1521,7 @@
     "link": "https://www.quzo.co.uk/gigabyte-27-ips-monitor-gs27u-4k--pid401402.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/05/02/gigabyte-27-uhd-gaming-monitor--3840-x-2160-160hz-1ms-350-cdm-display-hdr400-hdmi-2-1-displaypo-401402.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE GS32Q 31.5 QHD Gaming Monitor - 2560 x 1440 165Hz 1ms 300 cd/m FreeSync Premium HDR Ready HDMI 2.0 Displayport 1.4",
@@ -1509,7 +1533,7 @@
     "link": "https://www.quzo.co.uk/gigabyte-315-ips-monitor-gs32q--pid381729.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2024/08/gigabyte-31-5-ips-monitor-gs32q-381729.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Acer Veriton X VX2720G I5-14500 8GB/512GB W11P Intel Core i5 DDR5-SDRAM SSD Windows 11 Pro Desktop PC Black",
@@ -1521,187 +1545,163 @@
     "link": "https://www.quzo.co.uk/vx2720g-i514500-8gb512gb-w11p-dtr1nek002-pid389069.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2024/10/23/acer-veriton-x-vx2720g-i5-14500-8gb512gb-w11p-2-6-ghz-intel-core-i5-i5-14500-8-gb-512-gb-window-389069.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
-  },
-  {
-    "title": "Lenovo 4XB1L68661 internal solid state drive 512 GB M.2 PCI Express 4.0 NVMe",
-    "cleanTitle": "Lenovo 4XB1L68661 internal solid state drive 512 GB M.2 PCI Express 4.0 NVMe",
-    "price": "£88.37",
-    "category": "SSDs",
-    "quality": "Worth Checking",
-    "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/lenovo-512gb-2280-m2-nvme-ssd-4xb1l68661b-pid361116.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2024/03/lenovo-4xb1l68661-ssd-capacity-512-gb-ssd-form-factor-m-2-component-for-pclaptop-4xb1l68661-b-361116.jpg",
-    "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "MSI SPATIUM M450 PCIe 4.0 NVMe M.2 1TB PCI Express 4.0 3D NAND",
     "cleanTitle": "MSI SPATIUM M450 PCIe 4.0 NVMe M.2 1TB PCI Express 4.0 3D NAND",
-    "price": "£99.38",
+    "price": "£74.61",
     "category": "SSDs",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/msi-ssd-spatium-m450-m2-pcie-1tb-spatiumm450pcie40nvmem21tb-pid346450.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2023/09/msi-ssd-spatium-m450-m-2-pcie-1tb-spatium-m450-pcie-4-0-nvme-m-2-1tb-346450.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "MSI Spatium M470 PRO PCIe 4.0 NVMe M.2 1TB PCI Express 4.0 3D NAND",
     "cleanTitle": "MSI Spatium M470 PRO PCIe 4.0 NVMe M.2 1TB PCI Express 4.0 3D NAND",
-    "price": "£109.08",
+    "price": "£81.89",
     "category": "SSDs",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/msi-ssd-spatium-m470-pro-m2-pcie-1tb-spatiumm470propcie40nvmem21tb-pid399077.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/04/03/msi-spatium-m470-pro-pcie-4-0-nvme-m-2-1tb-ssd-capacity-1-tb-ssd-form-factor-m-2-component-for--399077.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
-    "title": "GIGABYTE M27UP 27 4K UHD Gaming Monitor - Dual Mode (4K 160Hz or FHD 320Hz) 3840 x 2160 1ms 350 cd/m FreeSync Premium DisplayHDR400 HDMI 2.1 Displayport 1.4",
-    "cleanTitle": "GIGABYTE M27UP 27 4K UHD Gaming Monitor - Dual Mode (4K 160Hz or FHD 320Hz) 3840 x 2160 1ms 350 cd/m FreeSync Premium DisplayHDR40",
-    "price": "£316.84",
-    "category": "Monitors",
+    "title": "Lenovo 4XB1L68661 internal solid state drive 512 GB M.2 PCI Express 4.0 NVMe",
+    "cleanTitle": "Lenovo 4XB1L68661 internal solid state drive 512 GB M.2 PCI Express 4.0 NVMe",
+    "price": "£89.23",
+    "category": "SSDs",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/27-inch-ss-ipsedge-type-nonglare-type4k-160hz-fhd-320hz-10001-vesa-displayhdr-400freesync-premi-m27upek-pid410866.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/10/20/gigabyte-m27up-27-4k-uhd-gaming-monitor--dual-mode-4k-160hz-or-fhd-320hz-3840-x-2160-1ms-350-cd-410866.webp",
+    "link": "https://www.quzo.co.uk/lenovo-512gb-2280-m2-nvme-ssd-4xb1l68661b-pid361116.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2024/03/lenovo-4xb1l68661-ssd-capacity-512-gb-ssd-form-factor-m-2-component-for-pclaptop-4xb1l68661-b-361116.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
+  },
+  {
+    "title": "HP 512GB PCIe-4x4 NVMe M.2 SSD PCI Express 4.0",
+    "cleanTitle": "HP 512GB PCIe-4x4 NVMe M.2 SSD PCI Express 4.0",
+    "price": "£75.22",
+    "category": "SSDs",
+    "quality": "Worth Checking",
+    "source": "Quzo UK Awin Product Feed",
+    "link": "https://www.quzo.co.uk/hp-512gb-pcie4x4-nvme-m2-ssd-pulls--5r8x9aab-pid394030.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/02/02/hp-512gb-pcie-4x4-nvme-m-2-ssd-ssd-capacity-512-gb-ssd-form-factor-m-2-component-for-laptop-5r8-394030.webp",
+    "merchant": "Quzo UK",
+    "timestamp": "2026-08-10T21:03:51"
+  },
+  {
+    "title": "GIGABYTE Z790 EAGLE AX Motherboard - Supports Intel Core 14th Gen CPUs 12+1+Phases Digital VRM up to 7600MHz DDR5 (OC) 3xPCIe 4.0 M.2 Wi-Fi 6E 2.5GbE LAN USB 3.2 Gen 2 Intel LGA 1700 Intel Celeron Intel Core i3 Intel Core i5 Intel",
+    "cleanTitle": "GIGABYTE Intel Core 14th Intel Core i3 Intel Core i5",
+    "price": "£186.23",
+    "category": "Hardware",
+    "quality": "Worth Checking",
+    "source": "Quzo UK Awin Product Feed",
+    "link": "https://www.quzo.co.uk/gigabyte-z790-eagle-ax-intel-1700-socket-motherboard-atx-4x-ddr5-slots-3x-m2-sockets-1x-usbc-po--pid367428.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2024/04/gigabyte-intel-1700-socket-motherboard-atx-4x-ddr5-slots-3x-m-2-sockets-1x-usb-c-port-fitted-io-367428.jpg",
+    "merchant": "Quzo UK",
+    "timestamp": "2026-08-10T21:03:51"
+  },
+  {
+    "title": "GIGABYTE Z790 AORUS ELITE AX Motherboard - Supports Intel Core 14th CPUs 16*+2+ Phases Digital VRM up to 7600MHz DDR5 (OC) 4xPCIe 4.0 M.2 Wi-Fi 6E 2.5GbE LAN USB 3.2 Gen 2x2 Intel LGA 1700 Intel Celeron Intel Core i3 Intel Core i5",
+    "cleanTitle": "GIGABYTE Intel Core 14th Intel Core i3 Intel Core i5",
+    "price": "£211.67",
+    "category": "Hardware",
+    "quality": "Worth Checking",
+    "source": "Quzo UK Awin Product Feed",
+    "link": "https://www.quzo.co.uk/mb-int-z790-aorus-elite-ax-ddr5-atx--pid327403.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2022/11/gigabyte--intel-lga-1700-intel-celeron-intel-core-i3-intel-core-i5-intel-core-i7-intel-core-i9--327403.jpg",
+    "merchant": "Quzo UK",
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "ASUS VA27AQ computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LCD Black",
     "cleanTitle": "ASUS VA27AQ monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LCD Black",
-    "price": "£132.14",
+    "price": "£118.93",
     "category": "Monitors",
     "quality": "🔥 GOOD PRICE",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/asus-27-frameless-eye-care-qhd-gaming-monitor-va27aq-ips-2560-x-1440-1ms-75hz-99-srgb-vesa--pid413296.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/11/03/asus-27-frameless-eye-care-qhd-gaming-monitor--ips-2560-x-1440-1ms-75hz-99-srgb-vesa-va27aq-413296.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
-    "title": "GIGABYTE G24F 2 24\" FHD Gaming Monitor - 1920 x 1080 165Hz 1ms 300 cd/m AMD FreeSync Premium HDR Ready Displayport 1.2 HDMI 2.0",
-    "cleanTitle": "GIGABYTE G24F 2 24\" FHD Gaming Monitor - 1920 x 1080 165Hz 1ms 300 cd/m AMD FreeSync Premium HDR Ready Displayport 1.2 HDMI 2.0",
-    "price": "£102.38",
+    "title": "Acer NITRO VG2 Nitro VG272UV3 gaming monitor - 27\" Quad HD 180Hz 0.5ms FreeSync Premium DisplayHDR 400 HDMI & DP",
+    "cleanTitle": "Acer NITRO VG2 Nitro VG272UV3 gaming monitor - 27\" Quad HD 180Hz 0.5ms FreeSync Premium DisplayHDR 400 HDMI & DP",
+    "price": "£164.09",
     "category": "Monitors",
-    "quality": "🔥 GOOD PRICE",
+    "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/gigabyte-238-ips-monitor-g24f-2-g24f2uk-pid338784.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2023/05/gigabyte-23-8-ips-monitor-g24f-2-g24f-2-uk-338784.jpg",
+    "link": "https://www.quzo.co.uk/69cm-27-qhd-ips-180hz-1ms05ms-gtg-min-350nits-2xhdmi-dp-mm-audio-out-hdr400-freesync-premium-uk-umhv2ee304-pid359413.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2024/08/acer-nitro-vg2-nitro-vg272uv3-gaming-monitor-180hz-wide-qhd-2560x1440-0-5ms-response-time-169-a-359413.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
+  },
+  {
+    "title": "GIGABYTE B760M D3HP DDR4 Motherboard - Supports Intel Core 14th Gen CPUs 4+1+1 Phases Digital VRM up to 5333MHz DDR4 (OC) 2xPCIe 4.0 M.2 GbE LAN USB 3.2 Gen1 Intel LGA 1700 Intel Celeron Intel Core i3 Intel Core i5 Intel Core i7 I",
+    "cleanTitle": "GIGABYTE Intel Core 14th Intel Core i3 Intel Core i5 Intel Core i7",
+    "price": "£94.23",
+    "category": "Hardware",
+    "quality": "Worth Checking",
+    "source": "Quzo UK Awin Product Feed",
+    "link": "https://www.quzo.co.uk/gigabyte-b760m-d3hp-ddr4-intel-1700-socket-motherboard-microatx-4x-ddr4-slots-2x-m2-sockets-1x---pid393749.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/01/09/gigabyte-motherboard--supports-intel-core-14th-gen-cpus-411-phases-digital-vrm-up-to-5333mhz-dd-393749.webp",
+    "merchant": "Quzo UK",
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE A620M H Motherboard - Supports AMD Ryzen 8000 CPUs 5+2+2 Phases Digital VRM up to 7200MHz DDR5 (OC) 1xPCIe 4.0 M.2 GbE LAN USB 3.2 Gen 1",
     "cleanTitle": "GIGABYTE A620M H Motherboard - Supports AMD Ryzen 8000 CPUs 5+2+2 Phases Digital VRM up to 7200MHz DDR5 (OC) 1xPCIe 4.0 M.2 GbE LA",
-    "price": "£95.29",
+    "price": "£85.76",
     "category": "Hardware",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/gigabyte-am5-a620m-h-matx--pid344250.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2023/07/gigabyte-am5-m-atx-a620m-h-344250.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
-  },
-  {
-    "title": "GIGABYTE A620M S2H Motherboard - Supports AMD Ryzen 8000 CPUs 5+2+2 Phases Digital VRM up to 7200MHz DDR5 (OC) 1xPCIe 4.0 M.2 GbE LAN USB 3.2 Gen 1",
-    "cleanTitle": "GIGABYTE A620M S2H Motherboard - Supports AMD Ryzen 8000 CPUs 5+2+2 Phases Digital VRM up to 7200MHz DDR5 (OC) 1xPCIe 4.0 M.2 GbE",
-    "price": "£101.06",
-    "category": "Hardware",
-    "quality": "Worth Checking",
-    "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/gigabyte-am5-a620m-s2h-matx--pid344251.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2023/07/gigabyte-am5-m-atx-a620m-s2h-344251.jpg",
-    "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE A620M DS3H Motherboard - Supports AMD Ryzen 8000 CPUs 5+2+2 Phases Digital VRM up to 7600MHz DDR5 (OC) 1xPCIe 4.0 M.2 GbE LAN USB 3.2 Gen 1",
     "cleanTitle": "GIGABYTE A620M DS3H Motherboard - Supports AMD Ryzen 8000 CPUs 5+2+2 Phases Digital VRM up to 7600MHz DDR5 (OC) 1xPCIe 4.0 M.2 GbE",
-    "price": "£108.89",
+    "price": "£90.58",
     "category": "Hardware",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/gigabyte-am5-a620m-ds3h-matx--pid344248.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2023/07/gigabyte-am5-m-atx-a620m-ds3h-344248.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
-  },
-  {
-    "title": "GIGABYTE B840M D2H Motherboard - AMD Ryzen 9000 CPUs 5+2+2 Phases VRM up to 7600MHz DDR5 1xPCIe 4.0 + 1xPCIe 3.0 M.2 2.5GbE LAN USB 3.2 Gen 1",
-    "cleanTitle": "GIGABYTE B840M D2H Motherboard - AMD Ryzen 9000 CPUs 5+2+2 Phases VRM up to 7600MHz DDR5 1xPCIe 4.0 + 1xPCIe 3.0 M.2 2.5GbE LAN US",
-    "price": "£109.02",
-    "category": "Hardware",
-    "quality": "Worth Checking",
-    "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/mb-amd-am5-b840m-d2h-d5-matx--pid398934.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/04/02/gigabyte-motherboard--amd-ryzen-9000-cpus-522-phases-vrm-up-to-7600mhz-ddr5-1xpcie-4-0-1xpcie-3-398934.webp",
-    "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
-  },
-  {
-    "title": "GIGABYTE B650M GAMING WIFI6E Motherboard - AMD Ryzen 9000 Series CPUs 5+2+2 Phases VRM up to 6400MHz DDR5 (OC) 1xPCIe 4.0 M.2 2.5 GbE LAN WIFI 6E USB 3.2 Gen 1",
-    "cleanTitle": "GIGABYTE B650M GAMING WIFI6E Motherboard - AMD Ryzen 9000 Series CPUs 5+2+2 Phases VRM up to 6400MHz DDR5 (OC) 1xPCIe 4.0 M.2 2.5",
-    "price": "£114.99",
-    "category": "Hardware",
-    "quality": "Worth Checking",
-    "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/gigabyte-b650m-gaming-wifi6e-rev-12-amd-am5-socket-motherboard-2-x-ddr5-dimm-slots-1-x-m2-socke--pid405135.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/06/25/gigabyte-rev-1-2-amd-am5-socket-motherboard-2-x-ddr5-dimm-slots-1-x-m-2-sockets-2-5gbe-lan-2-5g-405135.webp",
-    "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Western Digital WDS250G2G0C internal solid state drive 250 GB M.2 PCI Express 3.0 NVMe",
     "cleanTitle": "Western Digital WDS250G2G0C internal solid state drive 250 GB M.2 PCI Express 3.0 NVMe",
-    "price": "£42.55",
+    "price": "£37.67",
     "category": "SSDs",
     "quality": "🔥 GOOD PRICE",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/ssd-int-250gb-green-pcie-g3-m2-wds250g2g0c-pid336485.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2023/10/western-digital-green-sn350-m-2-250-gb-pci-express-3-0-tlc-nvme-wds250g2g0c-336485.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
-    "title": "Origin Storage Inception SSD 256GB M.2 SATA 3D TLC 80mm",
-    "cleanTitle": "Origin Storage Inception SSD 256GB M.2 SATA 3D TLC 80mm",
-    "price": "£50.52",
-    "category": "SSDs",
-    "quality": "🔥 GOOD PRICE",
-    "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/origin-storage-nb-2563dssd-m-2-internal-solid-state-drive-256-gb-serial-ata-iii-3d-tlc-nvme-nb2563dssdm2-pid160592.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2021/08/origin-storage-ssd-256gb-3d-tlc-m-2-80mm-sata-ssd-capacity-256-gb-ssd-form-factor-m-2-read-spee-160592.jpg",
-    "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
-  },
-  {
-    "title": "Origin Storage Inception SSD 256GB NVMe M.2 3D TLC 80mm",
-    "cleanTitle": "Origin Storage Inception SSD 256GB NVMe M.2 3D TLC 80mm",
-    "price": "£60.52",
-    "category": "SSDs",
-    "quality": "Worth Checking",
-    "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/origin-storage-256gb-pcie-m-2-nvme-ssd-nb256m2nvme-pid86267.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2021/08/origin-storage-256gb-pcie-m-2-nvme-ssd-ssd-capacity-256-gb-ssd-form-factor-m-2-read-speed-2450--86267.jpg",
-    "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
-  },
-  {
-    "title": "MSI VENTUS GEFORCE RTX 3050 2X XS 8G OC graphics card NVIDIA 8 GB GDDR6",
-    "cleanTitle": "MSI VENTUS GEFORCE RTX 3050 2X XS 8G OC graphics card NVIDIA 8 GB GDDR6",
-    "price": "£235.8",
+    "title": "GIGABYTE GeForce RTX 3050 WINDFORCE OC V2 6G NVIDIA 6 GB GDDR6",
+    "cleanTitle": "GIGABYTE GeForce RTX 3050 WINDFORCE OC V2 6G NVIDIA 6 GB GDDR6",
+    "price": "£182.04",
     "category": "GPUs",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/msi-rtx-3050-8gb-ventus-2x-xs-8g-oc-geforcertx3050ventus2xxs8goc-pid344723.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2023/08/msi-rtx-3050-8gb-ventus-2x-xs-8g-oc-geforce-rtx-3050-ventus-2x-xs-8g-oc-344723.jpg",
+    "link": "https://www.quzo.co.uk/gigabyte-nvidia-geforce-rtx-3050-windforce-oc-v2-6g-graphics-card-6gb-gddr6-2304-cuda-cores-147-gvn3050wf2ocv26gd-pid393503.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/01/03/gigabyte-nvidia-geforce-rtx-3050-windforce-oc-v2-6g-graphics-card-6gb-gddr6-2304-cuda-cores-147-393503.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "GIGABYTE GeForce RTX 3050 OC Low Profile 6G NVIDIA 6 GB GDDR6",
@@ -1713,7 +1713,7 @@
     "link": "https://www.quzo.co.uk/gigabyte-nvidia-geforce-rtx-3050-oc-6gb-low-profile-dual-fan-graphics-card-gvn3050oc6gl-pid358282.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2024/02/gigabyte-geforce-rtx-3050-oc-low-profile-6g-geforce-rtx-3050-6-gb-gddr6-96-bit-7680-x-4320-pixe-358282.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Hisense 43E7KQTUK TV 109.2 cm (43\") 4K Ultra HD Smart TV Black 250 cd/m",
@@ -1725,19 +1725,7 @@
     "link": "https://www.quzo.co.uk/hisense-43-e7-series-qled-tv-black-3840-times-2160-38001-3x-hdmi-2x-usb-vesa-200-x-300-43e7kqtuk-pid349126.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2023/10/hisense-43-quot-e7-series-qled-tv-black-3840-times-2160-38001-3x-hdmi-2x-usb-vesa-200-x-300-43e-349126.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
-  },
-  {
-    "title": "TCL 75A300W-UK TV 190.5 cm (75\") 4K Ultra HD Smart TV Wi-Fi White 450 cd/m",
-    "cleanTitle": "TCL 75A300W-UK TV 190.5 cm (75\") 4K Ultra HD Smart TV Wi-Fi White 450 cd/m",
-    "price": "£1448.46",
-    "category": "TVs",
-    "quality": "Worth Checking",
-    "source": "Quzo UK Awin Product Feed",
-    "link": "https://www.quzo.co.uk/tcl-nxtvision-75a300wuk-75-inch-4k-qled-tv--pid405291.html",
-    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/06/30/tcl--190-5-cm-75-3848-x-2160-pixels-qled-smart-tv-wi-fi-white-75a300w-uk-405291.webp",
-    "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "TCL SF560 43SF560-UK TV 109.2 cm (43\") Full HD Smart TV Wi-Fi Metallic 300 cd/m",
@@ -1749,7 +1737,19 @@
     "link": "https://www.quzo.co.uk/tcl-43f560k-fhd-qled-tv-43sf560k-pid405277.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/08/19/tcl-sf560-43sf560-uk-109-2-cm-43-1920-x-1080-pixels-qled-smart-tv-wi-fi-metallic-43sf560k-405277.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
+  },
+  {
+    "title": "Samsung 48\" OLED S90F 4K Vision AI Smart TV (2025)",
+    "cleanTitle": "Samsung 48\" OLED S90F 4K Vision AI Smart TV (2025)",
+    "price": "£1043.86",
+    "category": "TVs",
+    "quality": "Worth Checking",
+    "source": "Quzo UK Awin Product Feed",
+    "link": "https://www.quzo.co.uk/48-inch-oled-4k-4k-ai-upscaling-pronq4-ai-gen3-processor-ai-motion-enhancer-promotion-xcelerato-qe48s90faexxu-pid405540.html",
+    "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/07/03/samsung-48-oled-s90f-4k-vision-ai-smart-tv-2025-121-9-cm-48-3840-x-2160-pixels-oled-smart-tv-wi-405540.webp",
+    "merchant": "Quzo UK",
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Samsung HG43BU800EE 109.2 cm (43\") 4K Ultra HD Smart TV Wi-Fi Black",
@@ -1761,19 +1761,19 @@
     "link": "https://www.quzo.co.uk/hg43bu800eexxu-43-inch-uhd-hospitality-tv--pid344903.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2024/05/samsung-hg43bu800ee-109-2-cm-43-3840-x-2160-pixels-led-smart-tv-wi-fi-black-hg43bu800eexxu-344903.jpg",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Lenovo Legion H410 Headphones Wireless Head-band Gaming USB Type-C Bluetooth Black Purple",
     "cleanTitle": "Lenovo Legion H410 Headphones Wireless Head-band Gaming USB Type-C Bluetooth Black Purple",
-    "price": "£65.81",
+    "price": "£59.23",
     "category": "Accessories",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/legion-h410-wireless-gaming-headset-gxd1r34013-pid413122.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/11/16/lenovo-legion-h410-product-type-headphones-connectivity-technology-wireless-bluetooth-recommend-413122.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Marvo Scorpion 6-Product Gaming & Streaming Bundle featuring Gaming Keyboard Programmable USB Mouse Non-Slip Mousepad PC & Console-Compatible Gaming Headset RGB Stereo Soundbar & USB Streaming Microphone",
@@ -1785,35 +1785,515 @@
     "link": "https://www.quzo.co.uk/marvo-scorpion-6product-gaming-amp-streaming-bundle-featuring-80-tkl-multimedia-keyboard-progra-kemargaming25-pid399636.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/04/16/marvo-scorpion-6-product-gaming-amp-streaming-bundle-featuring-80-tkl-multimedia-keyboard-progr-399636.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Lenovo Legion M410 mouse Gaming Ambidextrous RF Wireless + USB Type-C Optical 16000 DPI",
     "cleanTitle": "Lenovo Legion M410 mouse Gaming Ambidextrous RF Wireless + USB Type-C Optical 16000 DPI",
-    "price": "£44.16",
+    "price": "£39.74",
     "category": "Accessories",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/legion-m410-wless-rgb-gaming-mouse-gy51p83012-pid413121.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2025/10/30/lenovo-legion-m410-ambidextrous-optical-rf-wireless-usb-type-c-16000-dpi-black-transparent-gy51-413121.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
     "title": "Marvo CM416 LOOT40 keyboard Mouse included Gaming USB Black",
     "cleanTitle": "Marvo CM416 LOOT40 keyboard Mouse included Gaming USB Black",
-    "price": "£31.04",
+    "price": "£27.94",
     "category": "Accessories",
     "quality": "Worth Checking",
     "source": "Quzo UK Awin Product Feed",
     "link": "https://www.quzo.co.uk/marvo-scorpion-cm416-4in1-gaming-bundle-wired-keyboard-mouse-headset-and-mouse-pad-uk-layout-cm416uk-pid392933.html",
     "image": "https://assets.media-quzo.co.uk/site/catalogue/large/2024/12/16/marvo-scorpion-cm416-4-in-1-gaming-bundle-wired-keyboard-mouse-headset-and-mouse-pad-uk-layout--392933.webp",
     "merchant": "Quzo UK",
-    "timestamp": "2026-08-02T11:27:41"
+    "timestamp": "2026-08-10T21:03:51"
   },
   {
-    "title": "Extra 5% off discounted deals",
-    "cleanTitle": "Extra 5% off discounted deals",
+    "title": "Refurbished Lenovo Legion Pro 7 AMD Ryzen 9 9955HX3D 64GB RAM 2TB SSD 16\" 240Hz RTX 5080 Windows 11 Home Gaming Laptop",
+    "cleanTitle": "Refurbished Lenovo Legion Pro 7 AMD Ryzen 9 9955HX3D 64GB RAM 2TB SSD 16\" 240Hz RTX 5080 Gaming Laptop",
+    "price": "£2999.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/lenovo-laptop-83ructo1ww-pf5wvk86-ag.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/L/e/Lenovo-Legion-Pro-7-16AFR10H-AMD-Ryzen-9-9955HX3D-20-1-LaptopOutlet-3.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Lenovo Legion Pro 7 OLED 16IAX10H Intel Core Ultra 9 275HX 32GB RAM 1TB SSD 16\" WQXGA OLED 240Hz RTX 5080 Windows 11 Home Gaming Laptop",
+    "cleanTitle": "Lenovo Legion Pro 7 OLED 16IAX10H Intel Core Ultra 9 275HX 32GB RAM 1TB SSD 16\" WQXGA OLED 240Hz RTX 5080 Gaming Laptop",
+    "price": "£3649.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/lenovo-legion-pro-intel-u9-83f5000ruk.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/L/e/Lenovo-Laptop-Legion-Pro-7-16IAX10H-Gaming-1-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Acer Predator Helios Neo 16 AI Intel Core Ultra 9 290HX Plus 32GB RAM 1TB SSD RTX 5080 240Hz 16\" Windows 11 Home Gaming Laptop",
+    "cleanTitle": "Acer Predator Helios Neo 16 AI Intel Core Ultra 9 290HX Plus 32GB RAM 1TB SSD RTX 5080 240Hz 16\" Gaming Laptop",
+    "price": "£3249.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/acer-predator-helios-nh-u46ek-001.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/A/c/Acer-20Predator-20Helios-20Neo-2016-20Gaming-20Laptop-NH.U46EK-20-16-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS ROG Zephyrus G14 (2026) GU405AW-SY003W Intel Core Ultra 9 386H 32GB RAM 2TB SSD 14\" 120Hz GeForce RTX 5080 Windows 11 Home Gaming Laptop",
+    "cleanTitle": "ASUS ROG Zephyrus G14 (2026) GU405AW-SY003W Intel Core Ultra 9 386H 32GB RAM 2TB SSD 14\" 120Hz GeForce RTX 5080 Gaming Laptop",
+    "price": "£3899.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-rog-zephyrus-g14-gu405aw-sy003w.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/A/S/ASUS-20ROG-20ZEPHYRUS-20G14-20GU405AW-SY003W-20LAPTOP-20-13-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Medion Erazer Tank X15 AMD Ryzen 7 7800X3D 32GB RAM 2TB SSD RTX NVIDIA GeForce 5070 Windows 11 Home Gaming PC",
+    "cleanTitle": "Medion Erazer Tank X15 AMD Ryzen 7 7800X3D 32GB RAM 2TB SSD RTX NVIDIA GeForce 5070 Gaming PC",
+    "price": "£2289.99",
+    "category": "Gaming",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/medion-erazer-tank-x15-10026054.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/M/e/Medion-20Erazer-20Tank-20X15-20AMD-20Ryzen-207-207800X3D-2010026054-20-13-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Lenovo Legion T5 30IAX10 Intel Core Ultra 7 16GB RAM 1TB SSD RTX 5060 Windows 11 Home Gaming Desktop PC",
+    "cleanTitle": "Lenovo Legion T5 30IAX10 Intel Core Ultra 7 16GB RAM 1TB SSD RTX 5060 Gaming Desktop PC",
+    "price": "£1197.99",
+    "category": "Gaming",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/lenovo-legion-t5-intel-90ye0023uk.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/8/4/84912f14d441f00b52cebcb7130b5591.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Medion Erazer Deputy P15 Intel Core 5 210H 16GB RAM 1TB SSD 15.6\" 144Hz RTX 5060 Windows 11 Home Gaming Laptop",
+    "cleanTitle": "Medion Erazer Deputy P15 Intel Core 5 210H 16GB RAM 1TB SSD 15.6\" 144Hz RTX 5060 Gaming Laptop",
+    "price": "£894.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/medion-erazer-deputy-p15-30041124.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/M/E/MEDION-Erazer-Deputy-P15-laptop-LaptopOutlet-1.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Medion Erazer Scout 15 Intel Core i5 13420H 16GB RAM 1TB SSD RTX 5050 15.6\" Full HD 144Hz IPS Windows 11 Home Gaming Laptop",
+    "cleanTitle": "Medion Erazer Scout 15 Intel Core i5 13420H 16GB RAM 1TB SSD RTX 5050 15.6\" Full HD 144Hz IPS Gaming Laptop",
+    "price": "£824.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/medion-erazer-scout-15-30039773.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/S/c/Scout-15-30039773-LaptopOutlet-1.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "HP Victus 15-fb3002na AMD Ryzen™ 5 8645HS 16GB RAM 512GB SSD RTX 4050 15.6\" Full HD Windows 11 Home Gaming Laptop",
+    "cleanTitle": "HP Victus 15-fb3002na AMD Ryzen™ 5 8645HS 16GB RAM 512GB SSD RTX 4050 15.6\" Full HD Gaming Laptop",
+    "price": "£849.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/hp-victus-gaming-15-laptop-c09k4eaabu.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/c/0/c09k4ea-abu-hp-victus-15-fb3002na-laptop-20-7-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "HP Victus 15-fb2005na AMD Ryzen 7 8845HS 16GB RAM 512GB SSD RTX 4050 15.6\" Full HD Windows 11 Home Gaming Laptop",
+    "cleanTitle": "HP Victus 15-fb2005na AMD Ryzen 7 8845HS 16GB RAM 512GB SSD RTX 4050 15.6\" Full HD Gaming Laptop",
+    "price": "£899.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/hp-victus-gaming-amd-r-a2dd5ea-abu.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/O/p/Opihr-24C1-20-17-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Refurbished BenQ MOBIUZ EX271UZ 27\" QD-OLED UHD 4K 240Hz 0.03ms Freesync Premium Pro DisplayPort HDMI Gaming Monitor",
+    "cleanTitle": "Refurbished BenQ MOBIUZ EX271UZ 27\" QD-OLED UHD 4K 240Hz 0.03ms Freesync Premium Pro DisplayPort HDMI Gaming Monitor",
+    "price": "£639",
+    "category": "Monitors",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/benq-ex271uz-27-oled-monitor-9h-lp2la-tbe-ag.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/b/e/benq-mobiuz-ex271uz-27-inch-gaming-monitor-20-10-LaptopOutlet-6.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "BenQ MOBIUZ EX271UZ 27\" QD-OLED UHD 4K 240Hz 0.03ms Freesync Premium Pro Gaming Monitor",
+    "cleanTitle": "BenQ MOBIUZ EX271UZ 27\" QD-OLED UHD 4K 240Hz 0.03ms Freesync Premium Pro Gaming Monitor",
+    "price": "£769",
+    "category": "Monitors",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/benq-ex271uz-27-oled-monitor-9h-lp2la-tbe.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/b/e/benq-mobiuz-ex271uz-27-inch-gaming-monitor-20-10-LaptopOutlet-5.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS V16 V3607VH Intel Core 5 210H 16 GB RAM 1 TB SSD 16\" WUXGA IPS 144Hz RTX 5050 Windows 11 Home Laptop",
+    "cleanTitle": "ASUS V16 V3607VH Intel Core 5 210H 16 GB RAM 1 TB SSD 16\" WUXGA IPS 144Hz RTX 5050 Laptop",
+    "price": "£949.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-vivobook-v16-v3607vh-rp029w.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/V/3/V3607VH-RP029W-20-3-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Philips Evnia 27M2N6501L 27\" QD-OLED Quad HD 240Hz 0.03ms G-Sync compatible Height Adjustable Gaming Monitor",
+    "cleanTitle": "Philips Evnia 27M2N6501L 27\" QD-OLED Quad HD 240Hz 0.03ms G-Sync compatible Height Adjustable Gaming Monitor",
+    "price": "£319.99",
+    "category": "Monitors",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/philips-27m2n6501l-27-oled-monitor.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/p/h/philips-evnia-27m2n6501l-27-qd-oled-qhd-height-adjustable-gaming-monitor-20-5-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS GeForce RTX 5080 ROG Astral 16GB OC Edition Graphics Card",
+    "cleanTitle": "ASUS GeForce RTX 5080 ROG Astral 16GB OC Edition Graphics Card",
+    "price": "£1558.89",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-rog-astral-90yv0lv0-m0na00.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/9/0/90YV0LV0-M0NA00-7-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "iiyama G-Master GOB2701QSC-B1 27\" Quad HD META3 OLED 280Hz 0.03ms USB-C Height Adjustable Gaming Monitor with Speakers - Black",
+    "cleanTitle": "iiyama G-Master GOB2701QSC-B1 27\" Quad HD META3 OLED 280Hz 0.03ms USB-C Height Adjustable Gaming Monitor with Speakers - Black",
+    "price": "£419.99",
+    "category": "Monitors",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/iiyama-27-inch-qhd-oled-monitor-gob2701qsc-b1.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/G/O/GOB2701QSC-B1-iiyama-27-inch-qhd-OLED-monitor-20-3-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Refurbished Lenovo Legion 27Q-10 27\" QHD 240Hz IPS FreeSync 4ms DisplayPort HDMI Gaming Monitor",
+    "cleanTitle": "Refurbished Lenovo Legion 27Q-10 27\" QHD 240Hz IPS FreeSync 4ms DisplayPort HDMI Gaming Monitor",
+    "price": "£129.99",
+    "category": "Monitors",
+    "quality": "🔥 GOOD PRICE",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/lenovo-legion-27q-10-monitor-68c6gac4eu-cg.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/L/e/Lenovo-Legion-27Q-10-27-QHD-IPS-Monitor-20-1-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Acer Nitro VG270KV4 27\" IPS UHD 4K 160Hz 0.5ms Freesync & G-Sync Gaming Monitor with Speakers",
+    "cleanTitle": "Acer Nitro VG270KV4 27\" IPS UHD 4K 160Hz 0.5ms Freesync & G-Sync Gaming Monitor with Speakers",
+    "price": "£249.99",
+    "category": "Monitors",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/acer-nitro-vg270kv4-monitor-um-hv0ee-405.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/u/m/um-hv0ee-405-acer-nitro-vg270kv4-27-inch-ips-monitor-20-1-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Refurbished ASUS ROG Strix XG27UCS 27\" 4K UHD IPS 160Hz AMD FreeSync DisplayPort HDMI Gaming Monitor",
+    "cleanTitle": "Refurbished ASUS ROG Strix XG27UCS 27\" 4K UHD IPS 160Hz AMD FreeSync DisplayPort HDMI Gaming Monitor",
+    "price": "£259.99",
+    "category": "Monitors",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-rog-strix-monitor-xg27ucs-ag.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/A/S/ASUS-ROG-Strix-XG27UCS-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS GeForce RTX 5060 TUF Gaming 8GB OC Graphics Card",
+    "cleanTitle": "ASUS GeForce RTX 5060 TUF Gaming 8GB OC Graphics Card",
+    "price": "£373.99",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-tuf-gaming-90yv0n00-m0na00.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/4/9/49a82cc09e3cf56813080896da992973.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Lenovo V15 AMD Ryzen 5-7520U 8GB RAM 512GB SSD 15.6\" Full HD Windows 11 Home Laptop",
+    "cleanTitle": "Lenovo V15 AMD Ryzen 5-7520U 8GB RAM 512GB SSD 15.6\" Full HD Laptop",
+    "price": "£437.13",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/lenovo-v-v15-7520u-notebook-39-6-cm-15-6-full-hd-amd-ryzen-5-8-gb-lpddr5-sdram-512-gb-ssd-wi-fi-5-802-11ac-windows-11-home-black-1.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/8/2/82YU00U8UK-main-LaptopOutlet-1.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Refurbished ASUS VivoBook X1504VA Intel Core i7 13th Gen 16GB RAM 1TB SSD 15.6\" Windows 11 Home Laptop",
+    "cleanTitle": "Refurbished ASUS VivoBook X1504VA Intel Core i7 13th Gen 16GB RAM 1TB SSD 15.6\" Laptop",
+    "price": "£489.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-laptop-rfb-x1504va-nj513w.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/X/1/X1504VA-NJ513W-4-LaptopOutlet-2.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Acer Nitro KG240YW3 24\" IPS Full HD 240Hz 0.5ms Freesync Premium Gaming Monitor with Speakers",
+    "cleanTitle": "Acer Nitro KG240YW3 24\" IPS Full HD 240Hz 0.5ms Freesync Premium Gaming Monitor with Speakers",
+    "price": "£119.99",
+    "category": "Monitors",
+    "quality": "🔥 GOOD PRICE",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/acer-nitro-kg240yw3-monitor-um-qx0ee-328.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/u/m/um-qx0ee-328-acer-nitro-kg240yw3-24-inch-ips-monitor-20-1-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Refurbished Lenovo ThinkPad T15 Gen 1 Intel Core i5-10210U 8GB RAM 256GB SSD 15.6\" Windows 10 Pro Laptop",
+    "cleanTitle": "Refurbished Lenovo ThinkPad T15 Gen 1 Intel Core i5-10210U 8GB RAM 256GB SSD 15.6\" Windows 10 Pro Laptop",
+    "price": "£349.99",
+    "category": "Laptops",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/lenovo-laptop-20s6002xmd-uk-ag.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/L/e/Lenovo-ThinkPad-T15-Gen-1-Intel-Core-i5-10210U-8GB-20-1-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS Geforce RTX 5070 DUAL 12GB OC Graphics Card",
+    "cleanTitle": "ASUS Geforce RTX 5070 DUAL 12GB OC Graphics Card",
+    "price": "£594.01",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-dual-rtx5070-90yv0m17-m0na00.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/3/6/36c98a6338100894bfb95b78235e1e9b.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS GeForce RTX 5070 Prime 12GB OC Graphics Card",
+    "cleanTitle": "ASUS GeForce RTX 5070 Prime 12GB OC Graphics Card",
+    "price": "£660.92",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-prime-rtx5070-90yv0m10-m0na00.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/b/8/b8ab17473cb2bf71686db98f48881d93_2.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Refurbished ASUS GeForce RTX 5060 Dual 8GB OC Graphics Card",
+    "cleanTitle": "Refurbished ASUS GeForce RTX 5060 Dual 8GB OC Graphics Card",
+    "price": "£299.99",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-dual-gpu-90yv0n12-m0na00-ag.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/9/0/90YV0N12-M0NA00-20-1-LaptopOutlet-1.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS GeForce RTX 5060 Dual 8GB OC Graphics Card",
+    "cleanTitle": "ASUS GeForce RTX 5060 Dual 8GB OC Graphics Card",
+    "price": "£341.29",
+    "category": "GPUs",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-dual-90yv0n12-m0na00.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/9/0/90YV0N12-M0NA00-20-1-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Kingston NV3 500GB M.2 NVMe PCIe 4.0 SSD/Solid State Drive",
+    "cleanTitle": "Kingston NV3 500GB M.2 NVMe PCIe 4.0 SSD/Solid State Drive",
+    "price": "£94.99",
+    "category": "SSDs",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/kingston-nv3-500gb-ssd-snv3s-500g.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/S/N/SNV3S-500G-2-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Kingston NV3 1TB M.2 NVMe PCIe 4.0 SSD/Solid State Drive",
+    "cleanTitle": "Kingston NV3 1TB M.2 NVMe PCIe 4.0 SSD/Solid State Drive",
+    "price": "£139.99",
+    "category": "SSDs",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/kingston-nv3-1tb-ssd-snv3s-1000g.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/S/N/SNV3S-1000G-0001-R4Agq1lliEatBLJ7za5yhg.r-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Kingston SKC3000S/512G 512GB M.2 2280 NVMe PCIe 4.0 SSD",
+    "cleanTitle": "Kingston SKC3000S/512G 512GB M.2 2280 NVMe PCIe 4.0 SSD",
+    "price": "£144.99",
+    "category": "SSDs",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/kingston-kc3000-m-2-skc3000s-512g.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/5/3/533d6e62336e37c1053f4ea204a15b27.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Origin Storage Inception TLC830 Pro 256GB NVMe M.2 Internal SSD",
+    "cleanTitle": "Origin Storage Inception TLC830 Pro 256GB NVMe M.2 Internal SSD",
+    "price": "£44.98",
+    "category": "SSDs",
+    "quality": "🔥 GOOD PRICE",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/origin-storage-otlc2563dnvmem-2-80.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/d/6/d6d1f72156bbad39a0068818690d76ad.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ADATA Legend 710 256GB M.2 2280 NVMe PCIe 3.0 SSD",
+    "cleanTitle": "ADATA Legend 710 256GB M.2 2280 NVMe SSD",
+    "price": "£44.99",
+    "category": "SSDs",
+    "quality": "🔥 GOOD PRICE",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/adata-legend-710-ssd-aleg-710-256gcs.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/4/6/46ac14655407783a86300f7ebf9233bb.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS ROG STRIX Z890-F GAMING WIFI DDR5 Intel 1851 ATX Motherboard + ROG STRIX LC III 360 ARGB LCD AIO Cooler Bundle Pack",
+    "cleanTitle": "ASUS ROG STRIX Z890-F GAMING WIFI DDR5 Intel 1851 ATX Motherboard + ROG STRIX LC III 360 ARGB LCD AIO Cooler Bundle Pack",
+    "price": "£452.99",
+    "category": "Hardware",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-rog-strix-z890-f-gaming-wifi-rog-strix-lc-iii-360-argb-lcd-bundle.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/9/0/90MB1I40-M0EAY0-2090RC00W1-M0UAY0-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "AMD Ryzen 7 9800X3D 4.70 GHz AM5 Socket Zen5 Architecture Processor",
+    "cleanTitle": "AMD Ryzen 7 9800X3D 4.70 GHz AM5 Socket Zen5 Architecture",
+    "price": "£379.99",
+    "category": "Hardware",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/amd-ryzen-7-9800x-100-100001084wof.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/1/d/1d2dcca62387a61e2c658d60c5986edd.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS ROG Strix LC III 360mm Intel/AMD AIO Liquid CPU Cooler - Black",
+    "cleanTitle": "ASUS ROG Strix LC III 360mm Intel/AMD AIO Liquid CPU Cooler - Black",
+    "price": "£143.41",
+    "category": "Hardware",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-rog-cooler-90rc00t0-m0uay0.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/9/0/90RC00T0-M0UAY0-image-1-LaptopOutlet-1.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS ROG Strix LC III 240mm ARGB Intel/AMD AIO Liquid CPU Cooler - White",
+    "cleanTitle": "ASUS ROG Strix LC III 240mm ARGB Intel/AMD AIO Liquid CPU Cooler - White",
+    "price": "£143.99",
+    "category": "Hardware",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-rog-cooler-90rc00s2-m0uay0.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/9/0/90RC00S2-M0UAY0-image-1-LaptopOutlet-1.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ASUS ROG Strix LC III 240mm ARGB Intel/AMD AIO Liquid CPU Cooler - Black",
+    "cleanTitle": "ASUS ROG Strix LC III 240mm ARGB Intel/AMD AIO Liquid CPU Cooler - Black",
+    "price": "£149.99",
+    "category": "Hardware",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/asus-rog-cooler-90rc00s1-m0uay0.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/1/a/1ad050b8dd2d3cc9f513b5010633a054.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "ACER Predator Galea 550 Wireless Gaming Headset - Black",
+    "cleanTitle": "ACER Predator Galea 550 Wireless Gaming Headset - Black",
+    "price": "£79.99",
+    "category": "Accessories",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/acer-predator-galea550-gp-hds11-01j.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/6/9/696d3fa5ecbf730c882190dd1606b830.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Acer Nitro TKL Wired RGB Mechanical Gaming Keyboard - Black",
+    "cleanTitle": "Acer Nitro TKL Wired RGB Mechanical Gaming Keyboard - Black",
+    "price": "£47.49",
+    "category": "Accessories",
+    "quality": "Worth Checking",
+    "source": "Laptop Outlet Awin Product Feed",
+    "link": "https://www.laptopoutlet.co.uk/acer-gaming-keyboard-gp-kbd11-01z.html",
+    "image": "https://static-media.laptopoutlet.co.uk/catalog/product/G/P/GP.KBD11.01Z-image-1-LaptopOutlet.jpg",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:04:12"
+  },
+  {
+    "title": "Mystery Discount",
+    "cleanTitle": "Mystery Discount",
     "price": "See deal",
     "category": "Other",
     "quality": "Partner Offer",
@@ -1821,13 +2301,121 @@
     "link": "https://store.acer.com/en-gb",
     "image": "/goblin-logo.png",
     "merchant": "Acer",
-    "timestamp": "2026-08-02T11:25:02",
+    "timestamp": "2026-08-10T21:01:25",
     "dealType": "offer",
-    "offerId": "3999097",
-    "offerStartDate": "2026-07-31T13:00:00+00:00",
-    "offerEndDate": "2026-08-04T07:00:00+00:00",
+    "offerId": "4042383",
+    "offerStartDate": "2026-08-07T13:00:00+00:00",
+    "offerEndDate": "2026-08-11T07:00:00+00:00",
     "offerStatus": "expiringSoon",
-    "description": "Extra 5% off discounted deals"
+    "description": "Mystery Discount"
+  },
+  {
+    "title": "UP TO £500 OFF on selected accessories",
+    "cleanTitle": "UP TO £500 OFF on selected accessories",
+    "price": "See deal",
+    "category": "Accessories",
+    "quality": "Partner Offer",
+    "source": "Acer UK Awin Promotions",
+    "link": "https://store.acer.com/en-gb/special-offers/deals/peripherals",
+    "image": "/goblin-logo.png",
+    "merchant": "Acer",
+    "timestamp": "2026-08-10T21:01:25",
+    "dealType": "offer",
+    "offerId": "4042379",
+    "offerStartDate": "2026-08-04T10:18:00+00:00",
+    "offerEndDate": "2026-09-25T10:00:00+00:00",
+    "offerStatus": "active",
+    "description": "Discount applied automatically in the cart"
+  },
+  {
+    "title": "UP TO £500 OFF on selected gaming products",
+    "cleanTitle": "UP TO £500 OFF on selected gaming products",
+    "price": "See deal",
+    "category": "Gaming",
+    "quality": "Partner Offer",
+    "source": "Acer UK Awin Promotions",
+    "link": "https://store.acer.com/en-gb/special-offers/deals/gaming",
+    "image": "/goblin-logo.png",
+    "merchant": "Acer",
+    "timestamp": "2026-08-10T21:01:25",
+    "dealType": "offer",
+    "offerId": "4042377",
+    "offerStartDate": "2026-08-04T10:17:00+00:00",
+    "offerEndDate": "2026-09-25T10:00:00+00:00",
+    "offerStatus": "active",
+    "description": "Discount applied automatically in the cart"
+  },
+  {
+    "title": "UP TO £500 OFF on selected monitors",
+    "cleanTitle": "UP TO £500 OFF on selected monitors",
+    "price": "See deal",
+    "category": "Monitors",
+    "quality": "Partner Offer",
+    "source": "Acer UK Awin Promotions",
+    "link": "https://store.acer.com/en-gb/special-offers/deals/monitors",
+    "image": "/goblin-logo.png",
+    "merchant": "Acer",
+    "timestamp": "2026-08-10T21:01:25",
+    "dealType": "offer",
+    "offerId": "4042373",
+    "offerStartDate": "2026-08-04T10:16:00+00:00",
+    "offerEndDate": "2026-09-25T10:00:00+00:00",
+    "offerStatus": "active",
+    "description": "Discount applied automatically in the cart"
+  },
+  {
+    "title": "UP TO £500 OFF on selected desktops",
+    "cleanTitle": "UP TO £500 OFF on selected desktops",
+    "price": "See deal",
+    "category": "Gaming",
+    "quality": "Partner Offer",
+    "source": "Acer UK Awin Promotions",
+    "link": "https://store.acer.com/en-gb/special-offers/deals/desktops",
+    "image": "/goblin-logo.png",
+    "merchant": "Acer",
+    "timestamp": "2026-08-10T21:01:25",
+    "dealType": "offer",
+    "offerId": "4042371",
+    "offerStartDate": "2026-08-04T10:14:00+00:00",
+    "offerEndDate": "2026-09-25T10:00:00+00:00",
+    "offerStatus": "active",
+    "description": "Discount applied automatically in the cart"
+  },
+  {
+    "title": "UP TO £500 OFF on selected laptops",
+    "cleanTitle": "UP TO £500 OFF on selected laptops",
+    "price": "See deal",
+    "category": "Laptops",
+    "quality": "Partner Offer",
+    "source": "Acer UK Awin Promotions",
+    "link": "https://store.acer.com/en-gb/special-offers/deals/laptops",
+    "image": "/goblin-logo.png",
+    "merchant": "Acer",
+    "timestamp": "2026-08-10T21:01:25",
+    "dealType": "offer",
+    "offerId": "4042317",
+    "offerStartDate": "2026-08-04T09:55:00+00:00",
+    "offerEndDate": "2026-09-25T10:00:00+00:00",
+    "offerStatus": "active",
+    "description": "Discount applied automatically in the cart"
+  },
+  {
+    "title": "Back to School Sale: UP TO £500 OFF",
+    "cleanTitle": "Back to School Sale: UP TO £500 OFF",
+    "price": "See deal",
+    "category": "Other",
+    "quality": "Partner Offer",
+    "source": "Acer UK Awin Promotions",
+    "link": "https://store.acer.com/en-gb/special-offers/deals",
+    "image": "/goblin-logo.png",
+    "merchant": "Acer",
+    "timestamp": "2026-08-10T21:01:25",
+    "dealType": "offer",
+    "offerId": "4042305",
+    "offerStartDate": "2026-08-04T09:52:00+00:00",
+    "offerEndDate": "2026-09-25T10:00:00+00:00",
+    "offerStatus": "active",
+    "description": "Discount applied automatically in the cart"
   },
   {
     "title": "Save up to 30% on LG 27MS550-B 27\" Full HD IPS 100Hz 5ms Height Adjustable Monitor with Speakers at box.co.uk",
@@ -1839,7 +2427,7 @@
     "link": "https://box.co.uk/27ms550-b-aek-lg-27-inch-fhd-ips-monitor",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:02",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "4031873",
     "offerStartDate": "2026-07-29T09:26:00+00:00",
@@ -1857,7 +2445,7 @@
     "link": "https://box.co.uk/lg-32mr50c-b-full-hd-freesync-32mr50c-b-aekq",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:02",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "4031867",
     "offerStartDate": "2026-07-29T09:25:00+00:00",
@@ -1875,7 +2463,7 @@
     "link": "https://box.co.uk/27gs60qc-b-aekq-lg-ultragear-quad-hd-monitor",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:02",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "4031863",
     "offerStartDate": "2026-07-29T09:24:00+00:00",
@@ -1893,7 +2481,7 @@
     "link": "https://box.co.uk/lg-monitors",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:02",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "4031859",
     "offerStartDate": "2026-07-29T09:23:00+00:00",
@@ -1911,7 +2499,7 @@
     "link": "https://box.co.uk/handheld-pc-gaming",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:02",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "4028683",
     "offerStartDate": "2026-07-28T08:59:00+00:00",
@@ -1929,31 +2517,13 @@
     "link": "https://box.co.uk/rtx-50-series-laptops",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-08-02T11:25:02",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "4025901",
     "offerStartDate": "2026-07-27T23:00:00+00:00",
     "offerEndDate": "2026-09-30T22:59:00+00:00",
     "offerStatus": "active",
     "description": "Back to school starts with NVIDIA. Discover great offers on laptops that deliver the performance you need for coursework, projects and gaming at box.co.uk"
-  },
-  {
-    "title": "£55 off on orders over £449",
-    "cleanTitle": "£55 off on orders over £449",
-    "price": "See deal",
-    "category": "Other",
-    "quality": "Partner Offer",
-    "source": "AliExpress Awin Promotions",
-    "link": "https://www.aliexpress.com/ssr/300003326/UK-Main-Venue?disableNav=YES&pha_manifest=ssr&_immersiveMode=true&businessCode=guide&aff_fcid=698c83ec1ec0469bbae3b372a7505ac2-1785516779159-02184-_c3aeeaDN&tt=CPS_NORMAL&aff_fsk=_c3aeeaDN&aff_platform=portals-tool&sk=_c3aeeaDN&aff_trace_key=698c83ec1ec0469bbae3b372a7505ac2-1785516779159-02184-_c3aeeaDN&terminal_id=5fff63a386b54ed8bf1ea736f8c80b6d",
-    "image": "/goblin-logo.png",
-    "merchant": "AliExpress",
-    "timestamp": "2026-08-02T11:25:03",
-    "dealType": "offer",
-    "offerId": "4038533",
-    "offerStartDate": "2026-07-31T16:57:00+00:00",
-    "offerEndDate": "2026-08-07T15:59:00+00:00",
-    "offerStatus": "expiringSoon",
-    "description": "£55 off on orders over £449"
   },
   {
     "title": "New term tech made simple - essential Back to School tech from only £14.99 at box.co.uk",
@@ -1965,7 +2535,7 @@
     "link": "https://box.co.uk/back-to-school-deals",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-07-23T14:30:35",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "4014449",
     "offerStartDate": "2026-07-20T13:08:00+00:00",
@@ -1983,7 +2553,7 @@
     "link": "https://box.co.uk/acer-monitors?most_suitable_for=619050",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-07-17T21:58:45",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "4002343",
     "offerStartDate": "2026-07-13T13:29:00+00:00",
@@ -2001,31 +2571,13 @@
     "link": "https://box.co.uk/components?box_promotion_filter=633220&brand_filter=616448",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-07-13T12:15:08",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "3998997",
     "offerStartDate": "2026-07-10T10:24:00+00:00",
     "offerEndDate": "2026-08-18T22:59:00+00:00",
     "offerStatus": "active",
     "description": "Power up your build with ASUS component bundles — engineered for speed, stability, and next-level performance. Build smarter, game harder at box.co.uk"
-  },
-  {
-    "title": "Save on HP laptops with our latest limited time deals. Find the perfect device for work, study, gaming or everyday use at a great price at box.co.uk",
-    "cleanTitle": "Save on HP laptops with our latest limited time deals. Find the perfect device for work, study, gaming or everyday use at a great",
-    "price": "See deal",
-    "category": "Laptops",
-    "quality": "Partner Offer",
-    "source": "Box.co.uk Awin Promotions",
-    "link": "https://box.co.uk/hp-laptops",
-    "image": "/goblin-logo.png",
-    "merchant": "Box",
-    "timestamp": "2026-07-13T12:15:08",
-    "dealType": "offer",
-    "offerId": "3998987",
-    "offerStartDate": "2026-07-10T10:23:00+00:00",
-    "offerEndDate": "2026-08-04T22:59:00+00:00",
-    "offerStatus": "active",
-    "description": "Save on HP laptops with our latest limited time deals. Find the perfect device for work, study, gaming or everyday use at a great price at box.co.uk"
   },
   {
     "title": "Stay connected for less. Shop TP Link summer savings now at box.co.uk",
@@ -2037,12 +2589,12 @@
     "link": "https://box.co.uk/networking?brand_filter=619000",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-07-13T12:15:08",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "3997315",
     "offerStartDate": "2026-07-09T08:53:00+00:00",
     "offerEndDate": "2026-08-11T22:59:00+00:00",
-    "offerStatus": "active",
+    "offerStatus": "expiringSoon",
     "description": "Stay connected for less. Shop TP Link summer savings now at box.co.uk"
   },
   {
@@ -2055,121 +2607,13 @@
     "link": "https://box.co.uk/all-deals",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-07-13T12:15:08",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "3997311",
     "offerStartDate": "2026-07-09T08:51:00+00:00",
     "offerEndDate": "2026-08-14T22:59:00+00:00",
-    "offerStatus": "active",
+    "offerStatus": "expiringSoon",
     "description": "Your Summer Upgrade Starts Here – Shop the Best Tech Offers at box.co.uk"
-  },
-  {
-    "title": "UP TO 25% OFF on selected accessories",
-    "cleanTitle": "UP TO 25% OFF on selected accessories",
-    "price": "See deal",
-    "category": "Accessories",
-    "quality": "Partner Offer",
-    "source": "Acer UK Awin Promotions",
-    "link": "https://store.acer.com/en-gb/special-offers/peripherals",
-    "image": "/goblin-logo.png",
-    "merchant": "Acer",
-    "timestamp": "2026-07-04T23:13:56",
-    "dealType": "offer",
-    "offerId": "3963543",
-    "offerStartDate": "2026-06-23T07:00:00+00:00",
-    "offerEndDate": "2026-08-04T07:00:00+00:00",
-    "offerStatus": "active",
-    "description": "Discount applied automatically in the cart"
-  },
-  {
-    "title": "UP TO 25% OFF on selected gaming products",
-    "cleanTitle": "UP TO 25% OFF on selected gaming products",
-    "price": "See deal",
-    "category": "Gaming",
-    "quality": "Partner Offer",
-    "source": "Acer UK Awin Promotions",
-    "link": "https://store.acer.com/en-gb/special-offers/gaming",
-    "image": "/goblin-logo.png",
-    "merchant": "Acer",
-    "timestamp": "2026-07-04T23:13:56",
-    "dealType": "offer",
-    "offerId": "3963539",
-    "offerStartDate": "2026-06-23T07:00:00+00:00",
-    "offerEndDate": "2026-08-04T07:00:00+00:00",
-    "offerStatus": "active",
-    "description": "Discount applied automatically in the cart"
-  },
-  {
-    "title": "UP TO 25% OFF on selected monitors",
-    "cleanTitle": "UP TO 25% OFF on selected monitors",
-    "price": "See deal",
-    "category": "Monitors",
-    "quality": "Partner Offer",
-    "source": "Acer UK Awin Promotions",
-    "link": "https://store.acer.com/en-gb/special-offers/monitors",
-    "image": "/goblin-logo.png",
-    "merchant": "Acer",
-    "timestamp": "2026-07-04T23:13:56",
-    "dealType": "offer",
-    "offerId": "3963535",
-    "offerStartDate": "2026-06-23T07:00:00+00:00",
-    "offerEndDate": "2026-08-04T07:00:00+00:00",
-    "offerStatus": "active",
-    "description": "Discount applied automatically in the cart"
-  },
-  {
-    "title": "UP TO 25% OFF on selected desktops",
-    "cleanTitle": "UP TO 25% OFF on selected desktops",
-    "price": "See deal",
-    "category": "Gaming",
-    "quality": "Partner Offer",
-    "source": "Acer UK Awin Promotions",
-    "link": "https://store.acer.com/en-gb/special-offers/desktops",
-    "image": "/goblin-logo.png",
-    "merchant": "Acer",
-    "timestamp": "2026-07-04T23:13:56",
-    "dealType": "offer",
-    "offerId": "3963531",
-    "offerStartDate": "2026-06-23T07:00:00+00:00",
-    "offerEndDate": "2026-08-04T07:00:00+00:00",
-    "offerStatus": "active",
-    "description": "Discount applied automatically in the cart"
-  },
-  {
-    "title": "UP TO 25% OFF on selected laptops",
-    "cleanTitle": "UP TO 25% OFF on selected laptops",
-    "price": "See deal",
-    "category": "Laptops",
-    "quality": "Partner Offer",
-    "source": "Acer UK Awin Promotions",
-    "link": "https://store.acer.com/en-gb/special-offers/laptops",
-    "image": "/goblin-logo.png",
-    "merchant": "Acer",
-    "timestamp": "2026-07-04T23:13:56",
-    "dealType": "offer",
-    "offerId": "3963525",
-    "offerStartDate": "2026-06-23T07:00:00+00:00",
-    "offerEndDate": "2026-08-04T07:00:00+00:00",
-    "offerStatus": "active",
-    "description": "Discount applied automatically in the cart"
-  },
-  {
-    "title": "Summer Sale: UP TO 25% OFF",
-    "cleanTitle": "Summer Sale: UP TO 25% OFF",
-    "price": "See deal",
-    "category": "Other",
-    "quality": "Partner Offer",
-    "source": "Acer UK Awin Promotions",
-    "link": "https://store.acer.com/en-gb/special-offers",
-    "image": "/goblin-logo.png",
-    "merchant": "Acer",
-    "timestamp": "2026-07-04T23:13:56",
-    "dealType": "offer",
-    "offerId": "3963519",
-    "offerStartDate": "2026-06-23T07:00:00+00:00",
-    "offerEndDate": "2026-08-04T07:00:00+00:00",
-    "offerStatus": "active",
-    "description": "Discount applied automatically in the cart"
   },
   {
     "title": "Get an extra £10 off your order at Box.co.uk for a limited time — just use code Extra10Off at checkout. Min spend £200",
@@ -2181,12 +2625,390 @@
     "link": "https://box.co.uk/",
     "image": "/goblin-logo.png",
     "merchant": "Box",
-    "timestamp": "2026-07-04T23:13:57",
+    "timestamp": "2026-08-10T21:01:26",
     "dealType": "offer",
     "offerId": "3861903",
     "offerStartDate": "2026-04-29T12:22:00+00:00",
     "offerEndDate": "2026-12-30T23:59:00+00:00",
     "offerStatus": "active",
     "description": "Get an extra £10 off your order at Box.co.uk for a limited time — just use code Extra10Off at checkout. Min spend £200"
+  },
+  {
+    "title": "£2.30 off when you spend £22.24 or more",
+    "cleanTitle": "£2.30 off when you spend £22.24 or more",
+    "price": "See deal",
+    "category": "Other",
+    "quality": "Partner Offer",
+    "source": "AliExpress Awin Promotions",
+    "link": "https://s.click.aliexpress.com/e/_c4LkPyiT",
+    "image": "/goblin-logo.png",
+    "merchant": "AliExpress",
+    "timestamp": "2026-08-10T21:01:27",
+    "dealType": "offer",
+    "offerId": "4042749",
+    "offerStartDate": "2026-08-04T11:58:00+00:00",
+    "offerEndDate": "2026-09-01T11:58:00+00:00",
+    "offerStatus": "active",
+    "description": "£2.30 off when you spend £22.24 or more"
+  },
+  {
+    "title": "Save up to 30% on LG 27MS550-B 27\" Full HD IPS 100Hz 5ms HDMI Monitor with Speakers at laptopoutlet.co.uk",
+    "cleanTitle": "Save up to 30% on LG 27MS550-B 27\" Full HD IPS 100Hz 5ms HDMI Monitor with Speakers at laptopoutlet.co.uk",
+    "price": "See deal",
+    "category": "Monitors",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/lg-27-inch-fhd-ips-monitor-27ms550-b-aek.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "4034485",
+    "offerStartDate": "2026-07-30T09:45:00+00:00",
+    "offerEndDate": "2026-08-31T22:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Save up to 30% on LG 27MS550-B 27\" Full HD IPS 100Hz 5ms HDMI Monitor with Speakers at laptopoutlet.co.uk"
+  },
+  {
+    "title": "Save up to 30% on LG 32MR50C-B 31.5\" Full HD VA 100Hz 5ms AMD FreeSync Black Stabilizer Curved Monitor at laptopoutlet.co.uk",
+    "cleanTitle": "Save up to 30% on LG 32MR50C-B 31.5\" Full HD VA 100Hz 5ms AMD FreeSync Black Stabilizer Curved Monitor at laptopoutlet.co.uk",
+    "price": "See deal",
+    "category": "Monitors",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/lg-32-fhd-freesync-32mr50c-b-aekq.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "4034481",
+    "offerStartDate": "2026-07-30T09:44:00+00:00",
+    "offerEndDate": "2026-08-31T22:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Save up to 30% on LG 32MR50C-B 31.5\" Full HD VA 100Hz 5ms AMD FreeSync Black Stabilizer Curved Monitor at laptopoutlet.co.uk"
+  },
+  {
+    "title": "Save up to 30% on LG UltraGear 27GS60QC-B 27\" Quad HD 180 Hz VA Curved Black Gaming Monitor at laptopoutlet.co.uk",
+    "cleanTitle": "Save up to 30% on LG UltraGear 27GS60QC-B 27\" Quad HD 180 Hz VA Curved Black Gaming Monitor at laptopoutlet.co.uk",
+    "price": "See deal",
+    "category": "Monitors",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/lg-ultragear-27gs60qc-b-aekq.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "4034475",
+    "offerStartDate": "2026-07-30T09:43:00+00:00",
+    "offerEndDate": "2026-08-31T22:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Save up to 30% on LG UltraGear 27GS60QC-B 27\" Quad HD 180 Hz VA Curved Black Gaming Monitor at laptopoutlet.co.uk"
+  },
+  {
+    "title": "Save up to 30% on selected LG Monitors at laptopoutlet.co.uk",
+    "cleanTitle": "Save up to 30% on selected LG Monitors at laptopoutlet.co.uk",
+    "price": "See deal",
+    "category": "Monitors",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/monitors/lg-monitors.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "4034473",
+    "offerStartDate": "2026-07-30T09:42:00+00:00",
+    "offerEndDate": "2026-08-31T22:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Save up to 30% on selected LG Monitors at laptopoutlet.co.uk"
+  },
+  {
+    "title": "Prepare for the new school year with NVIDIA powered laptops that deliver fast performance for studying, creating and everyday use at laptopoutlet.co.uk",
+    "cleanTitle": "Prepare for the new school year with NVIDIA powered laptops that deliver fast performance for studying, creating and everyday use",
+    "price": "See deal",
+    "category": "Laptops",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/laptops-and-notebooks.html?gpu_filter=621250-619626-619956-619955-620974-619625",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "4025883",
+    "offerStartDate": "2026-07-27T23:00:00+00:00",
+    "offerEndDate": "2026-09-30T22:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Prepare for the new school year with NVIDIA powered laptops that deliver fast performance for studying, creating and everyday use at laptopoutlet.co.uk"
+  },
+  {
+    "title": "Save up to £200 on student tech this Back to School season at laptopoutlet.co.uk",
+    "cleanTitle": "Save up to £200 on student tech this Back to School season at laptopoutlet.co.uk",
+    "price": "See deal",
+    "category": "Other",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/back-to-school.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "4014471",
+    "offerStartDate": "2026-07-20T13:22:00+00:00",
+    "offerEndDate": "2026-08-31T22:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Save up to £200 on student tech this Back to School season at laptopoutlet.co.uk"
+  },
+  {
+    "title": "Purchase a Qualifying Predator OLED monitor and claim a FREE Predator Mouse & Mousepad worth up to £82.98! at laptopoutlet.co.uk",
+    "cleanTitle": "Purchase a Qualifying Predator OLED monitor and claim a FREE Predator Mouse & Mousepad worth up to £82.98! at laptopoutlet.co.uk",
+    "price": "See deal",
+    "category": "Monitors",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/monitors/acer-monitors.html?series_filter=616700",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "4002337",
+    "offerStartDate": "2026-07-13T13:28:00+00:00",
+    "offerEndDate": "2026-10-31T23:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Purchase a Qualifying Predator OLED monitor and claim a FREE Predator Mouse & Mousepad worth up to £82.98! at laptopoutlet.co.uk"
+  },
+  {
+    "title": "Our Summer Sale is here with great savings across laptops, PCs, components, monitors, accessories and more. Shop now while stocks last at laptopoutlet.co.uk",
+    "cleanTitle": "Our Summer Sale is here with great savings across laptops, PCs, components, monitors, accessories and more. Shop now while stocks",
+    "price": "See deal",
+    "category": "Laptops",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/deals/all-deals.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "4002333",
+    "offerStartDate": "2026-07-13T13:27:00+00:00",
+    "offerEndDate": "2026-08-14T22:59:00+00:00",
+    "offerStatus": "expiringSoon",
+    "description": "Our Summer Sale is here with great savings across laptops, PCs, components, monitors, accessories and more. Shop now while stocks last at laptopoutlet.co.uk"
+  },
+  {
+    "title": "Stay connected this summer with savings across a wide range of TP-Link networking products. Find great deals on routers, mesh systems, switches and more at laptopoutlet.co.uk",
+    "cleanTitle": "Stay connected this summer with savings across a wide range of TP-Link networking products. Find great deals on routers, mesh syst",
+    "price": "See deal",
+    "category": "Other",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/brands/tp-link.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "4002331",
+    "offerStartDate": "2026-07-13T13:26:00+00:00",
+    "offerEndDate": "2026-08-11T22:59:00+00:00",
+    "offerStatus": "expiringSoon",
+    "description": "Stay connected this summer with savings across a wide range of TP-Link networking products. Find great deals on routers, mesh systems, switches and more at laptopoutlet.co.uk"
+  },
+  {
+    "title": "Level up your rig with ASUS bundles. Smooth gameplay, elite cooling, and rock-solid reliability — everything your setup deserves at LaptopOutlet.co.uk",
+    "cleanTitle": "Level up your rig with ASUS bundles. Smooth gameplay, elite cooling, and rock-solid reliability — everything your setup deserves a",
+    "price": "See deal",
+    "category": "Other",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/components.html?lo_promotion_filter=624090&brand_filter=616448",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3999019",
+    "offerStartDate": "2026-07-10T10:28:00+00:00",
+    "offerEndDate": "2026-08-18T22:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Level up your rig with ASUS bundles. Smooth gameplay, elite cooling, and rock-solid reliability — everything your setup deserves at LaptopOutlet.co.uk"
+  },
+  {
+    "title": "Upgrade for less. Budget-friendly tablets from just £99.99 — perfect for everyday streaming, browsing and study. Shop now at LaptopOutlet.co.uk",
+    "cleanTitle": "Upgrade for less. Budget-friendly tablets from just £99.99 — perfect for everyday streaming, browsing and study. Shop now at Lapto",
+    "price": "See deal",
+    "category": "Other",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/tablets-pcs.html?product_list_order=lowest",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3675504",
+    "offerStartDate": "2026-01-13T15:38:00+00:00",
+    "offerEndDate": "2026-12-31T00:00:00+00:00",
+    "offerStatus": "active",
+    "description": "Upgrade for less. Budget-friendly tablets from just £99.99 — perfect for everyday streaming, browsing and study. Shop now at LaptopOutlet.co.uk"
+  },
+  {
+    "title": "Big visuals, small prices. Save up to £149 on Philips Monitors at LaptopOutlet.co.uk",
+    "cleanTitle": "Big visuals, small prices. Save up to £149 on Philips Monitors at LaptopOutlet.co.uk",
+    "price": "See deal",
+    "category": "Monitors",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/monitors/philips-monitors.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3674220",
+    "offerStartDate": "2026-01-13T09:50:00+00:00",
+    "offerEndDate": "2026-12-31T00:00:00+00:00",
+    "offerStatus": "active",
+    "description": "Big visuals, small prices. Save up to £149 on Philips Monitors at LaptopOutlet.co.uk"
+  },
+  {
+    "title": "HP laptops from £149.99? Yes, really. Premium performance without the premium price. Shop now at LaptopOutlet.co.uk",
+    "cleanTitle": "HP laptops from £149.99? Yes, really. Premium performance without the premium price. Shop now at LaptopOutlet.co.uk",
+    "price": "See deal",
+    "category": "Laptops",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/laptops-and-notebooks/hp-laptops.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3674210",
+    "offerStartDate": "2026-01-13T09:48:00+00:00",
+    "offerEndDate": "2026-12-31T00:00:00+00:00",
+    "offerStatus": "active",
+    "description": "HP laptops from £149.99? Yes, really. Premium performance without the premium price. Shop now at LaptopOutlet.co.uk"
+  },
+  {
+    "title": "Don’t miss the epic PayDay Deals at Laptop Outlet. Save big on ASUS, HP, Dell, Apple and loads more top tech at LaptopOutlet.co.uk",
+    "cleanTitle": "Don’t miss the epic PayDay Deals at Laptop Outlet. Save big on ASUS, HP, Dell, Apple and loads more top tech at LaptopOutlet.co.uk",
+    "price": "See deal",
+    "category": "Other",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/deals.html?",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3674198",
+    "offerStartDate": "2026-01-25T00:00:00+00:00",
+    "offerEndDate": "2026-12-31T00:00:00+00:00",
+    "offerStatus": "active",
+    "description": "Don’t miss the epic PayDay Deals at Laptop Outlet. Save big on ASUS, HP, Dell, Apple and loads more top tech at LaptopOutlet.co.uk"
+  },
+  {
+    "title": "Save up to £170 on Oppo phones this January! Hurry, stock won't last. Shop now at LaptopOutlet.co.uk",
+    "cleanTitle": "Save up to £170 on Oppo phones this January! Hurry, stock won't last. Shop now at LaptopOutlet.co.uk",
+    "price": "See deal",
+    "category": "Other",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/mobile-phones/oppo-mobiles.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3667130",
+    "offerStartDate": "2026-01-08T13:19:00+00:00",
+    "offerEndDate": "2026-12-30T23:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Save up to £170 on Oppo phones this January! Hurry, stock won't last. Shop now at LaptopOutlet.co.uk"
+  },
+  {
+    "title": "Print smarter and save bigger. Get up to £80 cashback on selected Canon printers on LaptopOutlet.co.uk",
+    "cleanTitle": "Print smarter and save bigger. Get up to £80 cashback on selected Canon printers on LaptopOutlet.co.uk",
+    "price": "See deal",
+    "category": "Other",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/accessories/printers-and-scanners.html?brand_filter=617351",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3667128",
+    "offerStartDate": "2026-01-08T13:17:00+00:00",
+    "offerEndDate": "2026-12-30T23:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Print smarter and save bigger. Get up to £80 cashback on selected Canon printers on LaptopOutlet.co.uk"
+  },
+  {
+    "title": "Acer Swift Copilot+ laptops are here — lighter, faster, and boosted by AI. Save up to £599.99 on LaptopOutlet.co.uk",
+    "cleanTitle": "Acer Swift Copilot+ laptops are here — lighter, faster, and boosted by AI. Save up to £599.99 on LaptopOutlet.co.uk",
+    "price": "See deal",
+    "category": "Laptops",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/laptops-and-notebooks/ai-laptops.html?brand_filter=616449",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3659222",
+    "offerStartDate": "2026-01-05T12:12:00+00:00",
+    "offerEndDate": "2026-12-30T23:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Acer Swift Copilot+ laptops are here — lighter, faster, and boosted by AI. Save up to £599.99 on LaptopOutlet.co.uk"
+  },
+  {
+    "title": "Unlock the future of computing with Copilot+ laptops. Smarter, faster, AI-powered performance starts here. Shop now at LaptopOutlet.co.uk",
+    "cleanTitle": "Unlock the future of computing with Copilot+ laptops. Smarter, faster, AI-powered performance starts here. Shop now at LaptopOutle",
+    "price": "See deal",
+    "category": "Laptops",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/laptops-and-notebooks/ai-laptops.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3659210",
+    "offerStartDate": "2026-01-05T12:10:00+00:00",
+    "offerEndDate": "2026-12-30T23:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Unlock the future of computing with Copilot+ laptops. Smarter, faster, AI-powered performance starts here. Shop now at LaptopOutlet.co.uk"
+  },
+  {
+    "title": "Level up your work setup for less. Save up to £550 on Lenovo ThinkBook & ThinkPad powerhouses — only at LaptopOutlet.co.uk",
+    "cleanTitle": "Level up your work setup for less. Save up to £550 on Lenovo ThinkBook & ThinkPad powerhouses — only at LaptopOutlet.co.uk",
+    "price": "See deal",
+    "category": "Other",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/laptops-and-notebooks/lenovo-laptops.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3659204",
+    "offerStartDate": "2026-01-05T12:08:00+00:00",
+    "offerEndDate": "2026-12-30T23:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Level up your work setup for less. Save up to £550 on Lenovo ThinkBook & ThinkPad powerhouses — only at LaptopOutlet.co.uk"
+  },
+  {
+    "title": "Turn your rig into a powerhouse! XFX graphics cards deliver elite performance, smooth frames and stunning visuals for every game. Shop XFX GPUs now at at LaptopOutlet.co.uk",
+    "cleanTitle": "Turn your rig into a powerhouse! XFX graphics cards deliver elite performance, smooth frames and stunning visuals for every game.",
+    "price": "See deal",
+    "category": "GPUs",
+    "quality": "Partner Offer",
+    "source": "Laptop Outlet Awin Promotions",
+    "link": "https://www.laptopoutlet.co.uk/gaming/graphics-cards/xfx-graphics-cards.html",
+    "image": "/goblin-logo.png",
+    "merchant": "Laptop Outlet",
+    "timestamp": "2026-08-10T21:01:28",
+    "dealType": "offer",
+    "offerId": "3651736",
+    "offerStartDate": "2025-12-29T12:29:00+00:00",
+    "offerEndDate": "2026-12-30T23:59:00+00:00",
+    "offerStatus": "active",
+    "description": "Turn your rig into a powerhouse! XFX graphics cards deliver elite performance, smooth frames and stunning visuals for every game. Shop XFX GPUs now at at LaptopOutlet.co.uk"
   }
 ]

@@ -136,6 +136,10 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
       return "19849";
     }
 
+    if (merchant === "laptop outlet" || link.includes("laptopoutlet.co.uk")) {
+      return "111534";
+    }
+
     return null;
   };
 
@@ -217,6 +221,17 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
         const link = offer.link.toLowerCase();
 
         return merchant === "quzo uk" || merchant === "quzo" || link.includes("quzo.net") || link.includes("quzo.co.uk");
+      }),
+    },
+    {
+      title: "Laptop Outlet Offers",
+      partnerName: "Laptop Outlet",
+      logo: "/images/partners/laptop-outlet.jpg",
+      offers: featuredOffers.filter((offer) => {
+        const merchant = offer.merchant?.trim().toLowerCase();
+        const link = offer.link.toLowerCase();
+
+        return merchant === "laptop outlet" || link.includes("laptopoutlet.co.uk");
       }),
     },
   ].filter((group) => group.offers.length > 0);
@@ -329,6 +344,10 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
 
     if (storeText.includes("quzo")) {
       return { alt: "Quzo UK", src: "/images/partners/quzo-logo.webp" };
+    }
+
+    if (storeText.includes("laptop outlet") || storeText.includes("laptopoutlet.co.uk")) {
+      return { alt: "Laptop Outlet", src: "/images/partners/laptop-outlet.jpg" };
     }
 
     return null;
