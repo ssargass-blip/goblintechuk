@@ -27,6 +27,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
     "Monitors",
     "TVs",
     "Laptops",
+    "Tablets",
     "Accessories",
     "Hardware",
     "Other",
@@ -374,6 +375,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
       Monitors: 40,
       TVs: 38,
       SSDs: 36,
+      Tablets: 35,
       Hardware: 34,
       Accessories: 8,
       Other: 0,
@@ -387,7 +389,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
     if (deal.quality.includes("GOOD PRICE")) score += 24;
     score += discountScore;
 
-    if (/(rtx|geforce|radeon|ryzen|core i[579]|oled|qled|mini led|gaming pc|laptop|monitor|nvme|ssd|ddr5|32gb|64gb|1tb|2tb)/.test(title)) {
+    if (/(rtx|geforce|radeon|ryzen|core i[579]|oled|qled|mini led|gaming pc|laptop|tablet|ipad|galaxy tab|monitor|nvme|ssd|ddr5|32gb|64gb|1tb|2tb)/.test(title)) {
       score += 18;
     }
 
@@ -1934,7 +1936,6 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
     </main>
   );
 }
-
 
 
 
