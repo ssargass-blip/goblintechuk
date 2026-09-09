@@ -24,3 +24,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 760px) {
+  .deal-detail-grid {
+    grid-template-columns: 1fr !important;
+    padding: 18px !important;
+  }
+
+  .site-header {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+    padding: 18px 16px !important;
+  }
+}

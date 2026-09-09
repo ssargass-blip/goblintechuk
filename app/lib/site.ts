@@ -4,6 +4,11 @@ export const siteUrl = (
 
 export const canonicalUrl = `${siteUrl}/`;
 
+export function absoluteSiteUrl(value: string) {
+  if (/^https?:\/\//i.test(value)) return value;
+  return new URL(value, canonicalUrl).toString();
+}
+
 export const siteTitle = "GoblinTechUK - UK Tech Deal Hunter";
 
 export const siteDescription =

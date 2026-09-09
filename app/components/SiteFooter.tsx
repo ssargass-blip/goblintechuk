@@ -54,11 +54,20 @@ export function SiteFooter() {
       id: "privacy",
       label: "Privacy Policy",
       content: (
-        <p style={{ margin: 0 }}>
-          GoblinTechUK does not currently collect personal data. If analytics,
-          forms, cookies or affiliate tracking are added later, this section
-          will be updated.
-        </p>
+        <div>
+          <p style={{ margin: "0 0 10px" }}>
+            GoblinTechUK uses Ahrefs Web Analytics to understand aggregated site
+            usage, including page views and interactions such as deal clicks.
+            Ahrefs states that its Web Analytics is cookie-free by default and
+            does not collect or store personal or identifiable data.
+          </p>
+          <p style={{ margin: 0 }}>
+            Affiliate links redirect through Awin so retailers can attribute a
+            purchase and pay us a commission. Awin and the destination retailer
+            may process data under their own privacy policies. We do not receive
+            your payment details from those retailers.
+          </p>
+        </div>
       ),
     },
   ];

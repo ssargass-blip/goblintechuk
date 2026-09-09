@@ -1,15 +1,26 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { BackToTopButton } from "./components/BackToTopButton";
 import { HeroSection } from "./components/HeroSection";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
-import type { Deal, SortOption } from "./types";
+import { trackDealClick } from "./lib/analytics";
+import {
+  getAffiliateUrl,
+  getCheckedTime,
+  getEligibleDeals,
+  isAffiliateDeal,
+  isOffer,
+  parsePrice,
+  prepareDeals,
+} from "./lib/deals";
+import type { PreparedDeal, SortOption } from "./types";
 
-export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
-  const [deals, setDeals] = useState<Deal[]>(initialDeals);
+export function HomeClient({ initialDeals }: { initialDeals: PreparedDeal[] }) {
+  const [deals, setDeals] = useState<PreparedDeal[]>(initialDeals);
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOption, setSortOption] = useState<SortOption>("newest");
@@ -51,7 +62,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
           throw new Error("deals.json must contain an array of deals");
         }
 
-        setDeals(data);
+        setDeals(prepareDeals(data));
       } catch (loadError) {
         setError(
           loadError instanceof Error
@@ -88,10 +99,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
 
   const normalizedSearchQuery = searchQuery.trim().toLowerCase();
 
-  const isOffer = (deal: Deal) =>
-    deal.dealType === "offer" || deal.source.toLowerCase().includes("awin promotions");
-
-  const isExpiredOffer = (deal: Deal) => {
+  const isExpiredOffer = (deal: PreparedDeal) => {
     if (!isOffer(deal) || !deal.offerEndDate) {
       return false;
     }
@@ -104,47 +112,6 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
 
     return expiry.getTime() < currentTimeMs;
   };
-
-  const getAwinMerchantId = (deal: Deal) => {
-    const merchant = deal.merchant?.trim().toLowerCase();
-    const link = (deal.link || "").toLowerCase();
-
-    if (merchant === "acer" || link.includes("store.acer.com")) {
-      return "12590";
-    }
-
-    if (merchant === "box" || merchant === "box.co.uk" || link.includes("box.co.uk")) {
-      return "100685";
-    }
-
-    if (merchant === "aliexpress" || link.includes("aliexpress.")) {
-      return "7035";
-    }
-
-    if (merchant === "amazon" || link.includes("amazon.co.uk")) {
-      return "118045";
-    }
-
-    if (
-      merchant === "stormforce gaming" ||
-      merchant === "stormforce" ||
-      link.includes("stormforcegaming.co.uk")
-    ) {
-      return "24882";
-    }
-
-    if (merchant === "quzo uk" || merchant === "quzo" || link.includes("quzo.net") || link.includes("quzo.co.uk")) {
-      return "19849";
-    }
-
-    if (merchant === "laptop outlet" || link.includes("laptopoutlet.co.uk")) {
-      return "111534";
-    }
-
-    return null;
-  };
-
-  const isAffiliateDeal = (deal: Deal) => Boolean(getAwinMerchantId(deal));
 
   const featuredOffers = deals.filter(
     (deal) => isOffer(deal) && !isExpiredOffer(deal) && isAffiliateDeal(deal)
@@ -241,17 +208,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
     (group) => group.title === selectedOfferGroup
   );
 
-  const getPriceNumber = (price: string) => {
-    const match = price.match(/[0-9]+(?:,[0-9]{3})*(?:\.[0-9]{1,2})?/);
-
-    if (!match) {
-      return Number.POSITIVE_INFINITY;
-    }
-
-    return Number(match[0].replace(/,/g, ""));
-  };
-
-  const formatFoundTime = (timestamp: string) => {
+  const formatCheckedTime = (timestamp: string) => {
     const foundAt = new Date(timestamp);
 
     if (Number.isNaN(foundAt.getTime())) {
@@ -264,21 +221,21 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
 
     if (foundAt.toDateString() === now.toDateString()) {
       if (diffMinutes < 60) {
-        return diffMinutes <= 1 ? "Found just now" : `Found ${diffMinutes}m ago`;
+        return diffMinutes <= 1 ? "Checked just now" : `Checked ${diffMinutes}m ago`;
       }
 
       const diffHours = Math.floor(diffMinutes / 60);
-      return diffHours <= 1 ? "Found 1h ago" : `Found ${diffHours}h ago`;
+      return diffHours <= 1 ? "Checked 1h ago" : `Checked ${diffHours}h ago`;
     }
 
     const diffDays = Math.max(1, Math.floor(diffMinutes / 1440));
 
     if (diffDays === 1) {
-      return "Found yesterday";
+      return "Checked yesterday";
     }
 
     if (diffDays < 7) {
-      return `Found ${diffDays}d ago`;
+      return `Checked ${diffDays}d ago`;
     }
 
     return foundAt.toLocaleDateString("en-GB", {
@@ -305,19 +262,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
     });
   };
 
-  const getDealUrl = (deal: Deal) => {
-    const link = deal.link || "";
-    const awinMerchantId = getAwinMerchantId(deal);
-
-    if (!awinMerchantId) {
-      return link;
-    }
-
-    return `https://www.awin1.com/cread.php?awinmid=${awinMerchantId}&awinaffid=2936395&ued=${encodeURIComponent(
-      link
-    )}`;
-  };
-  const getStoreLogo = (deal: Deal) => {
+  const getStoreLogo = (deal: PreparedDeal) => {
     const merchant = deal.merchant?.trim().toLowerCase() || "";
     const source = deal.source.trim().toLowerCase();
     const link = deal.link.toLowerCase();
@@ -354,84 +299,15 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
     return null;
   };
 
-  const getDealKey = (deal: Deal) =>
-    `${deal.link || deal.title}-${deal.source}-${deal.timestamp}`;
-
-  const getTopDealScore = (deal: Deal) => {
-    if (typeof deal.score === "number") {
-      return deal.score;
-    }
-
-    const title = `${deal.cleanTitle || deal.title} ${deal.category}`.toLowerCase();
-    const discountMatch = deal.discount?.match(/-?([0-9]+)%/);
-    const discountScore = discountMatch
-      ? Math.min(Number(discountMatch[1]) || 0, 35)
-      : 0;
-
-    const categoryScore: Record<string, number> = {
-      GPUs: 48,
-      Laptops: 46,
-      Gaming: 42,
-      Monitors: 40,
-      TVs: 38,
-      SSDs: 36,
-      Tablets: 35,
-      Hardware: 34,
-      Accessories: 8,
-      Other: 0,
-    };
-
-    let score = categoryScore[deal.category] ?? 0;
-
-    if (deal.image) score += 14;
-    if (Number.isFinite(getPriceNumber(deal.price))) score += 10;
-    if (deal.oldPrice) score += 8;
-    if (deal.quality.includes("GOOD PRICE")) score += 24;
-    score += discountScore;
-
-    if (/(rtx|geforce|radeon|ryzen|core i[579]|oled|qled|mini led|gaming pc|laptop|tablet|ipad|galaxy tab|monitor|nvme|ssd|ddr5|32gb|64gb|1tb|2tb)/.test(title)) {
-      score += 18;
-    }
-
-    if (/(case|cable|adapter|sticker|screen protector|cover|stand only)/.test(title)) {
-      score -= 45;
-    }
-
-    if (deal.category === "Accessories") {
-      score -= 30;
-    }
-
-    return score;
-  };
-
-  const isTopDealCandidate = (deal: Deal) => {
-    const hasUsablePrice = Number.isFinite(getPriceNumber(deal.price));
-
-    return Boolean(
-      deal.category === "Laptops" &&
-        deal.image &&
-        hasUsablePrice &&
-        isAffiliateDeal(deal)
-    );
-  };
-
-  const topDeal = [...productDeals]
-    .filter(isTopDealCandidate)
-    .sort((firstDeal, secondDeal) => {
-      const scoreDifference = getTopDealScore(secondDeal) - getTopDealScore(firstDeal);
-
-      if (scoreDifference !== 0) {
-        return scoreDifference;
-      }
-
-      return (
-        new Date(secondDeal.timestamp).getTime() -
-        new Date(firstDeal.timestamp).getTime()
-      );
-    })[0];
+  const eligibleDeals = useMemo(() => getEligibleDeals(deals), [deals]);
+  const topDeal = eligibleDeals[0];
+  const eligibleDealIds = useMemo(
+    () => new Set(eligibleDeals.map((deal) => deal.dealId)),
+    [eligibleDeals]
+  );
 
   const productDealsWithoutTopDeal = topDeal
-    ? productDeals.filter((deal) => getDealKey(deal) !== getDealKey(topDeal))
+    ? productDeals.filter((deal) => deal.dealId !== topDeal.dealId)
     : productDeals;
 
   const filteredDeals = productDealsWithoutTopDeal
@@ -446,11 +322,11 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
     })
     .sort((firstDeal, secondDeal) => {
       if (sortOption === "price-asc") {
-        return getPriceNumber(firstDeal.price) - getPriceNumber(secondDeal.price);
+        return parsePrice(firstDeal.price) - parsePrice(secondDeal.price);
       }
 
       if (sortOption === "price-desc") {
-        return getPriceNumber(secondDeal.price) - getPriceNumber(firstDeal.price);
+        return parsePrice(secondDeal.price) - parsePrice(firstDeal.price);
       }
 
       if (sortOption === "az") {
@@ -462,8 +338,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
       }
 
       return (
-        new Date(secondDeal.timestamp).getTime() -
-        new Date(firstDeal.timestamp).getTime()
+        getCheckedTime(secondDeal) - getCheckedTime(firstDeal)
       );
     });
 
@@ -944,7 +819,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
                 {selectedOfferGroupData.offers.map((offer) => (
                   <article
                     className="featured-offer-card"
-                    key={`${offer.source}-${offer.link}-${offer.offerId || offer.timestamp}`}
+                    key={offer.dealId}
                     style={{
                       background: "#101419",
                       border: "1px solid rgba(156, 255, 87, 0.18)",
@@ -1060,9 +935,10 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
                       </div>
 
                       <a
-                        href={getDealUrl(offer)}
+                        href={getAffiliateUrl(offer, "featured_offer")}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="sponsored noopener noreferrer"
+                        onClick={() => trackDealClick(offer, "featured_offer")}
                         style={{
                           display: "inline-block",
                           background: "#9cff57",
@@ -1332,7 +1208,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
                   textTransform: "uppercase",
                 }}
               >
-                Top Deal
+                Featured Deal
               </span>
 
               <h2
@@ -1345,7 +1221,12 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
                   maxWidth: "680px",
                 }}
               >
-                {topDeal.cleanTitle || topDeal.title}
+                <Link
+                  href={`/deals/${topDeal.slug}`}
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  {topDeal.cleanTitle || topDeal.title}
+                </Link>
               </h2>
 
               <div
@@ -1415,7 +1296,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
                 )}
               </div>
 
-              {formatFoundTime(topDeal.timestamp) && (
+              {formatCheckedTime(topDeal.lastCheckedAt || topDeal.timestamp) && (
                 <span
                   style={{
                     color: "#8f998d",
@@ -1423,7 +1304,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
                     fontWeight: "bold",
                   }}
                 >
-                  {formatFoundTime(topDeal.timestamp)}
+                  {formatCheckedTime(topDeal.lastCheckedAt || topDeal.timestamp)}
                 </span>
               )}
             </div>
@@ -1491,9 +1372,10 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
               </div>
 
               <a
-                href={getDealUrl(topDeal)}
+                href={getAffiliateUrl(topDeal, "featured_deal")}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored noopener noreferrer"
+                onClick={() => trackDealClick(topDeal, "featured_deal", true)}
                 style={{
                   alignItems: "center",
                   background: "#9cff57",
@@ -1639,7 +1521,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
             {filteredDeals.map((deal) => (
               <div
                 className="deal-card"
-                key={`${deal.source}-${deal.link}-${deal.timestamp}`}
+                key={deal.dealId}
                 style={{
                   background: "#14181d",
                   border: "1px solid rgba(198, 255, 173, 0.12)",
@@ -1767,7 +1649,16 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
                       maxWidth: "430px",
                     }}
                   >
-                    {deal.cleanTitle || deal.title}
+                    {eligibleDealIds.has(deal.dealId) ? (
+                      <Link
+                        href={`/deals/${deal.slug}`}
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        {deal.cleanTitle || deal.title}
+                      </Link>
+                    ) : (
+                      deal.cleanTitle || deal.title
+                    )}
                   </h3>
 
                   <div
@@ -1813,7 +1704,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
                       </span>
                     )}
 
-                    {formatFoundTime(deal.timestamp) && (
+                    {formatCheckedTime(deal.lastCheckedAt || deal.timestamp) && (
                       <span
                         style={{
                           color: "#8f998d",
@@ -1821,7 +1712,7 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
                           fontWeight: "bold",
                         }}
                       >
-                        {formatFoundTime(deal.timestamp)}
+                        {formatCheckedTime(deal.lastCheckedAt || deal.timestamp)}
                       </span>
                     )}
                   </div>
@@ -1904,9 +1795,10 @@ export function HomeClient({ initialDeals }: { initialDeals: Deal[] }) {
                   }}
                 >
                   <a
-                    href={getDealUrl(deal)}
+                    href={getAffiliateUrl(deal, "product_grid")}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="sponsored noopener noreferrer"
+                    onClick={() => trackDealClick(deal, "product_grid")}
                     style={{
                       alignItems: "center",
                       background: "#9cff57",
