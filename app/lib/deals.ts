@@ -6,13 +6,13 @@ const MAX_INDEXED_DEALS = 20;
 // V1 is intentionally review-controlled so rankings cannot silently create or
 // remove indexable URLs on the next feed refresh.
 const V1_INDEXED_DEAL_IDS = new Set([
-  "deal-662929b49df80580",
+  "deal-b0f35bb028d97524",
   "deal-14f5b966835d08f2",
   "deal-a4a2c16456361060",
-  "deal-012e44939b85db27",
+  "deal-ca1afd4e7164509a",
   "deal-dce4621192cb5c7d",
-  "deal-93f1f897d2dde0e3",
-  "deal-75a411facff7131e",
+  "deal-14178cc62ad8e432",
+  "deal-2748eceeafacdbf2",
   "deal-9a09d7d275e242ce",
   "deal-8273f92ad6a09cc6",
   "deal-690360de971c126a",
@@ -20,8 +20,8 @@ const V1_INDEXED_DEAL_IDS = new Set([
   "deal-dee7017717d733eb",
   "deal-c8679d065c88c4ba",
   "deal-21080845ae899fd1",
-  "deal-a2d41e5aef20cf6e",
-  "deal-2c3a7f407e9d0ddc",
+  "deal-efaf657cd593a4b0",
+  "deal-32e0953549ea43f1",
   "deal-708fe8a95b1d155d",
   "deal-aba71ab5b66ff941",
   "deal-81fc6719ec5ab625",
