@@ -8,6 +8,7 @@ import { SiteHeader } from "../../components/SiteHeader";
 import { loadEligibleDeals } from "../../lib/deal-data";
 import { parsePrice } from "../../lib/deals";
 import { absoluteSiteUrl, siteUrl } from "../../lib/site";
+import { dealSearchMetadata, productBrand } from "../../lib/seo";
 
 type DealPageProps = {
   params: Promise<{ slug: string }>;
@@ -38,10 +39,10 @@ export async function generateMetadata({ params }: DealPageProps): Promise<Metad
 
   const name = deal.cleanTitle || deal.title;
   const canonical = `/deals/${deal.slug}`;
-  const description = `${name} for ${deal.price} from ${deal.merchant || deal.source}. Price and availability can change at the retailer.`;
+  const { title, description } = dealSearchMetadata(name, deal.price, deal.merchant || deal.source);
 
   return {
-    title: `${name} deal | GoblinTechUK`,
+    title,
     description,
     alternates: { canonical },
     openGraph: {
@@ -83,17 +84,28 @@ export default async function DealPage({ params }: DealPageProps) {
   const imageUrl = absoluteSiteUrl(deal.image);
   const checkedDate = formatCheckedDate(deal.lastCheckedAt || deal.timestamp);
   const price = parsePrice(deal.price);
+  const brand = productBrand(deal.title);
+  const eligibleDeals = await loadEligibleDeals();
+  const position = eligibleDeals.findIndex((other) => other.dealId === deal.dealId);
+  const neighbours = [
+    eligibleDeals[(position + 1) % eligibleDeals.length],
+    eligibleDeals[(position + eligibleDeals.length - 1) % eligibleDeals.length],
+    eligibleDeals.find((other) => other.category === deal.category && other.dealId !== deal.dealId),
+  ];
+  const relatedDeals = [...new Map(neighbours.filter((other) => other && other.dealId !== deal.dealId).map((other) => [other!.dealId, other!])).values()];
   const description = `${name} is currently listed at ${deal.price} by ${merchant}. GoblinTechUK provides the product link and price snapshot so you can check the latest retailer details before buying.`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": `${canonical}#product`,
     name,
     image: imageUrl,
     description,
     sku: deal.dealId,
+    ...(brand ? { brand: { "@type": "Brand", name: brand } } : {}),
     offers: {
       "@type": "Offer",
-      url: canonical,
+      url: deal.link,
       priceCurrency: "GBP",
       price,
       seller: {
@@ -209,6 +221,18 @@ export default async function DealPage({ params }: DealPageProps) {
             </p>
           </div>
         </div>
+        <nav aria-label="Related deals" style={{ marginTop: "32px" }}>
+          <h2>More UK tech deals</h2>
+          <ul>
+            {relatedDeals.map((other) => (
+              <li key={other.dealId} style={{ marginBottom: "12px" }}>
+                <Link href={`/deals/${other.slug}`} style={{ color: "#9cff57" }}>
+                  {other.cleanTitle || other.title} — {other.price}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </article>
 
       <SiteFooter />

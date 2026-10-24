@@ -16,16 +16,24 @@ const geistMono = Geist_Mono({
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "GoblinTechUK",
-  url: canonicalUrl,
-  description: siteDescription,
-  publisher: {
-    "@type": "Organization",
-    name: "GoblinTechUK",
-    url: canonicalUrl,
-    logo: `${siteUrl}/goblin-icon.png`,
-  },
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "GoblinTechUK",
+      url: canonicalUrl,
+      description: siteDescription,
+      logo: { "@type": "ImageObject", url: `${siteUrl}/goblin-icon.png` },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      name: "GoblinTechUK",
+      url: canonicalUrl,
+      description: siteDescription,
+      publisher: { "@id": `${siteUrl}/#organization` },
+    },
+  ],
 };
 
 export const metadata: Metadata = {
@@ -83,7 +91,7 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
         />
       </body>
     </html>

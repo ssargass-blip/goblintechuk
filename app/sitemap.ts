@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { loadEligibleDeals } from "./lib/deal-data";
 import { absoluteSiteUrl, siteUrl } from "./lib/site";
+import { escapeSitemapUrl } from "./lib/seo";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const deals = await loadEligibleDeals();
@@ -9,7 +10,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: deal.lastCheckedAt || deal.timestamp,
     changeFrequency: "daily",
     priority: 0.8,
-    images: deal.image ? [absoluteSiteUrl(deal.image)] : undefined,
+    images: deal.image ? [escapeSitemapUrl(absoluteSiteUrl(deal.image))] : undefined,
   }));
 
   return [

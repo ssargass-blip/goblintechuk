@@ -8,6 +8,7 @@ import { HeroSection } from "./components/HeroSection";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
 import { trackDealClick } from "./lib/analytics";
+import { getStoreLogo } from "./lib/partners";
 import {
   getAffiliateUrl,
   getCheckedTime,
@@ -260,43 +261,6 @@ export function HomeClient({ initialDeals }: { initialDeals: PreparedDeal[] }) {
       month: "short",
       year: "numeric",
     });
-  };
-
-  const getStoreLogo = (deal: PreparedDeal) => {
-    const merchant = deal.merchant?.trim().toLowerCase() || "";
-    const source = deal.source.trim().toLowerCase();
-    const link = deal.link.toLowerCase();
-    const storeText = `${merchant} ${source} ${link}`;
-
-    if (storeText.includes("acer")) {
-      return { alt: "Acer", src: "/images/partners/acer.webp" };
-    }
-
-    if (storeText.includes("box.co.uk") || storeText.includes("box")) {
-      return { alt: "Box.co.uk", src: "/images/partners/box.webp" };
-    }
-
-    if (storeText.includes("aliexpress")) {
-      return { alt: "AliExpress", src: "/images/partners/aliexpress.webp" };
-    }
-
-    if (storeText.includes("amazon")) {
-      return { alt: "Amazon", src: "/images/partners/Amazon.svg" };
-    }
-
-    if (storeText.includes("stormforce")) {
-      return { alt: "Stormforce Gaming", src: "/images/partners/stormforce.jpg" };
-    }
-
-    if (storeText.includes("quzo")) {
-      return { alt: "Quzo UK", src: "/images/partners/quzo-logo.webp" };
-    }
-
-    if (storeText.includes("laptop outlet") || storeText.includes("laptopoutlet.co.uk")) {
-      return { alt: "Laptop Outlet", src: "/images/partners/laptop-outlet.jpg" };
-    }
-
-    return null;
   };
 
   const eligibleDeals = useMemo(() => getEligibleDeals(deals), [deals]);
