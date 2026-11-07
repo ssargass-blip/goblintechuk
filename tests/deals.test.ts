@@ -55,6 +55,14 @@ test("affiliate URLs continue to route through Awin", () => {
   assert.equal(url.searchParams.get("ued"), fixture.link);
 });
 
+test("HONOR UK links route through its Awin programme", () => {
+  const deal = prepareDeal({ ...fixture, merchant: "HONOR UK", source: "HONOR UK Awin Product Feed", link: "https://www.honor.com/uk/tablets/honor-magicpad/" });
+  const url = new URL(getAffiliateUrl(deal, "deal_page"));
+  assert.equal(url.hostname, "www.awin1.com");
+  assert.equal(url.searchParams.get("awinmid"), "28529");
+  assert.equal(url.searchParams.get("ued"), deal.link);
+});
+
 test("featured affiliate clicks emit funnel events with useful metadata", () => {
   const sent: Array<{ name: string; options?: { props?: Record<string, string> } }> = [];
   Object.defineProperty(globalThis, "window", {

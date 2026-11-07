@@ -1,6 +1,7 @@
 import type { Deal } from "../types";
 
 const partners = [
+  { alt: "HONOR UK", src: "/images/partners/honor.png", aliases: ["honor uk", "honor"], host: "honor.com", source: "HONOR UK Awin" },
   { alt: "Acer", src: "/images/partners/acer.webp", aliases: ["acer", "acer uk"], host: "store.acer.com", source: "Acer UK Awin" },
   { alt: "Box.co.uk", src: "/images/partners/box.webp", aliases: ["box", "box.co.uk"], host: "box.co.uk", source: "Box.co.uk Awin" },
   { alt: "AliExpress", src: "/images/partners/aliexpress.webp", aliases: ["aliexpress"], host: "aliexpress.com", source: "AliExpress Awin" },

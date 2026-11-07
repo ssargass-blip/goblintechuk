@@ -8,7 +8,7 @@ const MAX_INDEXED_DEALS = 20;
 const V1_INDEXED_DEAL_IDS = new Set([
   "deal-64b56fea253d6e46",
   "deal-aa49aaa390ef94c7",
-  "deal-a4a2c16456361060",
+  "deal-2b6823f16c06dd55",
   "deal-ca1afd4e7164509a",
   "deal-dce4621192cb5c7d",
   "deal-43f1afd7a78226e3",
@@ -58,6 +58,7 @@ export function getAwinMerchantId(deal: Deal) {
   const merchant = deal.merchant?.trim().toLowerCase();
   const link = (deal.link || "").toLowerCase();
 
+  if (merchant === "honor uk" || merchant === "honor") return "28529";
   if (merchant === "acer" || link.includes("store.acer.com")) return "12590";
   if (merchant === "box" || merchant === "box.co.uk" || link.includes("box.co.uk")) return "100685";
   if (merchant === "aliexpress" || link.includes("aliexpress.")) return "7035";

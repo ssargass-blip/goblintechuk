@@ -29,3 +29,8 @@ test("missing merchant falls back to feed identity and then URL hostname", () =>
   assert.equal(getStoreLogo({ source: "Legacy", link: "https://www.laptopoutlet.co.uk/acer-pc" })?.alt, "Laptop Outlet");
   assert.equal(getStoreLogo({ source: "Legacy", link: "https://example.com/acer-pc" }), null);
 });
+
+test("HONOR products show the retailer logo, including those sold by Laptop Outlet", () => {
+  assert.equal(getStoreLogo({ merchant: "HONOR UK", source: "HONOR UK Awin Product Feed", link: "https://www.honor.com/uk/tablets/honor-magicpad/" })?.src, "/images/partners/honor.png");
+  assert.equal(getStoreLogo({ merchant: "Laptop Outlet", source: "Laptop Outlet Awin Product Feed", link: "https://www.laptopoutlet.co.uk/honor-magicpad.html" })?.alt, "Laptop Outlet");
+});
