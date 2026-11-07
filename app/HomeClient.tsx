@@ -13,6 +13,7 @@ import {
   getAffiliateUrl,
   getCheckedTime,
   getEligibleDeals,
+  groupPhoneDeals,
   isAffiliateDeal,
   isOffer,
   parsePrice,
@@ -40,6 +41,7 @@ export function HomeClient({ initialDeals }: { initialDeals: PreparedDeal[] }) {
     "TVs",
     "Laptops",
     "Tablets",
+    "Phones",
     "Accessories",
     "Hardware",
     "Other",
@@ -1482,7 +1484,7 @@ export function HomeClient({ initialDeals }: { initialDeals: PreparedDeal[] }) {
               width: "100%",
             }}
           >
-            {filteredDeals.map((deal) => (
+            {groupPhoneDeals(filteredDeals).map(({ deal, variants }) => (
               <div
                 className="deal-card"
                 key={deal.dealId}
@@ -1680,8 +1682,24 @@ export function HomeClient({ initialDeals }: { initialDeals: PreparedDeal[] }) {
                       </span>
                     )}
                   </div>
+                  {variants.length > 0 && (
+                    <details className="phone-variants" style={{ marginTop: "8px", color: "#cfd6cb" }}>
+                      <summary style={{ cursor: "pointer" }}>More colours ({variants.length})</summary>
+                      {variants.map(({ deal: variant, colour }) => (
+                        <a
+                          key={variant.dealId}
+                          href={getAffiliateUrl(variant, "product_grid")}
+                          target="_blank"
+                          rel="sponsored noopener noreferrer"
+                          onClick={() => trackDealClick(variant, "product_grid")}
+                          style={{ display: "inline-block", margin: "8px 12px 0 0", color: "#9cff57" }}
+                        >
+                          {colour}
+                        </a>
+                      ))}
+                    </details>
+                  )}
                 </div>
-
                 <div
                   className="deal-price-panel"
                   style={{

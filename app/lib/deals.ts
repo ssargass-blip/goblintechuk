@@ -94,6 +94,33 @@ export function parsePrice(price: string) {
   return match ? Number(match[0].replace(/,/g, "")) : Number.POSITIVE_INFINITY;
 }
 
+const PHONE_COLOUR_SUFFIX = /[\s,–-]+((?:(?:velvet|sprout|desert|golden|midnight|forest|titanium|dawn|ivory|sky|breeze|lunar shadow|epi|ocean|meteor|stellar)\s+)?(?:black|grey|gray|green|gold|white|orange|blue|purple|silver|red|pink|brown|cyan))(\s*[,–-]?\s*(?:dual sim|dual card|unlocked)\s*)?$/i;
+
+export function groupPhoneDeals<T extends Deal>(deals: T[]) {
+  const groups: { deal: T; variants: { deal: T; colour: string }[] }[] = [];
+  const byModel = new Map<string, (typeof groups)[number]>();
+  for (const deal of deals) {
+    const colour = deal.category === "Phones" ? deal.title.match(PHONE_COLOUR_SUFFIX) : null;
+    const merchant = deal.merchant?.trim().toLowerCase();
+    const price = parsePrice(deal.price);
+    const model = colour ? deal.title.slice(0, colour.index).trim() + (colour[2] || "") : "";
+    const key = colour && merchant && Number.isFinite(price) && /\b\d+\s*(?:gb|tb)\b/i.test(model)
+      ? JSON.stringify([merchant, price, model.toLowerCase()
+        .replace(/(\d+\s*(?:gb|tb))\s+(?:storage|rom)\b/g, "$1")
+        .replace(/\s+/g, " ").trim()])
+      : null;
+    const existing = key ? byModel.get(key) : undefined;
+    if (existing && colour) {
+      existing.variants.push({ deal, colour: colour[1] });
+    } else {
+      const group: (typeof groups)[number] = { deal, variants: [] };
+      groups.push(group);
+      if (key) byModel.set(key, group);
+    }
+  }
+  return groups;
+}
+
 function normalizedMerchant(deal: Deal) {
   return (deal.merchant || deal.source || "unknown")
     .trim()
@@ -183,6 +210,7 @@ export function getRankingScore(deal: Deal) {
     TVs: 38,
     SSDs: 36,
     Tablets: 35,
+    Phones: 35,
     Hardware: 34,
     Accessories: 8,
     Other: 0,

@@ -7,6 +7,7 @@ import {
   canonicalProductUrl,
   getAffiliateUrl,
   getEligibleDeals,
+  groupPhoneDeals,
   prepareDeal,
   prepareDeals,
 } from "../app/lib/deals.ts";
@@ -53,6 +54,19 @@ test("affiliate URLs continue to route through Awin", () => {
   assert.equal(url.searchParams.get("clickref"), deal.dealId);
   assert.equal(url.searchParams.get("clickref2"), "deal_page");
   assert.equal(url.searchParams.get("ued"), fixture.link);
+});
+
+test("phone colours group only at the same retailer, configuration and price", () => {
+  const phone = { ...fixture, category: "Phones", merchant: "HONOR UK", title: "HONOR 600 Lite 8GB+256GB Velvet Black Dual Card", price: "£369.99" };
+  const green = { ...phone, title: "HONOR 600 Lite 8GB+256GB Sprout Green Dual Card" };
+  const groups = groupPhoneDeals([phone, green,
+    { ...green, price: "£359.99" },
+    { ...green, merchant: "Box" },
+    { ...green, title: green.title.replace("256GB", "512GB") },
+    { ...green, title: green.title.replace("HONOR", "Refurbished HONOR") },
+  ]);
+  assert.equal(groups.length, 5);
+  assert.deepEqual(groups[0].variants, [{ deal: green, colour: "Sprout Green" }]);
 });
 
 test("HONOR UK links route through its Awin programme", () => {
